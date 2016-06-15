@@ -4,21 +4,40 @@
     ViewBag.Title = "Sesamit";
     Layout = "../Shared/_Layout.cshtml";
 }
-<header>
-    <div class="container header-container">
-        <div class="col-md-3"></div>
-        <div class="col-md-6">
-            <div class="well">
-                <p>asdoijasdoijsadoij</p>
+
+
+<section id="slider" class="text-center">
+    <div class="slider-overlay">
+        <div class="container">
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                </ol>
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <h3>En text</h3>
+                        <h2>En större rubrik</h2>
+                        <h4>En mindre text</h4>
+                    </div>
+                    <div class="item">
+                        <h3>En text</h3>
+                        <h2>En större rubrik</h2>
+                        <h4>En mindre text</h4>
+                    </div>
+                    <div class="item">
+                        <h3>En text</h3>
+                        <h2>En större rubrik</h2>
+                        <h4>En mindre text</h4>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="col-md-3"></div>
     </div>
-</header>
-<div class="container">
-    <div class="col-md-2"></div>
-    <div class="col-md-8">
-        <h2>Sesamit</h2>
-    </div>
-    <div class="col-md-2"></div>
-</div>
+</section>
+
+
+

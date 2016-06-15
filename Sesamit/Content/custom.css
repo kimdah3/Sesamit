@@ -6,8 +6,16 @@
     #c6c7c4
 */
 
-body, html {
-    height: 100%;
+
+body {
+    font-family: 'Roboto', sans-serif !important;
+}
+
+.navbar {
+    border-radius: 0px;
+        text-transform: uppercase;
+
+    margin-bottom: 0px !important;
 }
 
 .navbar-header img {
@@ -19,28 +27,22 @@ body, html {
     width: auto;
 }
 
-body {
-    font-family: 'Roboto', sans-serif !important;
+#slider {
+    background: url(Images/Sesam.png);
+}
+.slider-overlay {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.2);
+}
+.item {
+    padding: 150px 0;
+    color: #fff;
 }
 
-header {
-    margin-top: -21px;
-    height: 350px;
-    text-align: center;
-    background-attachment: scroll;
-    background-image: url('../Content/Images/Sesam.png');
-    background-position: center center;
-    background-repeat: none;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
+.carousel-indicators li {
+    padding: 7px;
 }
-
-.header-container {
-    padding-top: 120px;
-}
-
-.navbar {
-    border-radius: 0px;
-}
+/*.carousel-indicators .active{
+    width: 15px;
+    height: 15px;
+}*/
