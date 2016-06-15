@@ -13,10 +13,20 @@ body {
 
 .navbar {
     border-radius: 0px;
-        text-transform: uppercase;
-
-    margin-bottom: 0px !important;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 2px;
 }
+
+.navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+    .navbar-default .navbar-nav > li > a:focus,
+    .navbar-default .navbar-nav > li > a:hover {
+        color: #c6c7c4;
+    }
 
 .navbar-header img {
     margin-top: 7px;
@@ -30,10 +40,12 @@ body {
 #slider {
     background: url(Images/Sesam.png);
 }
+
 .slider-overlay {
     width: 100%;
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.35);
 }
+
 .item {
     padding: 150px 0;
     color: #fff;
