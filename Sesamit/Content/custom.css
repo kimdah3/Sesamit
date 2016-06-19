@@ -77,7 +77,7 @@ body {
 
 .slider-overlay {
     width: 100%;
-    background: rgba(0, 0, 0, 0.20);
+    /*background: rgba(0, 0, 0, 0.20);*/
 }
 
 .item {
