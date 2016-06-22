@@ -7,16 +7,22 @@
 */
 
 
-body {
+body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: 'Open Sans', sans-serif !important;
+    color: #FFF;
 }
 /*Center menu*/
 @media (min-width: 768px) {
     .navbar-nav {
-        float: none;
-        margin: 0 auto;
-        display: table;
-        table-layout: fixed;
     }
+}
+
+.navbar-default .navbar-brand {
+    color: #FFF;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #FFF;
 }
 
 .navbar {
@@ -27,11 +33,24 @@ body {
     z-index: 2;
 }
 
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #FFF;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: lightgrey;
+}
+
+    .navbar-default .navbar-toggle:hover {
+        border-color: lightgrey;
+        background-color: lightgrey;
+    }
+
 /*Transparent menu*/
 .navbar-default {
-    background: rgba(0, 0, 0, 0.25);
-    background-color: transparent;
+    /*background: rgba(0, 0, 0, 0.25);*/
     border-color: transparent;
+    background-color: #2c3e50;
 }
 
 /*För att menyn är transparent och slidern skall hoppa bakom när fönstret minskas så det inte blir ett fult vitt glapp*/
@@ -40,6 +59,7 @@ body {
         margin-top: -145px !important;
     }
 }
+
 @media (max-width: 768px) {
     #slider {
         margin-top: -85px !important;
@@ -49,6 +69,14 @@ body {
     nav.navbar.navbar-default {
         background-color: #2c3e50;
     }
+
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+        color: #FFF;
+    }
+
+        .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+            color: #c6c7c4;
+        }
 }
 
 
@@ -69,7 +97,7 @@ body {
 }
 
 #slider {
-    background: url(Images/Sesam.png) no-repeat;
+    background: url(Images/introduktion.png) no-repeat;
     background-size: cover;
     z-index: 1;
     margin-top: -85px;
@@ -81,7 +109,8 @@ body {
 }
 
 .item {
-    padding: 150px 0;
+    padding-top: 240px;
+    padding-bottom: 170px;
     color: #fff;
 }
 
