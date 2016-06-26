@@ -1,0 +1,119 @@
+﻿/*
+    #3b469d
+    #ffffff
+    #333333
+    #eef0f2
+    #c6c7c4
+*/
+
+
+body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: 'Open Sans', sans-serif !important;
+    color: #FFF;
+}
+/*Center menu*/
+@media (min-width: 768px) {
+    .navbar-nav {
+    }
+}
+
+.navbar-default .navbar-brand {
+    color: #FFF;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #FFF;
+}
+
+.navbar {
+    border-radius: 0px;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 2px;
+    z-index: 2;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #FFF;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: lightgrey;
+}
+
+    .navbar-default .navbar-toggle:hover {
+        border-color: lightgrey;
+        background-color: lightgrey;
+    }
+
+/*Transparent menu*/
+.navbar-default {
+    /*background: rgba(0, 0, 0, 0.25);*/
+    border-color: transparent;
+    background-color: #2c3e50;
+}
+
+/*För att menyn är transparent och slidern skall hoppa bakom när fönstret minskas så det inte blir ett fult vitt glapp*/
+@media (max-width: 1201px) and (min-width: 769px) {
+    #slider {
+        margin-top: -145px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    #slider {
+        margin-top: -85px !important;
+    }
+
+    /*-- change navbar dropdown color --*/
+    nav.navbar.navbar-default {
+        background-color: #2c3e50;
+    }
+
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+        color: #FFF;
+    }
+
+        .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+            color: #c6c7c4;
+        }
+}
+
+
+
+
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > li > a:hover {
+    color: #c6c7c4;
+}
+
+.navbar-header img {
+    margin-top: 7px;
+    margin-right: 7px;
+    margin-bottom: 0px;
+    margin-left: 7px;
+    height: 50px;
+    width: auto;
+}
+
+#slider {
+    background: url(Images/introduktion.png) no-repeat;
+    background-size: cover;
+    z-index: 1;
+    margin-top: -85px;
+}
+
+.slider-overlay {
+    width: 100%;
+    /*background: rgba(0, 0, 0, 0.20);*/
+}
+
+.item {
+    padding-top: 240px;
+    padding-bottom: 170px;
+    color: #fff;
+}
+
+.carousel-indicators li {
+    padding: 7px;
+}
