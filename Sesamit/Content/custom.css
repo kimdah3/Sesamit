@@ -13,9 +13,7 @@ body, html {
 body {
     font-family: 'Roboto', sans-serif !important;
 }
-h1,h2,h3,h4,h5,h6 {
-    color: #FFF;
-}
+
 
 
 .navbar-header img {
@@ -26,10 +24,12 @@ h1,h2,h3,h4,h5,h6 {
     height: 40px;
     width: auto;
 }
+
 .navbar {
     z-index: 5;
     margin-top: 20px;
 }
+
 .navbar-default {
     /*border-color: rgb(181, 185, 216);*/
 }
@@ -44,14 +44,15 @@ h1,h2,h3,h4,h5,h6 {
     .front-page-header {
         margin-top: -19px !important;
     }
+
     .menu-container {
         background-color: white;
         padding: 0px;
     }
+
     .navbar-default {
         margin-top: 0px;
     }
-
 }
 
 
@@ -63,48 +64,66 @@ h1,h2,h3,h4,h5,h6 {
     background-size: cover;
     width: 100%;
 }
+
 #carousel-example-generic {
-    background-color: rgba(0,0,0,0.5);   
+    background-color: rgba(0,0,0,0.5);
 }
-.carousel-indicators li{
+
+.carousel-indicators li {
     width: 17px !important;
     height: 17px !important;
 }
+
 .front-page-header .glyphicon {
     font-size: 75px !important;
     margin-bottom: 10px;
 }
 
 .item {
-    padding-top: 250px;
+    padding-top: 350px;
     padding-bottom: 100px;
     margin-bottom: 50px;
     height: 100px;
 }
-.item p {
-    margin: 2px;
-    padding: 4px;
-}
-.item h2 {
-    margin-top: 0px;
-    margin-bottom: 13px;
-    padding: 1px;
-}
-.item .btn-info {
-}
-/*.btn, .btn:hover {
-    border-color: rgb(181, 185, 216);
 
-}*/
+    .item p {
+        margin: 2px;
+        padding: 4px;
+    }
 
-.content-frontpage {
-    /*background-color: #3b469d;*/
-}
-.well h2 {
-    color: #000;
+    .item h2 {
+        color: #FFF;
+        margin-top: 0px;
+        margin-bottom: 13px;
+        padding: 1px;
+    }
+
+    .item .fa-5x {
+        font-size: 11em;
+    }
+
+    .item .fa-briefcase {
+        font-size: 8em !important;
+    }
+
+.sesam-content-pic {
+    padding: 1em;
+    height: 200px;
 }
 
-.navbar-default .navbar-nav>li>a {
+.content-frontpage p {
+    font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif !important;
 }
-.navbar-default .navbar-nav>li>a:hover {
+
+.row .fa {
+    color: #127ba3;
+}
+
+.footer {
+    margin-top: 70px;
+    padding: 10px 15px;
+    background-color: #f5f5f5;
+    border-top: 1px solid transparent;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
 }
