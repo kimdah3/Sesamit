@@ -122,6 +122,7 @@
     <Content Include="Content\custom.css" />
     <Content Include="Content\Images\introduktion.png" />
     <Content Include="Content\Images\Sesam.png" />
+    <Content Include="Content\Images\Sesam3.png" />
     <Content Include="Content\Images\sesamLogo-big.png" />
     <Content Include="Content\Images\sesamLogo-medium.png" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
