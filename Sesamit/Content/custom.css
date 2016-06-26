@@ -34,6 +34,27 @@ h1,h2,h3,h4,h5,h6 {
     /*border-color: rgb(181, 185, 216);*/
 }
 
+@media (max-width: 1201px) and (min-width: 769px) {
+    .front-page-header {
+        margin-top: -145px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .front-page-header {
+        margin-top: -19px !important;
+    }
+    .menu-container {
+        background-color: white;
+        padding: 0px;
+    }
+    .navbar-default {
+        margin-top: 0px;
+    }
+
+}
+
+
 .front-page-header {
     z-index: 0;
     margin-top: -100px;
