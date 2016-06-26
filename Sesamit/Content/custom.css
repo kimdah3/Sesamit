@@ -10,6 +10,14 @@ body, html {
     height: 100%;
 }
 
+body {
+    font-family: 'Roboto', sans-serif !important;
+}
+h1,h2,h3,h4,h5,h6 {
+    color: #FFF;
+}
+
+
 .navbar-header img {
     margin-top: 7px;
     margin-right: 7px;
@@ -22,14 +30,11 @@ body, html {
     z-index: 5;
     margin-top: 20px;
 }
-
-body {
-    font-family: 'Roboto', sans-serif !important;
+.navbar-default {
+    /*border-color: rgb(181, 185, 216);*/
 }
 
-
-
-.header-slide {
+.front-page-header {
     z-index: 0;
     margin-top: -100px;
     background-image: url("../Content/Images/Sesam.png");
@@ -37,15 +42,45 @@ body {
     background-size: cover;
     width: 100%;
 }
+#carousel-example-generic {
+    background-color: rgba(0,0,0,0.5);   
+}
+.carousel-indicators li{
+    width: 17px !important;
+    height: 17px !important;
+}
+.front-page-header .glyphicon {
+    font-size: 75px !important;
+    margin-bottom: 10px;
+}
 
 .item {
-    padding-top: 200px;
+    padding-top: 250px;
     padding-bottom: 100px;
+    margin-bottom: 50px;
     height: 100px;
 }
-.item .well {
-    background-color: rgba(0,0,0, 0.43);
-    border-color: rgba(0, 0, 0, 0.1);
+.item p {
+    margin: 2px;
+    padding: 4px;
+}
+.item h2 {
+    margin-top: 0px;
+    margin-bottom: 13px;
+    padding: 1px;
+}
+.item .btn-info {
+}
+/*.btn, .btn:hover {
+    border-color: rgb(181, 185, 216);
+
+}*/
+
+.content-frontpage {
+    /*background-color: #3b469d;*/
+}
+.well h2 {
+    color: #000;
 }
 
 .navbar-default .navbar-nav>li>a {
