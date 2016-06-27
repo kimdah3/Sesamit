@@ -108,9 +108,12 @@ body {
 
 .sesam-content-pic {
     padding: 1em;
-    height: 200px;
+    height: 170px;
 }
-
+.content-frontpage {
+    padding: 30px 0px;
+    background-color: #f8f8f8;
+}
 .content-frontpage p {
     font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif !important;
 }
@@ -120,10 +123,17 @@ body {
 }
 
 .footer {
-    margin-top: 70px;
+    color: #FFF;
     padding: 10px 15px;
-    background-color: #f5f5f5;
+    background-color: #40b5e3;
     border-top: 1px solid transparent;
     border-bottom-right-radius: 3px;
     border-bottom-left-radius: 3px;
+}
+
+.content-frontpage .panel {
+        border-top-width: 1.5px;
+}
+.alert {
+    margin-bottom: 0px;
 }
