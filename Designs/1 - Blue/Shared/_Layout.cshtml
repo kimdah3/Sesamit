@@ -7,8 +7,8 @@
     <title>@ViewBag.Title - My ASP.NET Application</title>
     @Styles.Render("~/Content/bootstrap.min.css")
     @Styles.Render("~/Content/custom.css")
-    @Styles.Render("~/Content/fontawesome/font-awesome.min.css")
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     @*<link href="~/Content/bootstrap.css" rel="stylesheet" type="text/css" />
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
@@ -20,33 +20,36 @@
 
 </head>
 <body>
-    <div class="container menu-container">
-        <nav class="navbar navbar-default">
+    <nav class="navbar navbar-default ">
+        <div class="container">
             <div class="container-fluid">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <button type="button" id="minimzed-menu-button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
                     <a class="pull-left" href="#"><img class="sesamlogo" alt="Sesam logga" src="~/Content/Images/sesamlogo-medium.png" /></a>
-                    <a href="#" class="navbar-brand">Sesam</a>
-                    @*<a class="navbar-brand" href="#">Sesam</a>*@
+                    <a class="navbar-brand" href="#">Sesam</a>
                 </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
                         <li><a href="#">Introduktion</a></li>
+                        <li><a href="#">Nyheter</a></li>
+                        <li><a href="#">Företag</a></li>
+                        <li><a href="#">Kontakta oss</a></li>
+                        <li><a href="#">Blogg</a></li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Om sesam <span class="caret"></span></a>
                             <ul class="dropdown-menu">
                                 <li><a href="#">Vad är sesam?</a></li>
                                 <li><a href="#">Sesam Lounge</a></li>
                                 <li role="separator" class="divider"></li>
-                                <li><a href="#">Styrelsen</a></li>
+                                <li><a href="#">Styrelsen</a></li> 
                                 <li><a href="#">Utskott</a></li>
                                 <li><a href="#">Sektionsmöten</a></li>
                                 <li role="separator" class="divider"></li>
@@ -54,32 +57,23 @@
                                 <li><a href="#">Kalender</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">Nyheter</a></li>
-                        <li><a href="#">Företag</a></li>
-                        <li><a href="#">Blogg</a></li>
-                        <li><a href="#">Kontakta oss</a></li>
-
-                    </ul>
-                    <ul class="nav navbar-nav navbar-right">
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                <span class="caret"></span>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <a href="#">Logga in</a>
-                                </li>
-                            </ul>
-                        </li>
                     </ul>
 
                 </div><!-- /.navbar-collapse -->
             </div><!-- /.container-fluid -->
-        </nav>
-    </div>
+        </div>
+    </nav>
 
     @RenderBody()
+
     @Scripts.Render("~/Scripts/jquery-2.2.3.min.js")
     @Scripts.Render("~/Scripts/bootstrap.min.js")
+
+    <script>
+        $("#men").click(function () {
+            alert("Handler for .click() called.");
+        });
+
+    </script>
 </body>
 </html>
