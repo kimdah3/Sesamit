@@ -127,11 +127,13 @@
     <Content Include="Content\fontawesome\font-awesome.css" />
     <Content Include="Content\fontawesome\font-awesome.min.css" />
     <Content Include="Content\fonts\fontawesome-webfont.svg" />
+    <Content Include="Content\Images\handelshogskolaentre.png" />
     <Content Include="Content\Images\introduktion.png" />
     <Content Include="Content\Images\Sesam.png" />
     <Content Include="Content\Images\Sesam3.png" />
     <Content Include="Content\Images\sesamLogo-big.png" />
     <Content Include="Content\Images\sesamLogo-medium.png" />
+    <Content Include="Content\Images\sponsors.png" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

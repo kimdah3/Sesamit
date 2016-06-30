@@ -13,8 +13,11 @@ body, html {
 body {
     font-family: 'Roboto', sans-serif !important;
 }
-
-
+/**************************** NAVBAR ****************************/
+.navbar {
+    z-index: 5;
+    margin-top: 20px;
+}
 
 .navbar-header img {
     margin-top: 7px;
@@ -25,15 +28,7 @@ body {
     width: auto;
 }
 
-.navbar {
-    z-index: 5;
-    margin-top: 20px;
-}
-
-.navbar-default {
-    /*border-color: rgb(181, 185, 216);*/
-}
-
+/**************************** RESPONSIV FIXES ****************************/
 @media (max-width: 1201px) and (min-width: 769px) {
     .front-page-header {
         margin-top: -145px !important;
@@ -55,7 +50,14 @@ body {
     }
 }
 
+@media (max-width: 991px) {
+    .footer-contact {
+        text-align: center;
+    }
+}
 
+
+/**************************** Frontpage header ****************************/
 .front-page-header {
     z-index: 0;
     margin-top: -100px;
@@ -64,6 +66,11 @@ body {
     background-size: cover;
     width: 100%;
 }
+
+    .front-page-header .glyphicon {
+        font-size: 75px !important;
+        margin-bottom: 10px;
+    }
 
 #carousel-example-generic {
     background-color: rgba(0,0,0,0.5);
@@ -74,10 +81,6 @@ body {
     height: 17px !important;
 }
 
-.front-page-header .glyphicon {
-    font-size: 75px !important;
-    margin-bottom: 10px;
-}
 
 .item {
     padding-top: 350px;
@@ -106,34 +109,110 @@ body {
         font-size: 8em !important;
     }
 
-.sesam-content-pic {
-    padding: 1em;
-    height: 170px;
-}
-.content-frontpage {
-    padding: 30px 0px;
+/****************************Frontpage content****************************/
+.section-frontpage {
+    padding-top: 30px;
+    padding-bottom: 0px;
     background-color: #f8f8f8;
 }
-.content-frontpage p {
-    font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif !important;
-}
+
+    .section-frontpage p {
+        font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif !important;
+    }
 
 .row .fa {
     color: #127ba3;
 }
 
+.alert {
+    margin-bottom: 0px;
+}
+
+
+
+.section-frontpage .panel {
+    border-top-width: 1.5px;
+}
+
+/****************************Frontpage news-content****************************/
+.section-news {
+    color: #FFF;
+    background-color: #FFF;
+    padding: 30px 0px;
+    background-image: url("../Content/Images/handelshogskolaentre.png");
+}
+
+    .section-news h1 {
+        color: #FFF;
+    }
+
+
+/****************************FOOTER****************************/
 .footer {
     color: #FFF;
-    padding: 10px 15px;
+    padding: 30px;
     background-color: #40b5e3;
     border-top: 1px solid transparent;
     border-bottom-right-radius: 3px;
     border-bottom-left-radius: 3px;
 }
 
-.content-frontpage .panel {
-        border-top-width: 1.5px;
+    .footer a {
+        color: #FFF;
+    }
+
+    .footer p {
+        text-align: left;
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0;
+    }
+
+    .footer h4 {
+        color: #FFF;
+    }
+
+    .footer p span {
+        display: block;
+    }
+
+.footer-contact {
+    padding: 15px 0;
 }
-.alert {
-    margin-bottom: 0px;
+
+    .footer-contact i {
+        background-color: #75caeb;
+        color: #ffffff;
+        font-size: 25px;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 42px;
+        margin: 10px 15px;
+        vertical-align: middle;
+    }
+
+    .footer-contact .fa {
+        display: inline-block;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+#footer-logo {
+    padding: 10px;
+    width: 100px;
+}
+
+#footer-samarbets-pic {
+    padding: 10px;
+    width: 255px;
+}
+
+.footer-icons {
+    padding: 65px 0;
+}
+
+.btn-footer:hover {
+    color: #fff;
 }
