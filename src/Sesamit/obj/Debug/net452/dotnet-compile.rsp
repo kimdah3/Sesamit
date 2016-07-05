@@ -1,5 +1,5 @@
---temp-output:C:\Users\Kim\Documents\GitHub\SesamitCore\Sesamit\src\Sesamit\obj\Debug\net452\
---out:C:\Users\Kim\Documents\GitHub\SesamitCore\Sesamit\src\Sesamit\bin\Debug\net452\Sesamit.exe
+--temp-output:C:\Users\Kim\Documents\GitHub\Sesamit\src\Sesamit\obj\Debug\net452\
+--out:C:\Users\Kim\Documents\GitHub\Sesamit\src\Sesamit\bin\Debug\net452\Sesamit.exe
 --define:DEBUG
 --define:TRACE
 --define:NET452
@@ -159,7 +159,7 @@
 --reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.ServiceModel.dll
 --reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\Facades\System.Diagnostics.Tracing.dll
 --reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\Facades\System.Reflection.Primitives.dll
---resource:"C:\Users\Kim\Documents\GitHub\SesamitCore\Sesamit\src\Sesamit\obj\Debug\net452\Sesamitdotnet-compile.deps.json",Sesamit.deps.json
-C:\Users\Kim\Documents\GitHub\SesamitCore\Sesamit\src\Sesamit\Program.cs
-C:\Users\Kim\Documents\GitHub\SesamitCore\Sesamit\src\Sesamit\Startup.cs
-C:\Users\Kim\Documents\GitHub\SesamitCore\Sesamit\src\Sesamit\Controllers\HomeController.cs
+--resource:"C:\Users\Kim\Documents\GitHub\Sesamit\src\Sesamit\obj\Debug\net452\Sesamitdotnet-compile.deps.json",Sesamit.deps.json
+C:\Users\Kim\Documents\GitHub\Sesamit\src\Sesamit\Program.cs
+C:\Users\Kim\Documents\GitHub\Sesamit\src\Sesamit\Startup.cs
+C:\Users\Kim\Documents\GitHub\Sesamit\src\Sesamit\Controllers\HomeController.cs

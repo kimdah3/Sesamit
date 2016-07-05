@@ -13,6 +13,11 @@ namespace Sesamit.Controllers
             return View();
         }
 
+        public IActionResult Intro()
+        {
+            return View();
+        }
+
         public IActionResult Error()
         {
             return View();

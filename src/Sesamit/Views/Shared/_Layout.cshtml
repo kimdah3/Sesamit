@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - Sesamit</title>
+    <title>@ViewData["Title"] - Sesam</title>
 
     <environment names="Development">
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
@@ -33,34 +33,34 @@
                         <span class="icon-bar"></span>
                     </button>
                     <a class="pull-left" href="#"><img class="sesamlogo" alt="Sesam logga" src="~/Images/sesamlogo-medium.png"/></a>
-                    <a href="#" class="navbar-brand">Sesam</a>
+                    <a asp-controller="Home" asp-action="Index" class="navbar-brand">Sesam</a>
                     @*<a class="navbar-brand" href="#">Sesam</a>*@
                 </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav">
-                        <li><a href="#">Introduktion</a></li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Om sesam <span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">Vad är sesam?</a></li>
-                                <li><a href="#">Sesam Lounge</a></li>
-                                <li role="separator" class="divider"></li>
-                                <li><a href="#">Styrelsen</a></li>
-                                <li><a href="#">Utskott</a></li>
-                                <li><a href="#">Sektionsmöten</a></li>
-                                <li role="separator" class="divider"></li>
-                                <li><a href="#">CAMPUSMÄSSAN</a></li>
-                                <li><a href="#">Kalender</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Nyheter</a></li>
-                        <li><a href="#">Företag</a></li>
-                        <li><a href="#">Blogg</a></li>
-                        <li><a href="#">Kontakta oss</a></li>
+                        <ul class="nav navbar-nav">
+                            <li><a asp-controller="Home" asp-action="Intro">Introduktion</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Om sesam <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Vad är sesam?</a></li>
+                                    <li><a href="#">Sesam Lounge</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">Styrelsen</a></li>
+                                    <li><a href="#">Utskott</a></li>
+                                    <li><a href="#">Sektionsmöten</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">CAMPUSMÄSSAN</a></li>
+                                    <li><a href="#">Kalender</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Nyheter</a></li>
+                            <li><a href="#">Företag</a></li>
+                            <li><a href="#">Blogg</a></li>
+                            <li><a href="#">Kontakta oss</a></li>
 
-                    </ul>
+                        </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
