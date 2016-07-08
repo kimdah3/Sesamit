@@ -9,9 +9,11 @@
 body, html {
     height: 100%;
 }
+
 body {
     /*font-family: 'Roboto', sans-serif !important;*/
 }
+
 p {
     font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 16px;
@@ -32,9 +34,9 @@ p {
 }
 
 
-    .navbar-nav li a:hover {
-        /*text-decoration: underline;*/
-    }
+.navbar-nav li a:hover {
+    /*text-decoration: underline;*/
+}
 /**************************** RESPONSIV FIXES ****************************/
 @media (max-width: 1201px) and (min-width: 769px) {
     .front-page-header {
@@ -54,6 +56,14 @@ p {
 
     .navbar-default {
         margin-top: 0px;
+    }
+
+    p.lead {
+        font-size: 18px !important;
+    }
+
+    p {
+        font-size: 15px !important;
     }
 }
 
@@ -168,8 +178,12 @@ p {
     text-shadow: 0 1px 2px rgba(0,0,0,0.6);
 }
 
-    .top-page-header h1,.top-page-header h2,.top-page-header h3,.top-page-header h4 {
+    .top-page-header h1, .top-page-header h2, .top-page-header h3, .top-page-header h4 {
         color: #FFF;
+    }
+
+    .top-page-header h1 {
+        margin-top: 5px;
     }
 
     .top-page-header i {
@@ -178,25 +192,30 @@ p {
     }
 
 
-#intro-content {
+section#intro-content-top {
     background-color: #f8f8f8;
 }
 
-    #intro-content .thumbnail {
+#intro-k {
+        background-color: #75caeb;
+
+
+}
+   #intro-content-top .thumbnail {
         padding: 15px;
         border: 4px solid #eeeeee;
         box-shadow: 0px 1px 2px rgba(0,0,0,0.3);
     }
 
-        /*#intro-content .thumbnail .caption h2 {
-            margin-top: 0px;
-            margin-bottom: 0px;
-            color: #000;
-        }*/
-        #intro-content .thumbnail img {
-            width: 150px;
+        #intro-content-top .thumbnail .caption h3 {
+            margin-top: -10px;
+            margin-bottom: 7px;
         }
 
+        #intro-content-top .thumbnail img {
+            padding: 8px;
+            width: 175px;
+        }
 /****************************FOOTER****************************/
 .footer {
     color: #FFF;
