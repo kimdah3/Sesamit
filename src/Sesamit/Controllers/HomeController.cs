@@ -18,6 +18,11 @@ namespace Sesamit.Controllers
             return View();
         }
 
+        public IActionResult VadArSesam()
+        {
+            return View();
+        }
+
         public IActionResult Error()
         {
             return View();

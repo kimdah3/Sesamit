@@ -216,11 +216,25 @@ section#intro-content-top {
             padding: 8px;
             width: 175px;
         }
+
+/*VadArSesam*/
+.media-object {
+    height: 200px;
+    width: 200px;
+}
+
+.section-VadArSesampage {
+    padding-top: 30px;
+    padding-bottom: 0px;
+    background-color: #f8f8f8;
+}
+
+
 /****************************FOOTER****************************/
 .footer {
     color: #FFF;
     padding: 30px;
-    background-color: #40b5e3;
+    background-color: #003366;
     border-top: 1px solid transparent;
     border-bottom-right-radius: 3px;
     border-bottom-left-radius: 3px;
