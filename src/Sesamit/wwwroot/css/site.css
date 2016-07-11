@@ -229,6 +229,12 @@ section#intro-content-top {
     background-color: #f8f8f8;
 }
 
+.item-background {
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
 
 /****************************FOOTER****************************/
 .footer {
