@@ -211,16 +211,18 @@ section#intro-content-top {
         margin-bottom: 7px;
     }
 
-    #intro-content-top .thumbnail img {
-        padding: 8px;
-        width: 175px;
-    }
+.svamp-general {
+}
 
 #introk-bg-section {
     background-image: url("../Images/introk/alla.png");
     background-repeat: no-repeat;
     background-size: cover;
     height: 500px;
+}
+.intro-k-pair-small {
+    width: 100%;
+    padding: 10px;
 }
 /*VadArSesam*/
 .media-object {
