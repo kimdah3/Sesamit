@@ -204,6 +204,9 @@ p {
 section#intro-content-top {
     background-color: #f8f8f8;
 }
+#intro-content-top .row .fa {
+    color: #127ba3;
+}
 
 #intro-k {
     background-color: #75caeb;
@@ -220,8 +223,9 @@ section#intro-content-top {
         margin-bottom: 7px;
     }
 
-.svamp-general {
-}
+    .intro-img {
+        width: 100%;
+    }
 
 #introk-bg-section {
     background-image: url("../Images/introk/introduktion2.png");
@@ -287,7 +291,10 @@ section#intro-content-top {
 
 /****************************Styrelsen****************************/
 .styrelsen-person-picture {
-    display: inline;
+    margin: 0 auto;
+}
+.styrelse-row {
+    margin: 20px;
 }
 /****************************FOOTER****************************/
 .footer {
