@@ -1,14 +1,15 @@
 ﻿// Write your Javascript code.
-
-
 // Google maps
 var map;
 
 function initMap() {
-    map = new google.maps.Map(document.getElementById('kontakt-map'), {
-        center: { lat: -34.397, lng: 150.644 },
-        zoom: 8
-    });
+    var myLatlng = new google.maps.LatLng(59.2557144,15.2393114);
+    var myOptions = {
+        zoom: 17,
+        center: myLatlng,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+    }
+    map = new google.maps.Map(document.getElementById('kontakt-map'), myOptions);
 }
 
 $(function () {
