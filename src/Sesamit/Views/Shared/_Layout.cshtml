@@ -8,8 +8,8 @@
 
     <environment names="Development">
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
-        <link rel="stylesheet" href="~/css/site.css"/>
-        <link href="~/fontawesome/font-awesome.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="~/css/site.css" />
+        <link href="~/fontawesome/font-awesome.css" rel="stylesheet" />
         <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     </environment>
     <environment names="Staging,Production">
@@ -32,35 +32,34 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="pull-left" href="#"><img class="sesamlogo" alt="Sesam logga" src="~/Images/sesamlogo-medium.png"/></a>
+                    <a class="pull-left" href="#"><img class="sesamlogo" alt="Sesam logga" src="~/Images/sesamlogo-medium.png" /></a>
                     <a asp-controller="Home" asp-action="Index" class="navbar-brand">Sesam</a>
                     @*<a class="navbar-brand" href="#">Sesam</a>*@
                 </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                        <ul class="nav navbar-nav">
-                            <li><a asp-controller="Home" asp-action="Intro">Introduktion</a></li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Om sesam <span class="caret"></span></a>
-                                <ul class="dropdown-menu">
-                                    <li><a asp-controller="OmSesam" asp-action="VadArSesam">Vad är sesam?</a></li>
-                                    <li><a href="#">Sesam Lounge</a></li>
-                                    <li role="separator" class="divider"></li>
-                                    <li><a href="#">Styrelsen</a></li>
-                                    <li><a href="#">Utskott</a></li>
-                                    <li><a href="#">Sektionsmöten</a></li>
-                                    <li role="separator" class="divider"></li>
-                                    <li><a href="#">CAMPUSMÄSSAN</a></li>
-                                    <li><a href="#">Kalender</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">Nyheter</a></li>
-                            <li><a href="#">Företag</a></li>
-                            <li><a href="#">Blogg</a></li>
-                            <li><a href="#">Kontakta oss</a></li>
-
-                        </ul>
+                    <ul class="nav navbar-nav">
+                        <li><a asp-controller="Home" asp-action="Intro">Introduktion</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Om sesam <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a asp-controller="OmSesam" asp-action="VadArSesam">Vad är sesam?</a></li>
+                                <li><a href="#">Sesam Lounge</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a asp-controller="OmSesam" asp-action="Styrelsen">Styrelsen</a></li>
+                                <li><a href="#">Utskott</a></li>
+                                <li><a href="#">Sektionsmöten</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">CAMPUSMÄSSAN</a></li>
+                                <li><a href="#">Kalender</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Nyheter</a></li>
+                        <li><a href="#">Företag</a></li>
+                        <li><a href="#">Blogg</a></li>
+                        <li><a href="" id="kontakt-button" data-toggle="modal" data-target="#kontaktModal">Kontakta oss</a></li>
+                    </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
@@ -78,7 +77,7 @@
             </div><!-- /.container-fluid -->
         </nav>
     </div>
-        @RenderBody()
+    @RenderBody()
     <footer class="footer">
         <div class="container">
             <div class="col-md-1 ">
@@ -136,25 +135,48 @@
             </div>
             <div class="col-md-1"></div>
         </div>
-        </footer>
+    </footer>
 
-        <environment names="Development">
-            <script src="~/lib/jquery/dist/jquery.js"></script>
-            <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
-            <script src="~/js/site.js" asp-append-version="true"></script>
-        </environment>
-        <environment names="Staging,Production">
-            <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-2.2.0.min.js"
-                    asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
-                    asp-fallback-test="window.jQuery">
-            </script>
-            <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.6/bootstrap.min.js"
-                    asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
-                    asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal">
-            </script>
-            <script src="~/js/site.min.js" asp-append-version="true"></script>
-        </environment>
+    <!-- Modal -->
+    <div class="modal fade bs-example-modal-lg" id="kontaktModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Kontakta oss</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div id="kontakt-map">as</div>
+                        <div id="capture"></div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Stäng</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
-        @RenderSection("scripts", required: false)
+    <environment names="Development">
+        <script src="~/lib/jquery/dist/jquery.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtXwSw2mG7B4x-Y_-LGj4_DbHyzb_amno&callback=initMap"
+                async defer></script>
+    </environment>
+    <environment names="Staging,Production">
+        <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-2.2.0.min.js"
+                asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
+                asp-fallback-test="window.jQuery">
+        </script>
+        <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.6/bootstrap.min.js"
+                asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
+                asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal">
+        </script>
+        <script src="~/js/site.min.js" asp-append-version="true"></script>
+    </environment>
+
+    @RenderSection("scripts", required: false)
 </body>
 </html>

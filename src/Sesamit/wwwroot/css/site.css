@@ -164,7 +164,7 @@ p {
 
 
 
-/*introduktion*/
+/****************************introduktion****************************/
 .top-page-header {
     z-index: 0;
     margin-top: -100px;
@@ -224,7 +224,7 @@ section#intro-content-top {
     width: 100%;
     padding: 10px;
 }
-/*VadArSesam*/
+/****************************VadArSesam****************************/
 .media-object {
     height: 200px;
     width: 200px;
@@ -242,7 +242,10 @@ section#intro-content-top {
     border-radius: 5px;
 }
 
-
+/****************************Kontakta oss****************************/
+#kontakt-map {
+    height: 400px;
+}
 /****************************FOOTER****************************/
 .footer {
     color: #FFF;
