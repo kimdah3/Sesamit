@@ -42,6 +42,7 @@ p {
     .front-page-header {
         margin-top: -145px !important;
     }
+    
 }
 
 @media (max-width: 768px) {
@@ -71,6 +72,14 @@ p {
     .footer-contact {
         text-align: center;
     }
+
+}
+
+@media (min-width: 991px) {
+    .kontakt-modified-panel-small{
+    height: 150px;
+}
+
 }
 
 
@@ -137,7 +146,7 @@ p {
         font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif !important;
     }
 
-.row .fa {
+.section-frontpage .row .fa {
     color: #127ba3;
 }
 
@@ -215,7 +224,7 @@ section#intro-content-top {
 }
 
 #introk-bg-section {
-    background-image: url("../Images/introk/alla.png");
+    background-image: url("../Images/introk/introduktion2.png");
     background-repeat: no-repeat;
     background-size: cover;
     height: 500px;
@@ -273,6 +282,12 @@ section#intro-content-top {
 /****************************Kontakta oss****************************/
 #kontakt-map {
     height: 400px;
+    box-shadow: 0px 1px 2px rgba(0,0,0,0.3);
+}
+
+/****************************Styrelsen****************************/
+.styrelsen-person-picture {
+    display: inline;
 }
 /****************************FOOTER****************************/
 .footer {

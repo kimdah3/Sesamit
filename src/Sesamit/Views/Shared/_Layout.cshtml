@@ -139,6 +139,7 @@
     </footer>
 
     <!-- Modal -->
+
     <div class="modal fade bs-example-modal-lg" id="kontaktModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
@@ -148,8 +149,75 @@
                 </div>
                 <div class="modal-body">
                     <div class="row">
-                        <div id="kontakt-map">as</div>
-                        <div id="capture"></div>
+                        <div class="col-md-4">
+                            <div class="panel panel-primary kontakt-modified-panel-small">
+                                <div class="panel-heading">
+                                    <i class="fa fa-envelope fa-1x pull-right"></i>
+                                    <h3 class="panel-title">Email</h3>
+
+                                </div>
+                                <div class="panel-body">
+                                    <p>info@sesamit.se</p>
+                                    <a asp-controller="OmSesam" asp-action="Styrelsen">Kontakta någon i styrelsen? </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="panel panel-primary kontakt-modified-panel-small">
+                                <div class="panel-heading">
+                                    <i class="fa fa-building fa-1x pull-right"></i>
+                                    <h3 class="panel-title">Kontoret</h3>
+
+                                </div>
+                                <div class="panel-body">
+                                    <p>
+                                        Vi har kontorstid alla vardagar
+                                        från <strong>12-13</strong>. Hälsa gärna på!
+                                        Vi finns på plats i Nova huset våning 2!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="panel panel-primary kontakt-modified-panel-small">
+                                <div class="panel-heading">
+                                    <i class="fa fa-exclamation fa-1x pull-right"></i>
+                                    <h3 class="panel-title">Akut?</h3>
+                                    
+                                </div>
+                                <div class="panel-body">
+                                    <p>
+                                        Ring vår ordförande Jonatan Palmgren på
+                                        073-772 88 22
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+
+                            <div class="panel panel-primary">
+                                <div class="panel-heading">
+                                    <i class="fa fa-map-marker fa-1x pull-right"></i>
+                                    <h3 class="panel-title">Adress</h3>
+
+                                </div>
+                                <div class="panel-body">
+                                    <p>
+                                        <strong>
+                                            Studentsektionen-Sesam
+                                        </strong>
+                                        <br />
+                                        Fakultetsgatan 1
+                                        <br />
+                                        70181, Örebro
+                                        <br />
+                                    </p>
+                                    <div id="kontakt-map" class="thumbnail"></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="modal-footer">
