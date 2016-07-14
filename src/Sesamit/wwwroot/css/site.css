@@ -237,6 +237,9 @@ section#intro-content-top {
     width: 100%;
     padding: 10px;
 }
+.p-no-bottom-margin {
+    margin-bottom: -10px;
+}
 /****************************VadArSesam****************************/
 
     .vadarsesam-header {
