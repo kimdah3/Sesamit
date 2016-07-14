@@ -238,6 +238,33 @@ section#intro-content-top {
     padding: 10px;
 }
 /****************************VadArSesam****************************/
+
+    .vadarsesam-header {
+    z-index: 0;
+    margin-top: -100px;
+    background-image: url("../Images/imgs/styrelsenRemake - kopia.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding-top: 270px;
+    padding-bottom: 120px;
+    margin-bottom: 0px;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.6);
+}
+
+    .vadarsesam-header h1, .top-page-header h2, .top-page-header h3, .top-page-header h4 {
+        color: #FFF;
+    }
+
+    .vadarsesam-header h1 {
+        margin-top: 5px;
+    }
+
+    .vadarsesam-header i {
+        color: #FFF;
+        font-size: 08em;
+    }
+
 .media-object {
     height: 200px;
     width: 200px;
