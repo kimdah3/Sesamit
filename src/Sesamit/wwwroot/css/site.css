@@ -27,7 +27,7 @@ p {
 .navbar-header img {
     margin-top: 7px;
     margin-right: 7px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
     margin-left: 7px;
     height: 40px;
     width: auto;
@@ -52,11 +52,11 @@ p {
 
     .menu-container {
         background-color: white;
-        padding: 0px;
+        padding: 0;
     }
 
     .navbar-default {
-        margin-top: 0px;
+        margin-top: 0;
     }
 
     p.lead {
@@ -122,7 +122,7 @@ p {
 
     .item h2 {
         color: #FFF;
-        margin-top: 0px;
+        margin-top: 0;
         margin-bottom: 13px;
         padding: 1px;
     }
@@ -138,7 +138,7 @@ p {
 /****************************Frontpage content****************************/
 .section-frontpage {
     padding-top: 30px;
-    padding-bottom: 0px;
+    padding-bottom: 0;
     background-color: #f8f8f8;
 }
 
@@ -151,7 +151,7 @@ p {
 }
 
 .alert {
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 
 
@@ -164,7 +164,7 @@ p {
 .section-news {
     color: #FFF;
     background-color: #FFF;
-    padding: 30px 0px;
+    padding: 30px 0;
 }
 
     .section-news h1 {
@@ -183,7 +183,7 @@ p {
     width: 100%;
     padding-top: 270px;
     padding-bottom: 120px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
     text-shadow: 0 1px 2px rgba(0,0,0,0.6);
 }
 
@@ -215,7 +215,7 @@ section#intro-content-top {
 #intro-content-top .thumbnail {
     padding: 15px;
     border: 4px solid #eeeeee;
-    box-shadow: 0px 1px 2px rgba(0,0,0,0.3);
+    box-shadow: 0 1px 2px rgba(0,0,0,0.3);
 }
 
     #intro-content-top .thumbnail .caption h3 {
@@ -251,7 +251,7 @@ section#intro-content-top {
     width: 100%;
     padding-top: 270px;
     padding-bottom: 120px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
     text-shadow: 0 1px 2px rgba(0,0,0,0.6);
 }
 
@@ -275,7 +275,7 @@ section#intro-content-top {
 
 .section-VadArSesampage {
     padding-top: 30px;
-    padding-bottom: 0px;
+    padding-bottom: 0;
     background-color: #f8f8f8;
 }
 
@@ -283,6 +283,171 @@ section#intro-content-top {
     background-color: white;
     border: 1px solid white;
     border-radius: 5px;
+}
+
+.header-image {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background: url('http://placehold.it/1900x500') no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.headline {
+    padding: 120px 0;
+}
+
+.headline h1 {
+    font-size: 130px;
+    background: #fff;
+    background: rgba(255,255,255,0.9);
+}
+
+.headline h2 {
+    font-size: 77px;
+    background: #fff;
+    background: rgba(255,255,255,0.9);
+}
+
+.featurette-divider {
+    margin: 80px 0;
+}
+
+.featurette {
+    overflow: hidden;
+}
+
+.featurette-image.pull-left {
+    margin-right: 40px;
+}
+
+.featurette-image.pull-right {
+    margin-left: 40px;
+}
+
+.featurette-heading {
+    font-size: 50px;
+}
+
+@media(max-width:1200px) {
+    .headline h1 {
+        font-size: 140px;
+    }
+
+    .headline h2 {
+        font-size: 63px;
+    }
+
+    .featurette-divider {
+        margin: 50px 0;
+    }
+
+    .featurette-image.pull-left {
+        margin-right: 20px;
+    }
+
+    .featurette-image.pull-right {
+        margin-left: 20px;
+    }
+
+    .featurette-heading {
+        font-size: 35px;
+    }
+}
+
+@media(max-width:991px) {
+    .headline h1 {
+        font-size: 105px;
+    }
+
+    .headline h2 {
+        font-size: 50px;
+    }
+
+    .featurette-divider {
+        margin: 40px 0;
+    }
+
+    .featurette-image {
+        max-width: 50%;
+    }
+
+    .featurette-image.pull-left {
+        margin-right: 10px;
+    }
+
+    .featurette-image.pull-right {
+        margin-left: 10px;
+    }
+
+    .featurette-heading {
+        font-size: 30px;
+    }
+}
+
+@media(max-width:768px) {
+    .container {
+        margin: 0 15px;
+    }
+
+    .featurette-divider {
+        margin: 40px 0;
+    }
+
+    .featurette-heading {
+        font-size: 25px;
+    }
+}
+
+@media(max-width:668px) {
+    .headline h1 {
+        font-size: 70px;
+    }
+
+    .headline h2 {
+        font-size: 32px;
+    }
+
+    .featurette-divider {
+        margin: 30px 0;
+    }
+}
+
+@media(max-width:640px) {
+    .headline {
+        padding: 75px 0 25px 0;
+    }
+
+    .headline h1 {
+        font-size: 60px;
+    }
+
+    .headline h2 {
+        font-size: 30px;
+    }
+}
+
+@media(max-width:375px) {
+    .featurette-divider {
+        margin: 10px 0;
+    }
+
+    .featurette-image {
+        max-width: 100%;
+    }
+
+    .featurette-image.pull-left {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .featurette-image.pull-right {
+        margin-bottom: 10px;
+        margin-left: 0;
+    }
 }
 
 /****************************Sesam lounge****************************/
@@ -296,7 +461,7 @@ section#intro-content-top {
     width: 100%;
     padding-top: 270px;
     padding-bottom: 120px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
     text-shadow: 0 1px 2px rgba(0,0,0,0.6);
 }
 
@@ -316,7 +481,7 @@ section#intro-content-top {
 /****************************Kontakta oss****************************/
 #kontakt-map {
     height: 400px;
-    box-shadow: 0px 1px 2px rgba(0,0,0,0.3);
+    box-shadow: 0 1px 2px rgba(0,0,0,0.3);
 }
 
 /****************************Styrelsen****************************/
