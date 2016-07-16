@@ -9,11 +9,6 @@
 body, html {
     height: 100%;
 }
-
-body {
-    /*font-family: 'Roboto', sans-serif !important;*/
-}
-
 p {
     font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 16px;
@@ -33,10 +28,6 @@ p {
     width: auto;
 }
 
-
-.navbar-nav li a:hover {
-    /*text-decoration: underline;*/
-}
 /**************************** RESPONSIV FIXES ****************************/
 @media (max-width: 1201px) and (min-width: 769px) {
     .front-page-header {
@@ -53,6 +44,7 @@ p {
     .menu-container {
         background-color: white;
         padding: 0;
+        margin: 0 !important;
     }
 
     .navbar-default {
@@ -177,14 +169,16 @@ p {
 .top-page-header {
     z-index: 0;
     margin-top: -100px;
-    background-image: url("../Images/sesam2.png");
-    background-repeat: no-repeat;
-    background-size: cover;
     width: 100%;
     padding-top: 270px;
     padding-bottom: 120px;
     margin-bottom: 0;
     text-shadow: 0 1px 2px rgba(0,0,0,0.6);
+}
+#intro-header {
+    background-image: url("../Images/sesam2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
     .top-page-header h1, .top-page-header h2, .top-page-header h3, .top-page-header h4 {
@@ -485,6 +479,20 @@ section#intro-content-top {
 }
 
 /****************************Styrelsen****************************/
+#styrelsen-header {
+    background-image: url("../Images/styrelsen-vt16-calles-stuga.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#styrelsen-content {
+    background-color: #f8f8f8;
+}
+.styrelsen-person-border {
+    padding: 15px;
+    border: 4px solid #eeeeee;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.3);
+    height: fit-content;
+}
 .styrelsen-person-picture {
     margin: 0 auto;
 }
