@@ -16,11 +16,6 @@ namespace Sesamit.Controllers
             return View();
         }
 
-        public IActionResult SesamLounge()
-        {
-            return View();
-        }
-
         public IActionResult Styrelsen()
         {
             return View();
