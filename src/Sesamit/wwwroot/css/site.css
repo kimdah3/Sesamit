@@ -501,6 +501,9 @@ section#intro-content-top {
 .styrelse-row {
     margin: 20px;
 }
+.styrelse-row .col-md-3 {
+    padding-bottom: 30px;
+}
 /****************************FOOTER****************************/
 .footer {
     color: #FFF;
