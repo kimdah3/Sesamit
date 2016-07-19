@@ -500,6 +500,13 @@ section#intro-content-top {
 .styrelse-row .col-md-3 {
     padding-bottom: 30px;
 }
+
+/****************************Bryggan****************************/
+#bryggan-header {
+    background-color: #75caeb;
+}
+
+
 /****************************FOOTER****************************/
 .footer {
     color: #FFF;
