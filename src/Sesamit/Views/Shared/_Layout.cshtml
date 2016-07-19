@@ -35,7 +35,7 @@
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
                         <li><a asp-controller="Home" asp-action="Intro">Introduktion</a></li>
-                        
+
                         <li><a href="#">Nyheter</a></li>
                         <li><a href="#">Företag</a></li>
                         <li><a href="#">Blogg</a></li>
@@ -78,7 +78,7 @@
             <div class="col-md-1 ">
                 @*<img id="footer-logo" class="pull-right" src="~/Content/Images/sesamLogo-medium.png" />*@
             </div>
-            <div class="col-md-3 ">
+            <div class="col-md-3  col-xs-12">
                 <div class="footer-contact">
                     <div>
                         <i class="fa fa-map-marker"></i>
@@ -96,35 +96,37 @@
                         </p>
                     </div>
 
-                    <div>
-                        <i class="fa fa-phone"></i>
-                        <p>
-                            073-772 88 22
-                        </p>
-                    </div>
+                    @*<div>
+                            <i class="fa fa-phone"></i>
+                            <p>
+                                073-772 88 22
+                            </p>
+                        </div>*@
 
                     <div>
-                        <i class="fa fa-envelope"></i>
+                        <i class="fa fa-envelope "></i>
                         <p>
-                            <a class="hidden-xs" href="mailto:info@sesamit.se">
+                            <a href="mailto:info@sesamit.se">
                                 info@sesamit.se
                             </a>
                         </p>
+
                     </div>
+                    
                 </div>
             </div>
 
-            <div class="col-md-4">
+            <div class="col-md-4 col-xs-12">
                 <div class="footer-samarbet text-center">
-                    <img id="footer-samarbets-pic" src="~/Images/sponsors.png" />
+                    <img id="footer-samarbets-pic" class="img-responsive img-center" src="~/Images/sponsors.png" />
                 </div>
             </div>
 
-            <div class="col-md-3">
+            <div class="col-md-3 col-xs-12">
 
                 <div class="footer-icons text-center">
-                    <a class="btn btn-footer" href=""><i class="fa fa-facebook fa-5x" aria-hidden="true"></i></a>
-                    <a class="btn btn-footer" href=""><i class="fa fa-instagram fa-5x" aria-hidden="true"></i></a>
+                    <a class="btn btn-footer" href=""><i class="fa fa-facebook fa-3x" aria-hidden="true"></i></a>
+                    <a class="btn btn-footer" href=""><i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a>
                 </div>
 
             </div>
@@ -177,7 +179,7 @@
                                 <div class="panel-heading">
                                     <i class="fa fa-exclamation fa-1x pull-right"></i>
                                     <h3 class="panel-title">Akut?</h3>
-                                    
+
                                 </div>
                                 <div class="panel-body">
                                     <p>
