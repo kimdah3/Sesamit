@@ -46,7 +46,7 @@
                                 <li><a asp-controller="OmSesam" asp-action="VadArSesam">Vad är sesam?</a></li>
                                 <li role="separator" class="divider"></li>
                                 <li><a asp-controller="OmSesam" asp-action="Styrelsen">Styrelsen</a></li>
-                                <li><a href="#">Utskott</a></li>
+                                <li><a asp-controller="OmSesam" asp-action="Utskott">Utskott</a></li>
                                 <li><a href="#">Sektionsmöten</a></li>
                                 <li role="separator" class="divider"></li>
                                 <li><a href="#">CAMPUSMÄSSAN</a></li>
@@ -224,6 +224,7 @@
     <environment names="Development,Staging,Production">
         <script src="~/lib/jquery/dist/jquery.js"></script>
         <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="~/js/jquery.easing.min.js"></script>
         <script src="~/js/site.js" asp-append-version="true"></script>
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtXwSw2mG7B4x-Y_-LGj4_DbHyzb_amno&callback=initMap"
                 async defer></script>
