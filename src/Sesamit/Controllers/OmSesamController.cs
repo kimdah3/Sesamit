@@ -20,5 +20,10 @@ namespace Sesamit.Controllers
         {
             return View();
         }
+
+        public IActionResult Utskott()
+        {
+            return View();
+        }
     }
 }
