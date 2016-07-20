@@ -162,5 +162,6 @@
 --resource:"C:\Users\johne\Documents\GitHub\Sesamit\src\Sesamit\obj\Debug\net452\Sesamitdotnet-compile.deps.json",Sesamit.deps.json
 C:\Users\johne\Documents\GitHub\Sesamit\src\Sesamit\Program.cs
 C:\Users\johne\Documents\GitHub\Sesamit\src\Sesamit\Startup.cs
+C:\Users\johne\Documents\GitHub\Sesamit\src\Sesamit\Controllers\BrygganController.cs
 C:\Users\johne\Documents\GitHub\Sesamit\src\Sesamit\Controllers\HomeController.cs
 C:\Users\johne\Documents\GitHub\Sesamit\src\Sesamit\Controllers\OmSesamController.cs
