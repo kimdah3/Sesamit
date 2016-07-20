@@ -503,7 +503,12 @@ section#intro-content-top {
 
 /****************************Bryggan****************************/
 #bryggan-header {
-    background-color: #75caeb;
+    background-image: url("../Images/bryggan/beer-hq.png");
+     background-repeat: no-repeat;
+    background-size: cover;
+}
+.top-page-header-bryggan {
+    
 }
 
 
