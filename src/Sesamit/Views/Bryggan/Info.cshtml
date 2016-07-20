@@ -5,22 +5,133 @@
     ViewData["Title"] = "Bryggan";
 }
 <header class="top-page-header" id="bryggan-header">
-    <div class="container text-center">
-        <img src="../Images/bryggan/logga.png"/>
+    <div class="container ">
+        <img class="img-responsive img-center" src="../Images/bryggan/logga.png" />
 
+        <div id="bryggan-menu">
+            <div class="col-md-1 hidden-xs"></div>
+            <div class="col-md-10 ">
+
+                <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active">
+                        <a href="#om" aria-controls="om" role="tab" data-toggle="tab">
+                            <i class="fa fa-info-circle fa-3x"></i>
+                        </a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#dryck" aria-controls="dryck" role="tab" data-toggle="tab">
+                            <i class="fa fa-beer fa-3x"></i>
+                        </a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#mat" aria-controls="mat" role="tab" data-toggle="tab">
+                            <i class="fa fa-cutlery fa-3x"></i>
+
+                        </a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#jobba" aria-controls="jobba" role="tab" data-toggle="tab">
+                            <i class="fa fa-phone fa-3x"></i>
+
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-1 hidden-xs"></div>
+
+        </div>
     </div>
+
 </header>
-<section>
+<section id="bryggan-content">
     <div class="container">
-        <h1>Öppettider:</h1>
-        <h3>
-            Onsdagar 17.00-23.00
-            <br />
-            Fredagar 19.00-01.00
-        </h3>
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+            <div class="row">
+                <!-- Nav tabs -->
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="om">
+                        <div class="col-md-8 ">
+                            <h2>Välkommen till bryggan</h2>
+                            <p>
+                                Bryggan är studentpuben på Örebro Universitets campus där <u>alla studenter</u> kan ha en trevlig stund, dricka och äta billigt.
+                            </p>
+                            <p>
+                                Belägen på Studentgatan 2 mitt emot Bågen och ett stenkast från Pressbyrån och Kårhuset.
+                            </p>
 
+                            <h2>Vad är då Bryggan?</h2>
+                            <p>
+                                Bryggan är en studentpub med en ärorik historia. Den bildades redan 1996 och har efter det växt mer och mer för varje år.
 
-    </div>
+                            </p>
+                            <p>
+                                Den ägs av studentsektionen Sesam på Örebro Universitet och samarbetar även med andra studentsektioner såväl som Örebro Studentkår och Kårhuset.
+                            </p>
+                            <p>
+                                Driven av studenter för studenter finns Bryggan öppen för den som är törstig och/eller hungrig.
+
+                            </p>
+
+                        </div>
+                        <div class="col-md-4">
+                            <div class="panel  panel-info">
+                                <div class="panel-heading">
+                                    <i class="fa fa-clock-o fa-1x pull-right"></i>
+                                    <h3 class="panel-title">Öppettider</h3>
+                                </div>
+                                <div class="panel-body">
+                                    <p>
+                                        <strong>Onsdagar:</strong> 17.00-23.00
+                                    </p>
+                                    <p>
+                                        <strong>Fredagar:</strong> 19.00-01.00
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="panel  panel-info">
+                                <div class="panel-heading">
+                                    <i class="fa fa-money fa-1x pull-right"></i>
+                                    <h3 class="panel-title">Kontanter & Barappen</h3>
+
+                                </div>
+                                <div class="panel-body">
+                                    <p>
+                                        Vi tar endast <strong>kontanter</strong> eller <strong>kortbetalning</strong> igenom barappen som finns till iOS och Android.
+                                    </p>
+                                </div>
+
+                            </div>
+                            <div class="panel  panel-info">
+                                <div class="panel-heading">
+                                    <i class="fa fa-users fa-1x pull-right"></i>
+                                    <h3 class="panel-title">Bli Medlem (Pris: 25:-/termin)</h3>
+                                </div>
+                                <div class="panel-body">
+                                    <p>
+                                        Bryggan är ett slutet sällskap av studenter, för studenter och vilken student som helst på Örebro Universitet får köpa medlemskap, oavsett sektion!
+
+                                    </p>
+                                    <p>
+                                        Köper du medlemskap via PayPal så gäller ditt medlemskap samma kväll om du betalat innan klockan 12.00. Du kan även köpa medlemskap direkt på Bryggan, detta gäller då från nästa öppetkväll. Pris: 25:- / termin
+                                        
+                                    </p>
+                                </div>
+                               
+
+                            </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="dryck">...</div>
+                        <div role="tabpanel" class="tab-pane" id="mat">...</div>
+                        <div role="tabpanel" class="tab-pane" id="jobba">...</div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-1"></div>
+
+        </div>
 
 </section>
 
