@@ -9,6 +9,7 @@
 body, html {
     height: 100%;
 }
+
 p {
     font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 16px;
@@ -33,7 +34,10 @@ p {
     .front-page-header {
         margin-top: -145px !important;
     }
-    
+
+    .top-page-header {
+        margin-top: -145px !important;
+    }
 }
 
 @media (max-width: 768px) {
@@ -58,20 +62,22 @@ p {
     p {
         font-size: 15px !important;
     }
+    #bryggan-menu li a i{
+        padding: 0;
+        font-size: 1.4em;
+    }
 }
 
 @media (max-width: 991px) {
     .footer-contact {
         text-align: center;
     }
-
 }
 
 @media (min-width: 991px) {
-    .kontakt-modified-panel-small{
-    height: 150px;
-}
-
+    .kontakt-modified-panel-small {
+        height: 150px;
+    }
 }
 
 
@@ -84,6 +90,7 @@ p {
     background-size: cover;
     width: 100%;
 }
+
 #carousel-example-generic {
     background-color: rgba(0,0,0,0.5);
 }
@@ -92,6 +99,7 @@ p {
     width: 17px !important;
     height: 17px !important;
 }
+
 .carousel-control {
     background-image: -webkit-linear-gradient(left, rgba(0,0,0,0.0001) 0, rgba(0,0,0,0.0) 100%) !important;
 }
@@ -134,9 +142,9 @@ p {
         font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif !important;
     }
 
-.section-frontpage .row .fa {
-    color: #127ba3;
-}
+    .section-frontpage .row .fa {
+        color: #127ba3;
+    }
 
 .alert {
     margin-bottom: 0;
@@ -171,29 +179,30 @@ p {
     margin-bottom: 0;
     text-shadow: 0 1px 2px rgba(0,0,0,0.6);
 }
+
 #intro-header {
     background-image: url("../Images/sesam2.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-    .top-page-header h1, .top-page-header h2, .top-page-header h3, .top-page-header h4 {
-        color: #FFF;
-    }
+.top-page-header h1, .top-page-header h2, .top-page-header h3, .top-page-header h4 {
+    color: #FFF;
+}
 
-    .top-page-header h1 {
-        margin-top: 5px;
-    }
+.top-page-header h1 {
+    margin-top: 5px;
+}
 
-    .top-page-header i {
-        color: #FFF;
-        font-size: 08em;
-    }
+.top-page-header i {
+    color: #FFF;
+}
 
 
 section#intro-content-top {
     background-color: #f8f8f8;
 }
+
 #intro-content-top .row .fa {
     color: #127ba3;
 }
@@ -213,9 +222,9 @@ section#intro-content-top {
         margin-bottom: 7px;
     }
 
-    .intro-img {
-        width: 100%;
-    }
+.intro-img {
+    width: 100%;
+}
 
 #introk-bg-section {
     background-image: url("../Images/introk/introduktion2.png");
@@ -223,16 +232,26 @@ section#intro-content-top {
     background-size: cover;
     height: 500px;
 }
+
 .intro-k-pair-small {
     width: 100%;
     padding: 10px;
 }
+
 .p-no-bottom-margin {
     margin-bottom: -10px;
 }
+
+.border-left-panel {
+    border-left: 5px lightskyblue solid;
+}
+
+.border-right-panel {
+    border-right: 5px lightskyblue solid;
+}
 /****************************VadArSesam****************************/
 
-    .vadarsesam-header {
+.vadarsesam-header {
     z-index: 0;
     margin-top: -100px;
     background-image: url("../Images/imgs/styrelsenRemake - kopia.jpg");
@@ -290,17 +309,17 @@ section#intro-content-top {
     padding: 120px 0;
 }
 
-.headline h1 {
-    font-size: 130px;
-    background: #fff;
-    background: rgba(255,255,255,0.9);
-}
+    .headline h1 {
+        font-size: 130px;
+        background: #fff;
+        background: rgba(255,255,255,0.9);
+    }
 
-.headline h2 {
-    font-size: 77px;
-    background: #fff;
-    background: rgba(255,255,255,0.9);
-}
+    .headline h2 {
+        font-size: 77px;
+        background: #fff;
+        background: rgba(255,255,255,0.9);
+    }
 
 .featurette-divider {
     margin: 80px 0;
@@ -365,13 +384,13 @@ section#intro-content-top {
         max-width: 50%;
     }
 
-    .featurette-image.pull-left {
-        margin-right: 10px;
-    }
+        .featurette-image.pull-left {
+            margin-right: 10px;
+        }
 
-    .featurette-image.pull-right {
-        margin-left: 10px;
-    }
+        .featurette-image.pull-right {
+            margin-left: 10px;
+        }
 
     .featurette-heading {
         font-size: 30px;
@@ -411,13 +430,13 @@ section#intro-content-top {
         padding: 75px 0 25px 0;
     }
 
-    .headline h1 {
-        font-size: 60px;
-    }
+        .headline h1 {
+            font-size: 60px;
+        }
 
-    .headline h2 {
-        font-size: 30px;
-    }
+        .headline h2 {
+            font-size: 30px;
+        }
 }
 
 @media(max-width:375px) {
@@ -429,21 +448,21 @@ section#intro-content-top {
         max-width: 100%;
     }
 
-    .featurette-image.pull-left {
-        margin-right: 0;
-        margin-bottom: 10px;
-    }
+        .featurette-image.pull-left {
+            margin-right: 0;
+            margin-bottom: 10px;
+        }
 
-    .featurette-image.pull-right {
-        margin-bottom: 10px;
-        margin-left: 0;
-    }
+        .featurette-image.pull-right {
+            margin-bottom: 10px;
+            margin-left: 0;
+        }
 }
 
 /****************************Utskott****************************/
 
 .affix {
-  top: 20px;
+    top: 20px;
 }
 
 #nav li a:hover {
@@ -471,35 +490,74 @@ section#intro-content-top {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 #styrelsen-content {
     background-color: #f8f8f8;
 }
+
 .styrelsen-person-border {
     padding: 15px;
     border: 4px solid #eeeeee;
     box-shadow: 0 1px 2px rgba(0,0,0,0.3);
 }
+
 .styrelsen-person-picture {
     margin: 0 auto;
 }
+
 .styrelse-mail-button {
     margin-top: 30px;
 }
+
 .styrelse-row {
     margin: 20px;
 }
-.styrelse-row .col-md-3 {
-    padding-bottom: 30px;
-}
+
+    .styrelse-row .col-md-3 {
+        padding-bottom: 30px;
+    }
 
 /****************************Bryggan****************************/
 #bryggan-header {
     background-image: url("../Images/bryggan/beer-hq.png");
-     background-repeat: no-repeat;
+    background-repeat: no-repeat;
     background-size: cover;
+    padding-top: 200px;
+    padding-bottom: 0px;
+    margin-bottom: 0;
 }
-.top-page-header-bryggan {
-    
+
+#bryggan-menu {
+    padding-top: 40px;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.0);
+}
+
+    #bryggan-menu .nav-tabs {
+        border: none;
+    }
+
+    #bryggan-menu li a {
+        background-color: #f8f8f8;
+        border: none;
+        margin-bottom: -5px;
+        margin-right: 10px;
+    }
+    #bryggan-menu li a i{
+        color: #003366;
+    }
+
+    #bryggan-menu li.active a {
+        border: none;
+        -webkit-transition: none;
+        -o-transition: none;
+    }
+
+#bryggan-content {
+    padding: 25px 0;
+    background-color: #f8f8f8;
+}
+#bryggan-content .tab-content i {
+    font-size: 1.5em;
 }
 
 
@@ -572,4 +630,7 @@ section#intro-content-top {
 .btn-footer:hover {
     color: #fff;
 }
-.img-center {margin:0 auto;}
+
+.img-center {
+    margin: 0 auto;
+}
