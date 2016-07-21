@@ -553,7 +553,7 @@ section#intro-content-top {
     }
 
 #bryggan-content {
-    padding-top: 20px;
+    padding: 25px 0;
     background-color: #f8f8f8;
 }
 #bryggan-content .tab-content i {
