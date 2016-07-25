@@ -181,7 +181,7 @@ p {
 }
 
 #intro-header {
-    background-image: url("../Images/sesam2.png");
+    background-image: url("../Images/introduktion/15-09-11-orebrodagen-2015-57665-faded.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -486,12 +486,13 @@ section#intro-content-top {
 
 /****************************Styrelsen****************************/
 #styrelsen-header {
-    background-image: url("../Images/styrelsen-vt16-calles-stuga.png");
+    background-image: url("../Images/introduktion/15-09-11-orebrodagen-2015-57644-faded.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 #styrelsen-content {
+    padding: 40px 0;
     background-color: #f8f8f8;
 }
 
@@ -559,8 +560,12 @@ section#intro-content-top {
 #bryggan-content .tab-content i {
     font-size: 1.5em;
 }
-
-
+.img-margin-bottom {
+    margin-bottom: 25px;
+}
+.h2-margin-top {
+    margin-top: 0px;
+}
 /****************************FOOTER****************************/
 .footer {
     color: #FFF;
