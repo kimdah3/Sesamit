@@ -593,6 +593,50 @@ section#intro-content-top {
     margin-top: 4px;
     color: #333333 !important;
 }
+/****************************BLOGG&NYHETER****************************/
+
+#blogg-nyheter-header {
+    background-image: url("../Images/introduktion/orebro-dagen-small.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 0px;
+}
+
+#section-blogg {
+    padding: 30px 0;
+    background-color: #f8f8f8;
+}
+
+
+#nyheter-blogg-menu {
+    padding-top: 40px;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.0);
+}
+
+    #nyheter-blogg-menu .nav-tabs {
+        border: none;
+    }
+
+    #nyheter-blogg-menu li a {
+        background-color: #f8f8f8;
+        border: none;
+        margin-bottom: -5px;
+        margin-right: 10px;
+    }
+
+        #nyheter-blogg-menu li a i {
+            color: #003366;
+        }
+        #nyheter-blogg-menu li a h4 {
+            color: #003366;
+        }
+
+    #nyheter-blogg-menu li.active a {
+        border: none;
+        -webkit-transition: none;
+        -o-transition: none;
+    }
+
 /****************************FOOTER****************************/
 .footer {
     color: #FFF;

@@ -1,3 +1,69 @@
-﻿@{
-    ViewData["Title"] = "Blog";
+﻿@model Sesamit.Models.BloggRssModel
+
+@{
+    ViewData["Title"] = "Blogg";
 }
+<header class="top-page-header" id="blogg-nyheter-header">
+    @*<h1 class="text-center">Nyheter & Blogg</h1>*@
+    <div class="container">
+
+        <div id="nyheter-blogg-menu">
+            <div class="col-md-1 hidden-xs"></div>
+            <div class="col-md-10 ">
+                <div class="row">
+
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation" class="active">
+                            <a href="#nyheter" aria-controls="om" role="tab" data-toggle="tab">
+                                <h5>
+                                    @*<i class="fa fa-anchor fa-2x "></i>*@
+                                    Nyheter
+                                </h5>
+                            </a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#blogg" aria-controls="mat" role="tab" data-toggle="tab">
+                                <h5>
+                                    @*<i class="fa fa-beer fa-2x "></i>*@
+                                    Blogg
+                                </h5>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-1 hidden-xs"></div>
+
+        </div>
+    </div>
+
+</header>
+<section id="section-blogg">
+    <div class="container">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+            @foreach (var bloggPost in Model.BloggPosts)
+            {
+                <div class="row">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <h3>
+                                @bloggPost.Title
+                                <small>
+                                    @bloggPost.PubDate.ToString()
+                                    <span class="text-capitalize pull-right">Blogginlägg</span>
+                                </small>
+                            </h3>
+                            <p>@Html.Raw(bloggPost.Description.ToString())</p>
+                            <a class="btn btn-primary" href="@bloggPost.Link.ToString()">Läs inlägget här</a>
+                        </div>
+                    </div>
+
+                </div>
+            }
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+
+</section>
