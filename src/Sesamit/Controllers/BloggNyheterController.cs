@@ -29,9 +29,18 @@ namespace Sesamit.Controllers
                         Title = item.Title.Text,
                         Description = item.Summary.Text.Substring(0, item.Summary.Text.IndexOf('-')),
                         Link = item.Links[0].Uri,
-                        PubDate = DateTime.Parse(item.PublishDate.ToString())
+                        PubDate = DateTime.Parse(item.PublishDate.ToString()),
+                        TimePast = DateTime.Today - DateTime.Parse(item.PublishDate.ToString()),
+                        ImageLink = null
                     };
+
+                    if (item.Links.Count == 2)
+                    {
+                        bloggPost.ImageLink = item.Links[1].Uri;
+                    }
+
                     bloggModel.BloggPosts.Add(bloggPost);
+
                 }
             }
             return View(bloggModel);

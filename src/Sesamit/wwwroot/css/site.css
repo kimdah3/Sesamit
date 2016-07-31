@@ -564,7 +564,8 @@ section#intro-content-top {
     #bryggan-menu li.active a {
         border: none;
         -webkit-transition: none;
-        -o-transition: none;
+        -moz-transition: none;
+        transition: none;
     }
 
 #bryggan-content {
@@ -633,6 +634,7 @@ section#intro-content-top {
 
     #nyheter-blogg-menu li.active a {
         border: none;
+        transition: none;
         -webkit-transition: none;
         -o-transition: none;
     }
