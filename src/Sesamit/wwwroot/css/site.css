@@ -468,7 +468,6 @@ section#intro-content-top {
 }
 
 /****************************Utskott****************************/
-
 .affix {
     top: 20px;
 }
@@ -593,6 +592,21 @@ section#intro-content-top {
     padding: 0;
     margin-top: 4px;
     color: #333333 !important;
+}
+
+/****************************FÖRETAG****************************/
+#foretag-header {
+    background-image: url("../Images/foretag/handelshogskolaentre.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+#foretag-section {
+    padding: 30px 0;
+    background-color: #f8f8f8;
+}
+.row-bottom-buffer {
+    margin-bottom: 35px;
 }
 /****************************BLOGG&NYHETER****************************/
 

@@ -45,8 +45,6 @@
             <div class="tab-content">
                 <!-- Nyheter -->
                 <div role="tabpanel" class="tab-pane active" id="nyheter">
-                    @foreach (var bloggPost in Model.BloggPosts)
-                    {
                         <div class="row">
                             <div class="panel panel-default border-left-panel">
                                 <div class="panel-body">
@@ -54,23 +52,22 @@
                                 </div>
                             </div>
                         </div>
-                    }
                 </div>
                 <div role="tabpanel" class="tab-pane " id="blogg">
                     @foreach (var bloggPost in Model.BloggPosts)
                     {
-                        //var index = Model.BloggPosts.FindIndex(x => x == bloggPost);
-                        //var panelBoder = "";
-                        //if (index%2 == 0)
-                        //{
-                        //    panelBoder = "border-left-panel";
-                        //}
-                        //else
-                        //{
-                        //    panelBoder = "border-right-panel";
-                        //}
+                        var index = Model.BloggPosts.FindIndex(x => x == bloggPost);
+                        var panelBorder = "border-right-panel";
+                        if (index % 2 == 0)
+                        {
+                            panelBorder = "border-left-panel";
+                        }
+                        else
+                        {
+                            panelBorder = "border-right-panel";
+                        }
                         <div class="row">
-                            <div class="panel panel-defaulb border-right-panel">
+                            <div class="panel panel-defaulb @panelBorder">
                                 <div class="panel-body">
                                     <h3>
                                         @bloggPost.Title

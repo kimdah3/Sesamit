@@ -23,6 +23,11 @@ namespace Sesamit.Controllers
             return View();
         }
 
+        public IActionResult Foretag()
+        {
+            return View();
+        }
+
         public IActionResult Error()
         {
             return View();
