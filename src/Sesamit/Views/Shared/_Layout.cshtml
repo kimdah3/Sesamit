@@ -36,7 +36,7 @@
                     <ul class="nav navbar-nav">
                         <li><a asp-controller="Home" asp-action="Intro">Introduktion</a></li>
                         @*<li><a href="#">Nyheter</a></li>*@
-                        <li><a asp-controller="BloggNyheter" asp-action="Index">Nyheter & Blogg</a></li>
+                        <li><a asp-controller="NyheterBlogg" asp-action="Index">Nyheter & Blogg</a></li>
                         <li><a asp-controller="Home" asp-action="Foretag">Företag</a></li>
                         <li><a asp-controller="Bryggan" asp-action="Info">Bryggan</a></li>
                         <li class="dropdown">
@@ -177,7 +177,7 @@
                             <div class="panel panel-primary kontakt-modified-panel-small">
                                 <div class="panel-heading">
                                     <i class="fa fa-exclamation fa-1x pull-right"></i>
-                                    <h3 class="panel-title">Akut?</h3>
+                                    <h3 class="panel-title">Akut</h3>
 
                                 </div>
                                 <div class="panel-body">
@@ -230,7 +230,7 @@
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtXwSw2mG7B4x-Y_-LGj4_DbHyzb_amno&callback=initMap"
                 async defer></script>
     </environment>
-
+   
     @RenderSection("scripts", required: false)
 </body>
 </html>

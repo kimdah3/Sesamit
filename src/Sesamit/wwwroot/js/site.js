@@ -3,7 +3,7 @@
 var map;
 
 function initMap() {
-    var myLatlng = new google.maps.LatLng(59.258944,15.2320114);
+    var myLatlng = new google.maps.LatLng(59.258944, 15.2320114);
     var myOptions = {
         zoom: 15,
         center: myLatlng,
@@ -27,8 +27,9 @@ $(function () {
 
     $('#nav').affix({
         offset: {
-            top: $('#nav').offset().top
+            top: $('#nav').offset()
         }
     });
 
 });
+// IMPORTERAD NEWS CAROUSEL

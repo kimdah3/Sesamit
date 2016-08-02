@@ -38,17 +38,17 @@ p {
     .top-page-header {
         margin-top: -145px !important;
     }
-    
+
     .header-responsive-fix {
         margin-top: -130px !important;
     }
-
 }
 
 @media (max-width: 768px) {
     .front-page-header {
         margin-top: -19px !important;
     }
+
     .menu-container {
         background-color: white;
         padding: 0;
@@ -71,6 +71,7 @@ p {
         padding: 0;
         font-size: 1.4em;
     }
+
     #bryggan-header {
         background-size: 100% 100% !important;
     }
@@ -99,45 +100,44 @@ p {
     width: 100%;
 }
 
-#carousel-example-generic {
-    background-color: rgba(0,0,0,0.5);
-}
-
-.carousel-indicators li {
-    width: 17px !important;
-    height: 17px !important;
-}
-
-.carousel-control {
-    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0.0001) 0, rgba(0,0,0,0.0) 100%) !important;
-}
-
-.item {
-    padding-top: 350px;
-    padding-bottom: 100px;
-    margin-bottom: 50px;
-    height: 100px;
-}
-
-    .item p {
-        margin: 2px;
-        padding: 4px;
+    .front-page-header #carousel-example-generic {
+        background-color: rgba(0,0,0,0.5);
     }
 
-    .item h2 {
-        color: #FFF;
-        margin-top: 0;
-        margin-bottom: 13px;
-        padding: 1px;
+    .front-page-header .carousel-indicators li {
+        width: 17px !important;
+        height: 17px !important;
     }
 
-    .item .fa-5x {
-        font-size: 11em;
+    .front-page-header .carousel-control {
+        background-image: -webkit-linear-gradient(left, rgba(0,0,0,0.0001) 0, rgba(0,0,0,0.0) 100%) !important;
     }
 
-    .item .fa-briefcase {
-        font-size: 8em !important;
+    .front-page-header .item {
+        padding: 350px 0 100px;
+        margin-bottom: 100px;
+        height: 100px;
     }
+
+        .front-page-header .item p {
+            margin: 2px;
+            padding: 4px;
+        }
+
+        .front-page-header .item h2, .item h1, .item h4 {
+            color: #FFF;
+            margin-top: 0;
+            margin-bottom: 13px;
+            padding: 1px;
+        }
+
+        .front-page-header .item .fa-5x {
+            font-size: 11em;
+        }
+
+        .front-page-header .item .fa-briefcase {
+            font-size: 8em !important;
+        }
 
 /****************************Frontpage content****************************/
 .section-frontpage {
@@ -182,8 +182,8 @@ p {
     z-index: 0;
     margin-top: -100px;
     width: 100%;
-    padding-top: 270px;
-    padding-bottom: 120px;
+    padding-top: 300px;
+    padding-bottom: 150px;
     margin-bottom: 0;
     text-shadow: 0 1px 2px rgba(0,0,0,0.6);
 }
@@ -496,7 +496,7 @@ section#intro-content-top {
     background-image: url("../Images/introduktion/15-09-11-orebrodagen-2015-57644-faded.png");
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 270px 0 150px;
+    padding: 280px 0 400px;
 }
 
 #styrelsen-content {
@@ -599,16 +599,60 @@ section#intro-content-top {
     background-image: url("../Images/foretag/handelshogskolaentre.png");
     background-repeat: no-repeat;
     background-size: cover;
-
 }
+
 #foretag-section {
     padding: 30px 0;
     background-color: #f8f8f8;
 }
+
 .row-bottom-buffer {
     margin-bottom: 35px;
 }
-/****************************BLOGG&NYHETER****************************/
+
+
+.foretag-row img {
+    max-height: 125px;
+}
+
+
+
+#myCarousel .carousel-caption {
+    left:0;
+	right:0;
+	bottom:0;
+	text-align:left;
+	padding:10px;
+	background:rgba(0,0,0,0.6);
+	text-shadow:none;
+}
+
+#myCarousel .list-group {
+	position:absolute;
+	top:0;
+	right:0;
+}
+#myCarousel .list-group-item {
+	border:none;
+    background-color: transparent;
+	cursor:pointer;
+}
+#myCarousel .list-group .active {
+	border:none;
+        background-color: rgba(0,0,0,0.5);
+
+
+}
+
+@media (min-width: 992px) { 
+	#myCarousel {padding-right:33.3333%;}
+	#myCarousel .carousel-controls {display:none;} 	
+}
+@media (max-width: 991px) { 
+	.carousel-caption p,
+	#myCarousel .list-group {display:none;} 
+}
+/****************************NYHETER&BLOGG****************************/
 
 #blogg-nyheter-header {
     background-image: url("../Images/introduktion/orebro-dagen-small.png");
@@ -642,6 +686,7 @@ section#intro-content-top {
         #nyheter-blogg-menu li a i {
             color: #003366;
         }
+
         #nyheter-blogg-menu li a h4 {
             color: #003366;
         }

@@ -11,7 +11,7 @@ using Sesamit.Models;
 
 namespace Sesamit.Controllers
 {
-    public class BloggNyheterController : Controller
+    public class NyheterBloggController : Controller
     {
         // GET: /<controller>/
         public IActionResult Index()

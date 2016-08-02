@@ -162,8 +162,8 @@
 --resource:"C:\Users\kimda\OneDrive\Documents\GitHub\Sesamit\src\Sesamit\obj\Debug\net452\Sesamitdotnet-compile.deps.json",Sesamit.deps.json
 C:\Users\kimda\OneDrive\Documents\GitHub\Sesamit\src\Sesamit\Program.cs
 C:\Users\kimda\OneDrive\Documents\GitHub\Sesamit\src\Sesamit\Startup.cs
-C:\Users\kimda\OneDrive\Documents\GitHub\Sesamit\src\Sesamit\Controllers\BloggNyheterController.cs
 C:\Users\kimda\OneDrive\Documents\GitHub\Sesamit\src\Sesamit\Controllers\BrygganController.cs
 C:\Users\kimda\OneDrive\Documents\GitHub\Sesamit\src\Sesamit\Controllers\HomeController.cs
+C:\Users\kimda\OneDrive\Documents\GitHub\Sesamit\src\Sesamit\Controllers\NyheterBloggController.cs
 C:\Users\kimda\OneDrive\Documents\GitHub\Sesamit\src\Sesamit\Controllers\OmSesamController.cs
 C:\Users\kimda\OneDrive\Documents\GitHub\Sesamit\src\Sesamit\Models\BloggModel.cs
