@@ -28,7 +28,18 @@ p {
     height: 40px;
     width: auto;
 }
+/**************************** GENERAL ****************************/
+.section-padding {
+    padding: 60px 0 60px;
+}
 
+.row-padding {
+    padding: 30px 0;
+}
+
+.fa-blue {
+    color: #127ba3;
+}
 /**************************** RESPONSIV FIXES ****************************/
 @media (max-width: 1201px) and (min-width: 769px) {
     .front-page-header {
@@ -114,7 +125,7 @@ p {
     }
 
     .front-page-header .item {
-        padding: 350px 0 100px;
+        padding: 380px 0 130px;
         margin-bottom: 100px;
         height: 100px;
     }
@@ -139,43 +150,43 @@ p {
             font-size: 8em !important;
         }
 
+
 /****************************Frontpage content****************************/
-.section-frontpage {
-    padding-top: 30px;
-    padding-bottom: 0;
+#section-frontpage {
     background-color: #f8f8f8;
 }
 
-    .section-frontpage p {
-        font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif !important;
-    }
-
-    .section-frontpage .row .fa {
-        color: #127ba3;
-    }
 
 .alert {
     margin-bottom: 0;
 }
 
-
-
 .section-frontpage .panel {
     border-top-width: 1.5px;
 }
 
-/****************************Frontpage news-content****************************/
-.section-news {
-    color: #FFF;
-    background-color: #FFF;
-    padding: 30px 0;
+#front-page-samarbeten {
+    margin: 150px 0 150px;
 }
 
-    .section-news h1 {
-        color: #333333;
-    }
+.img-logo-fp {
+    margin: 20px 0 0;
+    max-height: 350px;
+}
 
+#section-ordforande .jumbotron {
+    border: 0;
+    -webkit-box-shadow: none;
+    background-color: #fff;
 
+}
+
+#section-fp-middle {
+    background-image: url("../Images/introduktion/15-09-11-orebrodagen-2015-57644-faded.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+}
 
 /****************************introduktion****************************/
 .top-page-header {
@@ -256,6 +267,11 @@ section#intro-content-top {
 
 .border-right-panel {
     border-right: 5px lightskyblue solid;
+}
+
+.border-full-panel {
+    border-right: 5px lightskyblue solid;
+    border-left: 5px lightskyblue solid;
 }
 /****************************VadArSesam****************************/
 
@@ -610,6 +626,9 @@ section#intro-content-top {
     margin-bottom: 35px;
 }
 
+.row-top-buffer {
+    margin-top: 35px;
+}
 
 .foretag-row img {
     max-height: 125px;
@@ -618,39 +637,47 @@ section#intro-content-top {
 
 
 #myCarousel .carousel-caption {
-    left:0;
-	right:0;
-	bottom:0;
-	text-align:left;
-	padding:10px;
-	background:rgba(0,0,0,0.6);
-	text-shadow:none;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: left;
+    padding: 10px;
+    background: rgba(0,0,0,0.6);
+    text-shadow: none;
 }
 
 #myCarousel .list-group {
-	position:absolute;
-	top:0;
-	right:0;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
+
 #myCarousel .list-group-item {
-	border:none;
+    border: none;
     background-color: transparent;
-	cursor:pointer;
+    cursor: pointer;
 }
+
 #myCarousel .list-group .active {
-	border:none;
-        background-color: rgba(0,0,0,0.5);
-
-
+    border: none;
+    background-color: rgba(0,0,0,0.5);
 }
 
-@media (min-width: 992px) { 
-	#myCarousel {padding-right:33.3333%;}
-	#myCarousel .carousel-controls {display:none;} 	
+@media (min-width: 992px) {
+    #myCarousel {
+        padding-right: 33.3333%;
+    }
+
+        #myCarousel .carousel-controls {
+            display: none;
+        }
 }
-@media (max-width: 991px) { 
-	.carousel-caption p,
-	#myCarousel .list-group {display:none;} 
+
+@media (max-width: 991px) {
+    .carousel-caption p,
+    #myCarousel .list-group {
+        display: none;
+    }
 }
 /****************************NYHETER&BLOGG****************************/
 

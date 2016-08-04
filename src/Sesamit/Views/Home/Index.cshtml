@@ -14,12 +14,12 @@
             <div class="item active">
                 <div class="carousel-caption">
                     <i class="fa fa-exclamation fa-5x" aria-hidden="true"></i>
-                    <h1>Höstens introduktion igång den 26 augusti</h1>
+                    <h1>Höstens introduktion drar igång den 26 augusti</h1>
                     @*<h1>Ska du plugga ekonomi, informatik eller statistik?</h1>*@
                     @*<h1>Grattis du är en Sesamit!</h1>*@
                     <p>
 
-                    <a asp-controller="Home" asp-action="Intro" class="btn btn-success">Klicka här för att veta mer!</a>
+                        <a asp-controller="Home" asp-action="Intro" class="btn btn-primary">Klicka här för att veta mer!</a>
                     </p>
                 </div>
             </div>
@@ -30,7 +30,7 @@
                     <h4>
                         Håll utkik! Vi kommer med ständiga uppdateringar från olika jobbaktörer.
                     </h4>
-                    <a href="#" class="btn btn-info">Läs mer!</a>
+                    <a asp-controller="NyheterBlogg" asp-action="Index" class="btn btn-info">Läs mer!</a>
                 </div>
             </div>
         </div>
@@ -51,63 +51,197 @@
     <button type="button" class="close" data-dismiss="alert">&times;</button>
     <strong>Senaste nytt:</strong> Unionen söker studenter till extrajobb i Örebro!
 </div>
-<section class="section-frontpage">
+
+<section class="section-padding" id="section-frontpage">
+
     <div class="container">
         <div class="row">
+            <div class="col-md-9 col-sm-9 col-xs-9">
+                <h1 class="">Vad är Sesam?</h1>
+                <p>
+                    <span class="lead">Vi är kårsektionen för dig som läser <strong>ekonomi</strong>, <strong>informatik</strong> och <strong>statistik</strong>. </span>
+                    Vi grundades 1993 och har sedan dess funnits med syfte att bevaka utbildningen, engagera medlemmar socialt och ge dem en naturligare väg in i näringslivet efter studierna.
+                    Återkommande aktiviteter är bland annat Mentorskapsprojektet, Campusmässan, Båtfesten och <a asp-controller="Home" asp-action="Intro">Introduktionen</a>. Vi är stolta över vår introduktion som är en av Sveriges längsta och bästa i slaget, där du som ny student snabbt har möjlighet att komma in i studentlivet!
+                </p>
 
-            <div class="col-md-1"></div>
-            <div class="col-md-10">
-                <div class="panel panel-default border-left-panel">
-                    <div class="panel-body ">
-                        <h1 class="text-center">Vad är Sesam?</h1>
-                        <p>Sesam är en sektion i Örebro studentkår. Man har delat upp studenterna på Örebro Universitet i nio sektioner efter ämnesområden, och Sesam representerar studenter på institutionen Handelshögskolan. Om du läser ekonomi, informatik eller statistik hör du till Handelshögskolan, och därmed sektionen Sesam.</p>
 
-                        <div class="row text-center">
-                            <div class="col-md-2 hidden-xs">
-                            </div>
-                            <div class="col-md-2 col-xs-6">
-                                <i class="fa fa-users fa-5x" aria-hidden="true"></i>
-                                <h4>
-                                    Över 500
-                                    unika Medlemmar!
-                                </h4>
-                            </div>
-                            <div class="col-md-2 col-xs-6">
-                                <i class="fa fa-check fa-5x" aria-hidden="true"></i>
-                                <h4>
-                                    En sjukt bra
-                                    Introduktion!
-                                </h4>
-                            </div>
-                            <div class="col-md-2 col-xs-6">
-                                <i class="fa fa-suitcase fa-5x" aria-hidden="true"></i>
-                                <h4>
-                                    Samarbeten
-                                    med företag!
-                                </h4>
-                            </div>
-                            <div class="col-md-2 col-xs-6">
-                                <i class="fa fa-coffee fa-5x" aria-hidden="true"></i>
-                                <h4>
-                                    Vår egen
-                                    lounge i nova!
-                                </h4>
-                            </div>
-                            <div class="col-md-2 hidden-xs">
-                            </div>
-                        </div>
+                <div class="row text-center row-top-buffer row-bottom-buffer">
+                    <div class="col-md-3 col-xs-6 fa-blue">
+                        <i class="fa fa-users fa-3x" aria-hidden="true"></i>
+                        <h4>
+                            Över 500
+                            unika Medlemmar!
+                        </h4>
+                    </div>
+                    <div class="col-md-3 col-xs-6">
+                        <i class="fa fa-check fa-3x fa-blue" aria-hidden="true"></i>
+                        <h4>
+                            En sjukt bra
+                            Introduktion!
+                        </h4>
+                    </div>
+                    <div class="col-md-3 col-xs-6">
+                        <i class="fa fa-suitcase fa-3x fa-blue" aria-hidden="true"></i>
+                        <h4>
+                            Samarbeten
+                            med företag!
+                        </h4>
+                    </div>
+                    <div class="col-md-3 col-xs-6">
+                        <i class="fa fa-coffee fa-3x fa-blue" aria-hidden="true"></i>
+                        <h4>
+                            Vår egen
+                            lounge i nova!
+                        </h4>
+                    </div>
+                </div>
+                @*<p>
+                        <a asp-controller="OmSesam" asp-action="VadArSesam" class="btn btn-primary btn-lg t">Läs mer här!</a>
+                    </p>*@
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-3">
+                <img class="img-responsive img-logo-fp" src="../Images/sesamLogo-medium.png" />
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="section-padding" id="section-ordforande">
+    <div class="jumbotron">
+        <div class="container">
+            <div class="col-md-5  front-page-col">
+                <img class="img-responsive" src="../Images/styrelse/Kavaj Jonatan.jpg" alt="">
+            </div>
+            <div class="col-md-7 ">
+                <h2 class="h1 page-header">Mitt namn är Jonatan!</h2>
+                <p>Vi är kårsektionen för dig som läser ekonomi, informatik och statistik. Vi grundades 1993 och har sedan dess funnits med syfte att bevaka utbildningen, engagera medlemmar socialt och ge dem en naturligare väg in i näringslivet efter studierna. Återkommande aktiviteter är bland annat Mentorskapsprojektet, Campusmässan, Båtfesten och Introduktionen. Vi är stolta över vår introduktion som är en av Sveriges längsta och bästa i slaget, där du som ny student snabbt har möjlighet att komma in i studentlivet!</p>
+            </div>
+        </div>
+    </div>
+
+    @*<div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="col-md-6">
+                        <h1 class="">Hej! Mitt namn är Jonatan</h1>
+                        <p>Ordförande är ansvarig för att leda sektionens styrelse. Tillsammans med vice ordförande arbetar ordförande för att utveckla Sesam och främja Örebro studentkår. Ordförande är Sesams spindel i nätet och stöttar Sesams olika projekt och utskott. Vidare är även ordförande firmatecknare i organisationen.</p>
                         <p>
-                            <a asp-controller="OmSesam" asp-action="VadArSesam" class="btn btn-primary btn-lg t">Läs mer här!</a>
+                            <a href="mailto:ordforande@sesamit.se" class="">ordforande@sesamit.se</a>
                         </p>
                     </div>
+                    <div class="col-md-6">
+
+
+                        <img width="500" height="500" class="img-rounded img-responsive " src="../Images/styrelse/Kavaj-Jonatan.png" alt="">
+
+                    </div>
+
+
+
                 </div>
             </div>
 
 
-            <div class="col-md-1"></div>
 
-        </div>
-    </div>
+        </div>*@
 
 </section>
+<section class="" id="section-fp-middle">
+</section>
+    <section class="" id="front-page-samarbeten">
+        <div class="container ">
+            <div class="row text-center">
+                <h1>Våra samarbeten</h1>
+                <div class="col-md-2 ">
+                    <a href="http://www.lrfkonsult.se/" class="btn" target="_blank">
+                        <img class="img-responsive center-block" src="../Images/foretag/lrfkonsult.gif"/>
+                    </a>
+                </div>
+                <div class="col-md-2 ">
+                    <a href="http://www.unionen.se/" class="btn " target="_blank">
 
+                        <img class="img-responsive " src="../Images/foretag/unionen.jpg"/>
+                    </a>
+                </div>
+                <div class="col-md-2 ">
+                    <a href="http://www.pwc.se/" class="btn" target="_blank">
+
+                        <img class="img-responsive " src="../Images/foretag/Pwc.gif"/>
+                    </a>
+
+                </div>
+                <div class="col-md-2 ">
+                    <a href="http://www.civilekonomerna.se/" class="btn" target="_blank">
+
+                        <img class="img-responsive " src="../Images/foretag/civilekonomerna.gif"/>
+                    </a>
+                </div>
+                <div class="col-md-2 ">
+                    <a href="https://home.kpmg.com/se/sv/home.html" class="btn " target="_blank">
+                        <img class="img-responsive " src="../Images/foretag/KPMG.gif"/>
+                    </a>
+                </div>
+                <div class="col-md-2 ">
+                    <a href="http://www.grantthornton.se/" class="btn" target="_blank">
+
+                        <img class="img-responsive " src="../Images/foretag/GrandThornton.gif"/>
+                    </a>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-md-2 ">
+                    <a href="http://kommuninvest.se/" class="btn" target="_blank">
+                        <img class="img-responsive img-rounded" src="../Images/foretag/KI_V3_RGB_sve_text.jpg" />
+                    </a>
+                </div>
+                <div class="col-md-2 ">
+                    <a href="https://www.lansforsakringar.se/privat/" class="btn" target="_blank">
+                        <img class="img-responsive" src="../Images/foretag/LF-logo.jpg" />
+                    </a>
+                </div>
+                <div class="col-md-2 ">
+                    <a href="http://www.ikea.com/se/sv/" class="btn " target="_blank">
+                        <img class="img-responsive" src="../Images/foretag/2000px-Ikea_logo.svg.png" />
+                    </a>
+                </div>
+                <div class="col-md-2 ">
+                    <a href="http://www.ica.se/butiker/nara/orebro/ica-supermarket-tybble-1074/butikserbjudanden/" target="_blank" class="btn">
+                        <img class="img-responsive " src="../Images/foretag/ica_logo-390x238.png" />
+                    </a>
+
+                </div>
+                <div class="col-md-2">
+                    <a href="http://www.strateg.se/" class="btn" target="_blank">
+                        <img class="img-responsive " src="../Images/foretag/strateg.png" />
+                    </a>
+                </div>
+                <div class="col-md-2 ">
+                    <a href="http://seb.se/" class="btn" target="_blank">
+                        <img class="img-responsive" src="../Images/foretag/SEB.jpg" />
+                    </a>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-md-2 col-md-offset-3">
+
+                    <a href="http://drivhuset.se/orebro" class="btn " target="_blank">
+                        <img class="img-responsive " src="../Images/foretag/drivhuset.jpg" />
+                    </a>
+                </div>
+                <div class="col-md-2">
+                    <a href="https://www.academicwork.se/" class="btn" target="_blank">
+
+                        <img class="img-responsive " src="../Images/foretag/academicwork.png" />
+                    </a>
+                </div>
+                <div class="col-md-2">
+                    <a href="https://www.academicwork.se/" class="btn" target="_blank">
+                        <img class="img-responsive" src="../Images/foretag/upsales_logo_blue.png" />
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>

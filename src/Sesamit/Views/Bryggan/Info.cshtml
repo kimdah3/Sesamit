@@ -19,10 +19,10 @@
                         </a>
                     </li>
                     @*<li role="presentation">
-                        <a href="#dryck" aria-controls="dryck" role="tab" data-toggle="tab">
-                            <i class="fa fa-beer fa-3x"></i>
-                        </a>
-                    </li>*@
+                            <a href="#dryck" aria-controls="dryck" role="tab" data-toggle="tab">
+                                <i class="fa fa-beer fa-3x"></i>
+                            </a>
+                        </li>*@
                     <li role="presentation">
                         <a href="#mat-dryck" aria-controls="mat" role="tab" data-toggle="tab">
                             <i class="fa fa-beer fa-3x"></i>
@@ -46,8 +46,7 @@
 </header>
 <section id="bryggan-content">
     <div class="container">
-        <div class="col-md-1"></div>
-        <div class="col-md-10">
+        <div class="col-md-12">
             <!-- Nav tabs -->
             <!-- Tab panes -->
             <div class="tab-content">
@@ -106,17 +105,17 @@
                             <p>
                                 Bryggan är ett slutet sällskap av studenter, för studenter och vilken student som helst på Örebro Universitet får köpa medlemskap, <strong>oavsett sektion!</strong>
                             </p>
-                            <p>
-                                Köper du medlemskap via PayPal så gäller ditt medlemskap samma kväll om du betalat innan klockan 12.00.
-                            </p>
-                            <p>
-                                <span class="text-danger">OBS! Märk betalningen med namn, personnummer samt vilken sektion du tillhör! Detta gör du genom att trycka på "add note to seller"</span>
-                            </p>
-                            <p>
-                                <a class="btn btn-primary" href="https://www.paypal.com/se/cgi-bin/webscr?cmd=_flow&SESSION=N1yufk3_Qqehv9UM6lxtth5W0yOwtAPZVjRWEXyj0TQ7Zzm-YWewVexXfpy&dispatch=50a222a57771920b6a3d7b606239e4d529b525e0b7e69bf0224adecfb0124e9b61f737ba21b08198163eee001d8a5bd337af8e5197b2a388">Köp nu</a>
-                            </p>
-                            <p>
-                                Du kan även köpa medlemskap direkt på Bryggan, detta gäller då från nästa öppetkväll. Pris: 25:- / termin
+                            @*<p>
+                                    Köper du medlemskap via PayPal så gäller ditt medlemskap samma kväll om du betalat innan klockan 12.00.
+                                </p>
+                                <p>
+                                    <span class="text-danger">OBS! Märk betalningen med namn, personnummer samt vilken sektion du tillhör! Detta gör du genom att trycka på "add note to seller"</span>
+                                </p>
+                                <p>
+                                    <a class="btn btn-primary" href="https://www.paypal.com/se/cgi-bin/webscr?cmd=_flow&SESSION=N1yufk3_Qqehv9UM6lxtth5W0yOwtAPZVjRWEXyj0TQ7Zzm-YWewVexXfpy&dispatch=50a222a57771920b6a3d7b606239e4d529b525e0b7e69bf0224adecfb0124e9b61f737ba21b08198163eee001d8a5bd337af8e5197b2a388">Köp nu</a>
+                                </p>*@
+                            <p class="text-success">
+                                Köp medlemskap direkt på Bryggan. Pris: 25:- / termin
                             </p>
                         </div>
                     </div>
@@ -199,14 +198,14 @@
                     </div>
                 </div> <!-- CLOSING OM -->
                 @*<!-- DRYCK -->
-                <div role="tabpanel" class="tab-pane" id="dryck">
-                    <img class="img-responsive img-rounded" src="../Images/bryggan/tvmeny.jpg" />
-                    <img class="img-responsive img-rounded" src="../Images/bryggan/tvmeny2.jpg" />
+                    <div role="tabpanel" class="tab-pane" id="dryck">
+                        <img class="img-responsive img-rounded" src="../Images/bryggan/tvmeny.jpg" />
+                        <img class="img-responsive img-rounded" src="../Images/bryggan/tvmeny2.jpg" />
 
 
 
 
-                </div><!-- CLOSING DRYCK -->*@
+                    </div><!-- CLOSING DRYCK -->*@
                 <!-- MAT & DRYCK-->
                 <div role="tabpanel" class="tab-pane" id="mat-dryck">
 
@@ -231,6 +230,16 @@
                         <p>
                             Driven av studenter för studenter finns Bryggan öppen för den som är törstig och/eller hungrig.
 
+                        </p>
+
+                        <hr/>
+                        <img width="200" height="200" class="img-rounded img-responsive " src="../Images/styrelse/Kavaj-Erik.png" alt="">
+                        <h3 >
+                            Erik Nilsson<br />
+                            <small>Klubbmästare</small>
+                        </h3>
+                        <p >
+                            <a href="mailto:klubbmasteriet@sesamit.se" class="">klubbmasteriet@sesamit.se</a>
                         </p>
 
                     </div>
@@ -271,13 +280,20 @@
                             </li>
                         </ul>
 
-                        Bryggans öppettider är onsdagar 17-23 och fredagar 19-01, dock tillkommer några kvällar pga. av speciella evenemang och under dessa kvällar tar vi inte emot privata bokningar.
+                        <p>
+                            Bryggans öppettider är onsdagar 17-23 och fredagar 19-01, dock tillkommer några kvällar pga. av speciella evenemang och under dessa kvällar tar vi inte emot privata bokningar.
+                        </p>
+                        <p>
+                            Bryggans serveringstillstånd gäller måndag-söndag 11-01 för slutna sällskap vilket innebär att vi måste ha en lista med namn och personnummer på alla som ska komma under kvällen, dessa gäster måste också vara studenter vid Örebro universitet.
+                        </p>
 
-                        Bryggans serveringstillstånd gäller måndag-söndag 11-01 för slutna sällskap vilket innebär att vi måste ha en lista med namn och personnummer på alla som ska komma under kvällen, dessa gäster måste också vara studenter vid Örebro universitet.
+                        <p>
+                            I bokningsavgiften ingår medlemskap för alla inbjudna, under den aktuella kvällen. Alla gäster på listan har också rätt att ta med en gäst under kvällen.
+                        </p>
 
-                        I bokningsavgiften ingår medlemskap för alla inbjudna, under den aktuella kvällen. Alla gäster på listan har också rätt att ta med en gäst under kvällen.
-
-                        Kom ihåg att Bryggan drivs av ideella studenter! Därför ber vi er att ha god framförhållning när ni bokar och ifall planerna för er bokade kväll skulle ändras.
+                        <p>
+                            Kom ihåg att Bryggan drivs av ideella studenter! Därför ber vi er att ha god framförhållning när ni bokar och ifall planerna för er bokade kväll skulle ändras.
+                        </p>
                     </div>
                 </div> <!-- CLOSING KONTAKT -->
 
@@ -285,7 +301,6 @@
 
         </div>
     </div>
-    <div class="col-md-1"></div>
 
 </section>
 
