@@ -173,31 +173,37 @@ p {
     margin: 20px 0 0;
     max-height: 350px;
 }
+
 #section-ordforande {
     background-color: #f8f8f8;
     background-image: url("../Images/styrelse/Kavaj-Jonatan-fp5.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
-#section-ordforande .jumbotron {
-    border: 0;
-    -webkit-box-shadow: none;
-    background-color: transparent;
-    margin: 60px 0 0;
-    padding: 0 0 80px;
-}
-#section-ordforande .jumbotron .panel{
-}
-#section-ordforande .jumbotron h2, #section-ordforande .jumbotron p {
-    color: #FFF;
-        text-shadow: 0 1px 2px rgba(0,0,0,0.6);
-}
+
+    #section-ordforande .jumbotron {
+        border: 0;
+        -webkit-box-shadow: none;
+        background-color: transparent;
+        margin: 60px 0 0;
+        padding: 0 0 80px;
+    }
+
+        #section-ordforande .jumbotron .panel {
+        }
+
+        #section-ordforande .jumbotron h2, #section-ordforande .jumbotron p {
+            color: #FFF;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.6);
+        }
+
 #section-fp-middle {
     background-image: url("../Images/introduktion/15-09-11-orebrodagen-2015-57660-faded.png");
     background-repeat: no-repeat;
     background-size: cover;
     height: 600px;
 }
+
 #section-fp-info {
     background-color: #f8f8f8;
     padding: 180px 0;
@@ -735,7 +741,13 @@ section#intro-content-top {
         -webkit-transition: none;
         -o-transition: none;
     }
+/****************************CAMPUSMÄSSAN****************************/
 
+#campusmassan-header {
+    background-image: url("../Images/campusmassan.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 /****************************FOOTER****************************/
 .footer {
     color: #FFF;
