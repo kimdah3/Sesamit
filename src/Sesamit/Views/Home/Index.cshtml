@@ -56,7 +56,7 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-md-9 col-sm-9 col-xs-9">
+            <div class="col-md-9 col-sm-12 col-xs-12">
                 <h1 class="">Vad är Sesam?</h1>
                 <p>
                     <span class="lead">Vi är kårsektionen för dig som läser <strong>ekonomi</strong>, <strong>informatik</strong> och <strong>statistik</strong>. </span>
@@ -99,7 +99,7 @@
                         <a asp-controller="OmSesam" asp-action="VadArSesam" class="btn btn-primary btn-lg t">Läs mer här!</a>
                     </p>*@
             </div>
-            <div class="col-md-3 col-sm-3 col-xs-3">
+            <div class="col-md-3 hidden-xs hidden-sm">
                 <img class="img-responsive img-logo-fp" src="../Images/sesamLogo-medium.png" />
             </div>
         </div>
@@ -110,13 +110,12 @@
 <section class="section-padding" id="section-ordforande">
     <div class="jumbotron">
         <div class="container">
-            <div class="col-lg-4 col-md-5  col-sm-6 front-page-col">
-                @*<img class="img-responsive" src="../Images/styrelse/Kavaj Jonatan.jpg" alt="">*@
+            <div class="col-lg-4 col-md-5  hidden-sm">
             </div>
-            <div class="col-lg-7 col-md-7 col-sm-6">
-                        <h2 class="h1 page-header">Mitt namn är Jonatan!</h2>
-                        <p>Vi är kårsektionen för dig som läser ekonomi, informatik och statistik. Vi grundades 1993 och har sedan dess funnits med syfte att bevaka utbildningen, engagera medlemmar socialt och ge dem en naturligare väg in i näringslivet efter studierna. Återkommande aktiviteter är bland annat Mentorskapsprojektet, Campusmässan, Båtfesten och Introduktionen. Vi är stolta över vår introduktion som är en av Sveriges längsta och bästa i slaget, där du som ny student snabbt har möjlighet att komma in i studentlivet!</p>
-                    </div>
+            <div class="col-lg-7 col-md-7 col-sm-12">
+                <h2 class="h1 page-header">Mitt namn är Jonatan!</h2>
+                <p>Vi är kårsektionen för dig som läser ekonomi, informatik och statistik. Vi grundades 1993 och har sedan dess funnits med syfte att bevaka utbildningen, engagera medlemmar socialt och ge dem en naturligare väg in i näringslivet efter studierna. Återkommande aktiviteter är bland annat Mentorskapsprojektet, Campusmässan, Båtfesten och Introduktionen. Vi är stolta över vår introduktion som är en av Sveriges längsta och bästa i slaget, där du som ny student snabbt har möjlighet att komma in i studentlivet!</p>
+            </div>
         </div>
     </div>
 
@@ -138,10 +137,28 @@
         </div>*@
 
 </section>
+<section class="section-padding" id="section-fp-info">
+    <div class="container text-center">
+        <div class="col-md-4">
+            <i class="fa fa-exclamation fa-5x fa-blue"></i>
+            <p>Vi är kårsektionen för dig som läser ekonomi, informatik och statistik</p>
+
+        </div>
+        <div class="col-md-4">
+            <i class="fa fa-exclamation fa-5x fa-blue"></i>
+            <p>Vi är kårsektionen för dig som läser ekonomi, informatik och statistik</p>
+
+        </div>
+        <div class="col-md-4">
+            <i class="fa fa-exclamation fa-5x fa-blue"></i>
+            <p>Vi är kårsektionen för dig som läser ekonomi, informatik och statistik</p>
+        </div>
+    </div>
+</section>
+
 <section class="" id="front-page-samarbeten">
     <div class="container ">
         <div class="row text-center">
-            <h1>Våra samarbeten</h1>
             <div class="col-md-2 ">
                 <a href="http://www.lrfkonsult.se/" class="btn" target="_blank">
                     <img class="img-responsive center-block" src="../Images/foretag/lrfkonsult.gif" />

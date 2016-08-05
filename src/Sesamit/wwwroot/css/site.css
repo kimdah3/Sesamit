@@ -30,7 +30,7 @@ p {
 }
 /**************************** GENERAL ****************************/
 .section-padding {
-    padding: 60px 0 60px;
+    padding: 100px 0 100px;
 }
 
 .row-padding {
@@ -197,6 +197,10 @@ p {
     background-repeat: no-repeat;
     background-size: cover;
     height: 600px;
+}
+#section-fp-info {
+    background-color: #f8f8f8;
+    padding: 180px 0;
 }
 
 /****************************introduktion****************************/
