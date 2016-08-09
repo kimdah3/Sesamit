@@ -46,7 +46,7 @@
                                 <li role="separator" class="divider"></li>
                                 <li><a asp-controller="OmSesam" asp-action="Styrelsen">Styrelsen</a></li>
                                 <li><a asp-controller="OmSesam" asp-action="Utskott">Utskott</a></li>
-                                <li><a href="#">Sektionsmöten</a></li>
+                                <li><a asp-controller="OmSesam" asp-action="Sektionsmoten">Sektionsmöten</a></li>
                                 <li role="separator" class="divider"></li>
                                 <li><a asp-controller="OmSesam" asp-action="Campusmassan">CAMPUSMÄSSAN</a></li>
                                 <li><a href="#">Kalender</a></li>
@@ -72,58 +72,68 @@
         </nav>
     </div>
     @RenderBody()
-    <footer class="footer">
+    <footer>
         <div class="container">
-            
-            <div class="col-md-3  col-xs-12">
-                <div class="footer-contact">
-                    <div>
+
+            <div class="row ">
+
+                <div class="col-md-3 col-xs-6">
+                    <h3>
                         <i class="fa fa-map-marker"></i>
-                        <p>
-                            <span>
-                                Studentsektionen-Sesam
-                            </span>
-                            <span>
-                                Fakultetsgatan 1
-                            </span>
-                            <span>
-                                70181 Örebro
-                            </span>
-
-                        </p>
-                    </div>
-
-                    @*<div>
-                            <i class="fa fa-phone"></i>
-                            <p>
-                                073-772 88 22
-                            </p>
-                        </div>*@
-
-                    <div>
-                        <i class="fa fa-envelope "></i>
-                        <p>
-                            <a href="mailto:info@sesamit.se">
-                                info@sesamit.se
-                            </a>
-                        </p>
-
-                    </div>
-                    
+                        Adress
+                    </h3>
+                    <p>
+                        Studentsektionen-Sesam
+                    </p>
+                    <p>
+                        <i>
+                            Fakultetsgatan 1
+                        </i>
+                    </p>
+                    <p>
+                        <i>
+                            70181 Örebro
+                        </i>
+                    </p>
                 </div>
-            </div>
+                <div class="col-md-3 col-xs-6">
 
-            <div class="col-md-6 hidden-xs hidden-sm">
-                @*<div class="footer-samarbet text-center">
-                    <img id="footer-samarbets-pic" class="img-responsive img-center" src="~/Images/sponsors.png" />
-                </div>*@
-            </div>
+                    <h3>
+                        <i class="fa fa-envelope "></i>
 
-            <div class="col-md-3 col-xs-12">
+                        Mail
+                    </h3>
+                    <p>
+                        <a href="mailto:info@sesamit.se">
+                            info@sesamit.se
+                        </a>
+                    </p>
+                </div>
+                <div class="clearfix visible-xs visible-sm"></div>
+                <div class="col-md-3 col-xs-12">
 
-                <div class="footer-icons text-center">
-                    <a class="btn btn-footer" href=""><i class="fa fa-facebook fa-3x" aria-hidden="true"></i></a>
-                    <a class="btn btn-footer" href=""><i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a>
+                    <h3>
+                        <i class="fa fa-phone "></i>
+                        Telefon
+                    </h3>
+                    <p>
+                        Akut? Ring vår ordförande Jonatan på:
+                    </p>
+                    <p>
+                        070 - 84 44 499
+                    </p>
+                    <hr class="visible-xs visible-sm footer-hr" />
+
+                </div>
+                <div class="col-md-3 col-xs-12 col-fa text-center">
+
+                        <a class="fa-button" href="https://www.facebook.com/Sesamit/?fref=ts">
+                            <i class="fa fa-facebook-square fa-3x"></i>
+                        </a>
+
+                        <a class="fa-button" href="https://www.instagram.com/sesamofficial/?hl=en">
+                            <i class="fa fa-instagram fa-3x"></i>
+                        </a>
                 </div>
 
             </div>
@@ -227,7 +237,7 @@
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtXwSw2mG7B4x-Y_-LGj4_DbHyzb_amno&callback=initMap"
                 async defer></script>
     </environment>
-   
+
     @RenderSection("scripts", required: false)
 </body>
 </html>

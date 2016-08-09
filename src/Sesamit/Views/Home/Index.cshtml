@@ -1,5 +1,5 @@
 ﻿@{
-    ViewData["Title"] = "Framsida";
+    ViewData["Title"] = "Hem";
 }
 
 <header class="front-page-header">
@@ -15,8 +15,6 @@
                 <div class="carousel-caption">
                     <i class="fa fa-exclamation fa-5x" aria-hidden="true"></i>
                     <h1>Höstens introduktion drar igång den 26 augusti</h1>
-                    @*<h1>Ska du plugga ekonomi, informatik eller statistik?</h1>*@
-                    @*<h1>Grattis du är en Sesamit!</h1>*@
                     <p>
 
                         <a asp-controller="Home" asp-action="Intro" class="btn btn-primary">Klicka här för att veta mer!</a>
@@ -107,49 +105,52 @@
 </section>
 
 
-<section class="section-padding" id="section-ordforande">
+<section class="hidden-sm hidden-xs section-padding" id="section-ordforande">
     <div class="jumbotron">
         <div class="container">
             <div class="col-lg-4 col-md-5  hidden-sm">
             </div>
             <div class="col-lg-7 col-md-7 col-sm-12">
                 <h2 class="h1 page-header">Mitt namn är Jonatan!</h2>
-                <p>Vi är kårsektionen för dig som läser ekonomi, informatik och statistik. Vi grundades 1993 och har sedan dess funnits med syfte att bevaka utbildningen, engagera medlemmar socialt och ge dem en naturligare väg in i näringslivet efter studierna. Återkommande aktiviteter är bland annat Mentorskapsprojektet, Campusmässan, Båtfesten och Introduktionen. Vi är stolta över vår introduktion som är en av Sveriges längsta och bästa i slaget, där du som ny student snabbt har möjlighet att komma in i studentlivet!</p>
+                <p>Ordförande är ansvarig för att leda sektionens styrelse. Tillsammans med vice ordförande arbetar ordförande för att utveckla Sesam och främja Örebro studentkår. Ordförande är Sesams spindel i nätet och stöttar Sesams olika projekt och utskott. Vidare är även ordförande firmatecknare i organisationen.</p>
             </div>
         </div>
     </div>
 
-    @*<div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="col-md-6">
-                        <h1 class="">Hej! Mitt namn är Jonatan</h1>
-                        <p>Ordförande är ansvarig för att leda sektionens styrelse. Tillsammans med vice ordförande arbetar ordförande för att utveckla Sesam och främja Örebro studentkår. Ordförande är Sesams spindel i nätet och stöttar Sesams olika projekt och utskott. Vidare är även ordförande firmatecknare i organisationen.</p>
-                        <p>
-                            <a href="mailto:ordforande@sesamit.se" class="">ordforande@sesamit.se</a>
-                        </p>
-                    </div>
-                    <div class="col-md-6">
-                        <img width="500" height="500" class="img-rounded img-responsive " src="../Images/styrelse/Kavaj-Jonatan.png" alt="">
-                    </div>
+    
+
+</section>
+<section class="visible-sm visible-xs section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="col-md-6">
+                    <h1 class="">Hej! Mitt namn är Jonatan</h1>
+                    <p>Ordförande är ansvarig för att leda sektionens styrelse. Tillsammans med vice ordförande arbetar ordförande för att utveckla Sesam och främja Örebro studentkår. Ordförande är Sesams spindel i nätet och stöttar Sesams olika projekt och utskott. Vidare är även ordförande firmatecknare i organisationen.</p>
+                    <p>
+                        <a href="mailto:ordforande@sesamit.se" class="">ordforande@sesamit.se</a>
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <img width="500" height="500" class="img-rounded img-responsive " src="../Images/styrelse/Kavaj-Jonatan.png" alt="">
                 </div>
             </div>
-        </div>*@
-
+        </div>
+    </div>
 </section>
 <section class="section-padding" id="section-fp-info">
     <div class="container text-center">
-        <div class="col-md-4">
+        <div class="col-md-4 col-xs-4">
             <i class="fa fa-exclamation fa-5x fa-blue"></i>
             <p>Vi är kårsektionen för dig som läser ekonomi, informatik och statistik</p>
 
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 col-xs-4">
             <i class="fa fa-exclamation fa-5x fa-blue"></i>
             <p>Vi är kårsektionen för dig som läser ekonomi, informatik och statistik</p>
 
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 col-xs-4">
             <i class="fa fa-exclamation fa-5x fa-blue"></i>
             <p>Vi är kårsektionen för dig som läser ekonomi, informatik och statistik</p>
         </div>

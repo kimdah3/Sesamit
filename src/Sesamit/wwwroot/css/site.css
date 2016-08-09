@@ -37,9 +37,21 @@ p {
     padding: 30px 0;
 }
 
+.img-center {
+    margin: 0 auto;
+}
+
 .fa-blue {
     color: #127ba3;
 }
+
+.fa-white {
+    color: #FFF;
+}
+.fa-grey {
+    color: #666;
+}
+
 /**************************** RESPONSIV FIXES ****************************/
 @media (max-width: 1201px) and (min-width: 769px) {
     .front-page-header {
@@ -86,6 +98,9 @@ p {
     #bryggan-header {
         background-size: 100% 100% !important;
     }
+    .section-padding {
+        padding: 50px 0;
+}
 }
 
 @media (max-width: 991px) {
@@ -748,76 +763,41 @@ section#intro-content-top {
     background-repeat: no-repeat;
     background-size: cover;
 }
+/****************************SEKTINSMÖTEN****************************/
+#header-sektionsmoten {
+    background-image: url("../Images/sektionsmote.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 /****************************FOOTER****************************/
-.footer {
+footer {
     color: #FFF;
-    padding: 30px;
+    padding: 50px 0;
     background-color: #003366;
-    border-top: 1px solid transparent;
-    border-bottom-right-radius: 3px;
-    border-bottom-left-radius: 3px;
 }
 
-    .footer a {
+    footer a {
         color: #FFF;
     }
 
-    .footer p {
-        text-align: left;
-        display: inline-block;
-        vertical-align: middle;
-        margin: 0;
-    }
+        footer a:hover {
+            color: #FFF;
+        }
 
-    .footer h4 {
+    footer h1, footer h2, footer h3 {
         color: #FFF;
     }
 
-    .footer p span {
-        display: block;
+    footer .fa-button {
+        padding: 20px;
     }
-
-.footer-contact {
-    padding: 15px 0;
-}
-
-    .footer-contact i {
-        background-color: #75caeb;
-        color: #ffffff;
-        font-size: 25px;
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        text-align: center;
-        line-height: 42px;
-        margin: 10px 15px;
-        vertical-align: middle;
+    footer .fa-button:hover {
+        text-decoration: none;
     }
-
-    .footer-contact .fa {
-        display: inline-block;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
+    .col-fa {
+        padding: 50px 0;
     }
-
-#footer-logo {
-    padding: 10px;
-    width: 100px;
-}
-
-#footer-samarbets-pic {
-    padding: 10px;
-    width: 255px;
-}
-
-.footer-icons {
-    padding: 65px 0;
-}
-
-.btn-footer:hover {
-    color: #fff;
-}
-
-.img-center {
-    margin: 0 auto;
+.footer-hr {
+    background-color: #f8f8f8;
+     height: 1px; border: 0; 
 }
