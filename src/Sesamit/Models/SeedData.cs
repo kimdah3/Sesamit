@@ -19,6 +19,7 @@ namespace Sesamit.Models
                 Email = "it@sesamit.se"
             };
 
+
             var result = await roleManager.RoleExistsAsync("Admin");
             if (result) return;
 
