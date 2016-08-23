@@ -44,15 +44,40 @@
             <div class="tab-content">
                 <!-- Nyheter -->
                 <div role="tabpanel" class="tab-pane active" id="nyheter">
-                    <div class="row">
-                        <div class="panel panel-default border-left-panel">
-                            <div class="panel-body">
-                                <h3>
-                                    Kommer strax...
-                                </h3>
+                    @foreach (var newsPost in Model.NewsPosts)
+                    {
+                        var index = Model.NewsPosts.FindIndex(x => x == newsPost);
+                        var panelBorder = "";
+                        //if (index % 2 == 0)
+                        //{
+                        //    panelBorder = "border-left-panel";
+                        //}
+                        //else
+                        //{
+                        //    panelBorder = "border-right-panel";
+                        //}
+                        <div class="row">
+                            <div class="panel panel-default @panelBorder">
+                                <div class="panel-body">
+                                    <h3>
+                                        @newsPost.Title
+                                        <small>
+                                            <span class="text-capitalize pull-right">Nyhetsinlägg</span>
+                                            (@newsPost.Date.ToString("MM/dd/yyyy"))
+                                        </small>
+                                    </h3>
+                                                <p class="row-padding">
+                                                    @Html.Raw(newsPost.Text.ToString())
+                                                </p>
+                                    <p >
+                                            Skriven av
+                                            @newsPost.Author
+                                    </p>
+                                   
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    }
                 </div>
                 <div role="tabpanel" class="tab-pane " id="blogg">
                     @foreach (var bloggPost in Model.BloggPosts)
@@ -68,7 +93,7 @@
                         //    panelBorder = "border-right-panel";
                         //}
                         <div class="row">
-                            <div class="panel panel-defaulb @panelBorder">
+                            <div class="panel panel-default @panelBorder">
                                 <div class="panel-body">
                                     <h3>
                                         @bloggPost.Title

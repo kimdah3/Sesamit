@@ -55,7 +55,7 @@ namespace Sesamit.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Author,Date,Text")] NewsPost newsPost)
+        public async Task<IActionResult> Create([Bind("Id,Author,Date,Text,Title")] NewsPost newsPost)
         {
             if (ModelState.IsValid)
             {
@@ -87,7 +87,7 @@ namespace Sesamit.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Author,Date,Text")] NewsPost newsPost)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Author,Date,Text,Title")] NewsPost newsPost)
         {
             if (id != newsPost.Id)
             {

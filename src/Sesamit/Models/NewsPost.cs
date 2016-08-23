@@ -10,6 +10,9 @@ namespace Sesamit.Models
     {
         public int Id { get; set; }
         [Required]
+        [Display(Name = "Titel")]
+        public string Title { get; set; }
+        [Display(Name = "Text")]
         public string Text { get; set; }
         public string Author { get; set; }
 

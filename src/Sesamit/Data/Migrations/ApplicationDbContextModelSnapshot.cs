@@ -181,7 +181,9 @@ namespace Sesamit.Data.Migrations
 
                     b.Property<DateTime>("Date");
 
-                    b.Property<string>("Text")
+                    b.Property<string>("Text");
+
+                    b.Property<string>("Title")
                         .IsRequired();
 
                     b.HasKey("Id");

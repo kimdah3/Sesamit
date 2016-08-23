@@ -21,10 +21,7 @@ p {
 }
 
 .navbar-header img {
-    margin-top: 7px;
-    margin-right: 7px;
-    margin-bottom: 0;
-    margin-left: 7px;
+    margin: 7px 7px 7px 0;
     height: 40px;
     width: auto;
 }
@@ -37,6 +34,9 @@ p {
 /**************************** GENERAL ****************************/
 .section-padding {
     padding: 100px 0 100px;
+}
+.section-grey {
+    background-color: #f8f8f8;
 }
 
 .row-padding {
@@ -66,6 +66,9 @@ p {
 }
 .h1-margin {
     margin: 30px 0 100px;
+}
+.section-margin {
+    margin: 0 0 300px;
 }
 
 /**************************** RESPONSIV FIXES ****************************/
@@ -596,7 +599,7 @@ section#intro-content-top {
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 200px;
-    padding-bottom: 0px;
+    padding-bottom: 0;
     margin-bottom: 0;
 }
 
@@ -641,7 +644,7 @@ section#intro-content-top {
 }
 
 .h2-margin-top {
-    margin-top: 0px;
+    margin-top: 0;
 }
 
 #bryggan-medlemskap-tab a {
@@ -729,7 +732,7 @@ section#intro-content-top {
     background-image: url("../Images/introduktion/orebro-dagen-small.png");
     background-repeat: no-repeat;
     background-size: cover;
-    padding-bottom: 0px;
+    padding-bottom: 0;
 }
 
 #section-blogg {

@@ -6,12 +6,20 @@ using System.Threading.Tasks;
 using System.Xml;
 using System.Xml.Linq;
 using Microsoft.AspNetCore.Mvc;
+using Sesamit.Data;
 using Sesamit.Models.HomeViewModels;
 
 namespace Sesamit.Controllers
 {
     public class HomeController : Controller
     {
+        private readonly ApplicationDbContext _context;
+
+        public HomeController(ApplicationDbContext context)
+        {
+            _context = context;
+        }
+
         public IActionResult Index()
         {
             return View();
@@ -34,7 +42,7 @@ namespace Sesamit.Controllers
 
         public async Task<IActionResult> NyheterBlogg()
         {
-            var url = "http://sesamnu.blogg.se/index.rss";
+            const string url = "http://sesamnu.blogg.se/index.rss";
             var model = new NyheterBloggViewModel();
             var bloggPosts = new List<BloggPostModel>();
 
@@ -66,7 +74,16 @@ namespace Sesamit.Controllers
                 }
             }
             model.BloggPosts = bloggPosts;
+
+            var newsPosts = _context.NewsPosts.OrderByDescending(x => x.Date);
+            model.NewsPosts = newsPosts.ToList();
+
             return View(model);
+        }
+
+        public IActionResult Bryggan()
+        {
+            return View();
         }
 
         public IActionResult Error()
