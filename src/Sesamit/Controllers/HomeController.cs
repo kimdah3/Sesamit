@@ -1,8 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
 using System.Threading.Tasks;
+using System.Xml;
+using System.Xml.Linq;
 using Microsoft.AspNetCore.Mvc;
+using Sesamit.Models.HomeViewModels;
 
 namespace Sesamit.Controllers
 {
@@ -18,14 +22,51 @@ namespace Sesamit.Controllers
             return View();
         }
 
+        public IActionResult Foretag()
+        {
+            return View();
+        }
+
         public IActionResult VadArSesam()
         {
             return View();
         }
 
-        public IActionResult Foretag()
+        public async Task<IActionResult> NyheterBlogg()
         {
-            return View();
+            var url = "http://sesamnu.blogg.se/index.rss";
+            var model = new NyheterBloggViewModel();
+            var bloggPosts = new List<BloggPostModel>();
+
+            using (var client = new HttpClient())
+            {
+                client.BaseAddress = new Uri(url);
+                var responseMessage = await client.GetAsync(url);
+                var responseString = await responseMessage.Content.ReadAsStringAsync();
+
+                //extract feed items
+                var doc = XDocument.Parse(responseString);
+                foreach (var item in doc.Root.Descendants().First(i => i.Name.LocalName == "channel").Elements().Where(i => i.Name.LocalName == "item"))
+                {
+                    var post = new BloggPostModel()
+                    {
+                        Title = item.Elements().First(i => i.Name.LocalName == "title").Value,
+
+                        Description = item.Elements().First(i => i.Name.LocalName == "description").Value.Substring(0, item.Elements().First(i => i.Name.LocalName == "description").Value.IndexOf('-')),
+                        Link = new Uri(item.Elements().First(i => i.Name.LocalName == "link").Value),
+                        PubDate = DateTime.Parse(item.Elements().First(i => i.Name.LocalName == "pubDate").Value),
+                        TimePast = DateTime.Today - DateTime.Parse(item.Elements().First(i => i.Name.LocalName == "pubDate").Value),
+                        ImageLink = null
+                    };
+                    if (item.Elements().Count() == 8)
+                    {
+                        post.ImageLink = new Uri(item.Elements().First(i => i.Name.LocalName == "enclosure").FirstAttribute.Value);
+                    }
+                    bloggPosts.Add(post);
+                }
+            }
+            model.BloggPosts = bloggPosts;
+            return View(model);
         }
 
         public IActionResult Error()

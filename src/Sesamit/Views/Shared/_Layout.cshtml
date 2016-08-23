@@ -1,5 +1,6 @@
-﻿@using System.Security.Policy
-@using Microsoft.ApplicationInsights.Extensibility
+﻿@using Microsoft.ApplicationInsights.Extensibility
+@inject SignInManager<ApplicationUser> SignInManager
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,7 +10,7 @@
     <environment names="Development,Staging,Production">
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
         <link rel="stylesheet" href="~/css/site.css" />
-        <link href="~/fontawesome/font-awesome.css" rel="stylesheet" />
+        <link href="~/lib/font-awesome/css/font-awesome.css" rel="stylesheet" />
         <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     </environment>
     @Html.ApplicationInsightsJavaScript(TelemetryConfiguration)
@@ -36,7 +37,7 @@
                     <ul class="nav navbar-nav">
                         <li><a asp-controller="Home" asp-action="Intro">Introduktion</a></li>
                         @*<li><a href="#">Nyheter</a></li>*@
-                        <li><a asp-controller="NyheterBlogg" asp-action="Index">Nyheter & Blogg</a></li>
+                        <li><a asp-controller="Home" asp-action="NyheterBlogg">Nyheter & Blogg</a></li>
                         <li><a asp-controller="Home" asp-action="Foretag">Företag</a></li>
                         <li><a asp-controller="Bryggan" asp-action="Info">Bryggan</a></li>
                         <li class="dropdown">
@@ -54,23 +55,30 @@
                         </li>
                         <li><a href="" id="kontakt-button" data-toggle="modal" data-target="#kontaktModal">Kontakta oss</a></li>
                     </ul>
-                    <ul class="nav navbar-nav navbar-right">
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                <span class="caret"></span>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <a href="#">Logga in</a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
+                    @await Html.PartialAsync("_LoginPartial")
+
+                    @if (!SignInManager.IsSignedIn(User))
+                    {
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                    <span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a asp-controller="Account" asp-action="Login">Logga in</a>
+                                    </li>
+
+                                </ul>
+                            </li>
+                        </ul>
+                    }
 
                 </div><!-- /.navbar-collapse -->
             </div><!-- /.container-fluid -->
         </nav>
     </div>
+
     @RenderBody()
     <footer>
         <div class="container">
@@ -127,13 +135,13 @@
                 </div>
                 <div class="col-md-3 col-xs-12 col-fa text-center">
 
-                        <a class="fa-button" href="https://www.facebook.com/Sesamit/?fref=ts">
-                            <i class="fa fa-facebook-square fa-3x"></i>
-                        </a>
+                    <a class="fa-button" href="https://www.facebook.com/Sesamit/?fref=ts">
+                        <i class="fa fa-facebook-square fa-3x"></i>
+                    </a>
 
-                        <a class="fa-button" href="https://www.instagram.com/sesamofficial/?hl=en">
-                            <i class="fa fa-instagram fa-3x"></i>
-                        </a>
+                    <a class="fa-button" href="https://www.instagram.com/sesamofficial/?hl=en">
+                        <i class="fa fa-instagram fa-3x"></i>
+                    </a>
                 </div>
 
             </div>

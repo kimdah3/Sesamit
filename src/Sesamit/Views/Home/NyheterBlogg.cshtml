@@ -1,0 +1,98 @@
+﻿@model Sesamit.Models.HomeViewModels.NyheterBloggViewModel
+
+@{
+    ViewData["Title"] = "Blogg";
+}
+<header class="top-page-header text-center" id="blogg-nyheter-header">
+
+    <div class="container">
+
+        <div id="nyheter-blogg-menu">
+            <div class="col-md-1 hidden-xs"></div>
+            <div class="col-md-10 ">
+
+                <div class="row">
+
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation" class="active">
+                            <a href="#nyheter" aria-controls="om" role="tab" data-toggle="tab">
+                                <h5>
+                                    Senaste nytt
+                                </h5>
+                            </a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#blogg" aria-controls="mat" role="tab" data-toggle="tab">
+                                <h5>
+                                    Bloggen
+                                </h5>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-1 hidden-xs"></div>
+
+        </div>
+    </div>
+
+</header>
+<section id="section-blogg">
+    <div class="container">
+        <div class="col-md-12">
+            <div class="tab-content">
+                <!-- Nyheter -->
+                <div role="tabpanel" class="tab-pane active" id="nyheter">
+                    <div class="row">
+                        <div class="panel panel-default border-left-panel">
+                            <div class="panel-body">
+                                <h3>
+                                    Kommer strax...
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane " id="blogg">
+                    @foreach (var bloggPost in Model.BloggPosts)
+                    {
+                        var index = Model.BloggPosts.FindIndex(x => x == bloggPost);
+                        var panelBorder = "";
+                        //if (index % 2 == 0)
+                        //{
+                        //    panelBorder = "border-left-panel";
+                        //}
+                        //else
+                        //{
+                        //    panelBorder = "border-right-panel";
+                        //}
+                        <div class="row">
+                            <div class="panel panel-defaulb @panelBorder">
+                                <div class="panel-body">
+                                    <h3>
+                                        @bloggPost.Title
+                                        <small>
+                                            @bloggPost.TimePast.Days dagar, @bloggPost.TimePast.Hours timmar sedan.
+                                            <span class="text-capitalize pull-right">Blogginlägg</span>
+                                        </small>
+                                    </h3>
+                                    <p>@Html.Raw(bloggPost.Description.ToString())</p>
+
+                                    @if (bloggPost.ImageLink != null)
+                                    {
+                                        <img class="img-responsive img-rounded center-block" src="@bloggPost.ImageLink.ToString()" />
+                                    }
+                                    <h3>
+                                        <a class="btn btn-success" href="@bloggPost.Link">Läs mer här!</a>
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>

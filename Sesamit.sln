@@ -3,14 +3,14 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{97210F17-26D1-4488-83A3-00B864F030EB}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{4F83B038-B42F-469B-80BC-1EFA0C034585}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C9F569F2-DF9A-494A-AE2E-FBE0E37AFA06}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0ECB032C-B0B9-451A-9FE6-3383E1F83BB0}"
 	ProjectSection(SolutionItems) = preProject
 		global.json = global.json
 	EndProjectSection
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Sesamit", "src\Sesamit\Sesamit.xproj", "{F3D0D982-C455-4514-8994-BCB9877DDB7A}"
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Sesamit", "src\Sesamit\Sesamit.xproj", "{3DB49789-A751-4874-9494-9B44F4E6D31C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,15 +18,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{F3D0D982-C455-4514-8994-BCB9877DDB7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F3D0D982-C455-4514-8994-BCB9877DDB7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F3D0D982-C455-4514-8994-BCB9877DDB7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F3D0D982-C455-4514-8994-BCB9877DDB7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3DB49789-A751-4874-9494-9B44F4E6D31C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DB49789-A751-4874-9494-9B44F4E6D31C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DB49789-A751-4874-9494-9B44F4E6D31C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DB49789-A751-4874-9494-9B44F4E6D31C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{F3D0D982-C455-4514-8994-BCB9877DDB7A} = {97210F17-26D1-4488-83A3-00B864F030EB}
+		{3DB49789-A751-4874-9494-9B44F4E6D31C} = {4F83B038-B42F-469B-80BC-1EFA0C034585}
 	EndGlobalSection
 EndGlobal
