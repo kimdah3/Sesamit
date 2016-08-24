@@ -326,6 +326,14 @@ section#intro-content-top {
 }
 /****************************VadArSesam****************************/
 
+.featurette {
+    margin: 20px 0 20px 0;
+}
+
+.lead {
+    font-size: 18px;
+}
+
 .vadarsesam-header {
     z-index: 0;
     margin-top: -100px;
@@ -333,8 +341,7 @@ section#intro-content-top {
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    padding-top: 270px;
-    padding-bottom: 120px;
+    padding: 280px 0 380px;
     margin-bottom: 0;
     text-shadow: 0 1px 2px rgba(0,0,0,0.6);
 }
@@ -531,6 +538,10 @@ section#intro-content-top {
 }
 
 /****************************Utskott****************************/
+#nav li a {
+    background-color: white;
+}
+
 .affix {
     top: 20px;
 }
@@ -545,6 +556,16 @@ section#intro-content-top {
 
 #utskott-panel {
     border-left: 5px lightskyblue solid;
+}
+
+.btn-trans {
+  background: transparent;
+}
+
+.btn-trans:hover{
+  outline: none;
+  color: white;
+  background: rgba(255, 255, 255, 0.1);
 }
 
 

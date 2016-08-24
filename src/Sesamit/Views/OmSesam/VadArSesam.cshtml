@@ -4,101 +4,107 @@
 
 <header class="vadarsesam-header header-responsive-fix">
     <div class="container text-center">
-        <i class="fa fa-question" aria-hidden="true"></i>
-        <h1>Sesam</h1>
+        <h1>Sesam?</h1>
+        <a href="#ArrowDestination" class="btn btn-trans page-scroll">
+            <i class="fa fa-arrow-down fa-5x"></i>
+        </a>
     </div>
 </header>
 
 <div class="section-VadArSesampage">
 
-    <div class="container">
-        
-        <div class="panel panel-default border-left-panel">
-            <div class="panel-body">
+    <div class="row border-left-panel" id="ArrowDestination" style="text-align: center; margin: 20px 0 20px 0;">
+        <div class="container">
 
-                <div class="col-md-3">
-                    <img class="img-rounded" src="~/Images/Kåren_1.png" alt="Generic placeholder image" width="230" height="200">
-                    <h3>Örebro Studentkår</h3>
-                    <p>Sesam är en sektion i Örebro studentkår. Studentkåren för studenternas talan och representerar oss i frågor som rör universitetet och vår utbildning. Bli medlem idag!
-                    <p>
-                        <a class="btn btn-primary" href="http://www.orebrostudentkar.se/" target="_blank" role="button">Läs mer »</a>
-                    </p>
-                </div>
-
-                <div class="col-md-3">
-
-                    <img class="img-rounded" src="~/Images/logotype305x220.png" alt="Generic placeholder image" width="230" height="200">
-                    <h3>Handelshögskolan</h3>
-                    <p>Sesam representerar studenter på institutionen Handelshögskolan. Om du läser ekonomi, informatik eller statistik hör du till Handelshögskolan, och därmed sektionen Sesam.</p>
-                    <p>
-                        <a class="btn btn-primary" href="https://www.oru.se/institutioner/handelshogskolan/" target="_blank" role="button">Läs mer »</a>
-                    </p>
-                </div>
-
-                <div class="col-md-3">
-                    <img class="img-rounded" src="~/Images/workers.png" alt="Generic placeholder image" width="230" height="200">
-                    <h3>Styrelse</h3>
-                    <p>Sesam består av en styrelsen som utför arbeten som kommer att vara till nytta för dig som student. Allt från företagskontakter till lärofyllda upplevelser! Styrelsen består av...</p>
-                    <p>
-                        <a asp-controller="OmSesam" asp-action="Styrelsen" class="btn btn-primary" role="button">Läs mer »</a>
-                    </p>
-                </div>
-
-                <div class="col-md-3">
-                    <img class="img-rounded" src="~/Images/businessman278.png" alt="Generic placeholder image" width="230" height="200">
-                    <h3>Utskott</h3>
-                    <p>För att Sesam ska kunna utföra sitt arbete behöver de hjälp av sina Utskott. Utskotten gör allt för att Sesam medlemmar ska få det bättre under studietiden.</p>
-                    <p>
-                        <a class="btn btn-primary" href="#" role="button">Läs mer »</a>
-                    </p>
-                </div>
-
+            <div class="col-md-3">
+                <img class="img-rounded" src="~/Images/Kåren_1.png" width="200" height="140">
+                <h2>Örebro Studentkår</h2>
+                <p>Sesam är en sektion i Örebro studentkår. Studentkåren för studenternas talan och representerar oss i frågor som rör universitetet och vår utbildning. Bli medlem idag!</p>
+                <p>
+                    <a class="btn btn-primary" href="http://www.orebrostudentkar.se/" target="_blank" role="button">Läs mer »</a>
+                </p>
             </div>
+
+            <div class="col-md-3">
+                <img class="img-rounded" src="~/Images/tn2_775px-Örebro_Universitet.svg.png" width="200" height="140">
+                <h2>Handelshögskolan</h2>
+                <p>Sesam representerar studenter på institutionen Handelshögskolan. Om du läser ekonomi, informatik eller statistik hör du till Handelshögskolan, och därmed sektionen Sesam.</p>
+                <p>
+                    <a class="btn btn-primary" href="https://www.oru.se/institutioner/handelshogskolan/" target="_blank" role="button">Läs mer »</a>
+                </p>
+            </div>
+
+            <div class="col-md-3">
+                <img class="img-rounded" src="~/Images/workers.png" width="200" height="140">
+                <h2>Styrelse</h2>
+                <p>Sesam består av en styrelsen som utför arbeten som kommer att vara till nytta för dig som student. Allt från företagskontakter till lärofyllda upplevelser! Styrelsen består av...</p>
+                <p>
+                    <a asp-controller="OmSesam" asp-action="Styrelsen" class="btn btn-primary" role="button">Läs mer »</a>
+                </p>
+            </div>
+
+            <div class="col-md-3">
+                <img class="img-rounded" src="~/Images/businessman278.png" width="200" height="140">
+                <h2>Utskott</h2>
+                <p>För att Sesam ska kunna utföra sitt arbete behöver de hjälp av sina Utskott. Utskotten gör allt för att Sesam medlemmar ska få det bättre under studietiden.</p>
+                <p>
+                    <a asp-controller="OmSesam" asp-action="Utskott" class="btn btn-primary" role="button">Läs mer »</a>
+                </p>
+            </div>
+
         </div>
-
-        <hr class="featurette-divider">
-
-        <!-- First Featurette -->
-        <div class="featurette" id="about">
-            <img class="featurette-image img-circle img-responsive pull-right" src="~/Images/stundetkarlogga.png" style="width: 500px; height: 500px;">
-            <h2 class="featurette-heading">
-                Kåren
-                <span class="text-muted">För en bättre studietid</span>
-            </h2>
-            <p class="">
-            Man brukar dela in kårens arbete i två delar: det utbildningspolitiska, som handlar om att öka kvaliteten på utbildningen, och det studiesociala, som rör allt annat runtom studierna, till exempel boende, ekonomi, nöjen och fritid. Tidigare var kåravgiften obligatorisk för studenter, men numera är det frivillig. Vi arbetar därför ännu hårdare för att det ska löna sig för dig som student att vara medlem, bland annat får du rabatt på alla event som vi anordnar.
-            Sektionerna är den delen av kåren som arbetar närmast studenterna, och vi arbetar främst med tre delar: utbildningsbevakning, studiesociala aktiviteter och kontakter med näringslivet. Vi vill hela tiden förbättra utbildningen som ges på Handelshögskolan, se till att din fritid fylls med roliga aktiviteter och även se till att du redan under studierna får kontakt med företag i din bransch. Utbildningen är mer än böckerna du läser, föreläsningarna du går på och tentorna du skriver. Det är en helhet som vi vill göra så givande som möjligt både för dig som läser just nu, och för de som kommer läsa här efter vi har slutat. Det är vi i sektionerna som är den operativa delen av studentkåren – vi bedriver hela tiden utbildningsbevakning, vi anordnar föreläsningar och event med företag som vill träffa just dig, och vi har fester och sittningar med det där lilla extra när du lagt ifrån dig böckerna för dagen.
-        </div>
-
-        <hr class="featurette-divider">
-
-        <!-- Second Featurette -->
-        <div class="featurette" id="services">
-            <img class="featurette-image img-circle img-responsive pull-left" src="~/Images/SERO.png" style="width: 500px; height: 500px;">
-            <h2 class="featurette-heading">
-                S.E.R.O
-                <span class="text-muted">Sveriges Ekonomföreningars Riksorganisation</span>
-            </h2>
-            <p class="">
-            Större delen av Handelshögskolans studenter är ekonomer, och Sesam är medlem i S.E.R.O – Sveriges Ekonomföreningars Riksorganisation.
-            Det är en paraplyorganisation för ekonomföreningar, med mål att öka ekonomistudenters konkurrenskraft på arbetsmarknaden. Medlemskapet i S.E.R.O möjliggör många intressanta samarbeten, nya kontakter och erfarenhetsutbyten, samt utbildningar och konferenser som även är av intresse för andra ämnen på Handelshögskolan, vilket är viktigt då vi inte enbart representerar ekonomer.
-        </div>
-
-        <hr class="featurette-divider">
-
-        <!-- Third Featurette -->
-        <div class="featurette" id="contact">
-            <img class="featurette-image img-circle img-responsive pull-right" src="~/Images/lounge.jpg" style="width: 500px; height: 500px;">
-            <h2 class="featurette-heading">
-                Sesam Lounge
-                <span class="text-muted">vårt eget vardagsrum</span>
-            </h2>
-            <p class="">Vi är den enda sektionen som har ett eget vardagsrum - Sesams Lounge! Den hittar du tillsammans med vårt kontor. Här kan du som medlem komma in med ditt universitetskort. Sesam Lounge är det perfekta stället att sitta med sina vänner och ta det lugnt. Och när det är kontorstid, bjuder Sesam såklart på kaffe. Det är också en plats för mingel med företag när vi ordnar olika event, och här finns mycket information och material från våra sponsorer.</p>
-        </div>
-
-        <hr class="featurette-divider">
     </div>
 
+    <section style="background-color: white;">
+        <div class="container">
 
+            <!-- First Featurette -->
+            <div class="featurette" id="about">
+                <img class="featurette-image img-circle img-responsive pull-right" src="~/Images/stundetkarlogga.png" style="width: 500px; height: 500px;">
+                <h2 class="featurette-heading">
+                    Kåren
+                    <span class="text-muted">För en bättre studietid</span>
+                </h2>
+                <p class="lead">
+                    Man brukar dela in kårens arbete i två delar: det utbildningspolitiska, som handlar om att öka kvaliteten på utbildningen, och det studiesociala, som rör allt annat runtom studierna, till exempel boende, ekonomi, nöjen och fritid. Tidigare var kåravgiften obligatorisk för studenter, men numera är det frivillig. Vi arbetar därför ännu hårdare för att det ska löna sig för dig som student att vara medlem, bland annat får du rabatt på alla event som vi anordnar.
+                    Sektionerna är den delen av kåren som arbetar närmast studenterna, och vi arbetar främst med tre delar: utbildningsbevakning, studiesociala aktiviteter och kontakter med näringslivet. Vi vill hela tiden förbättra utbildningen som ges på Handelshögskolan, se till att din fritid fylls med roliga aktiviteter och även se till att du redan under studierna får kontakt med företag i din bransch. Utbildningen är mer än böckerna du läser, föreläsningarna du går på och tentorna du skriver. Det är en helhet som vi vill göra så givande som möjligt både för dig som läser just nu, och för de som kommer läsa här efter vi har slutat. Det är vi i sektionerna som är den operativa delen av studentkåren – vi bedriver hela tiden utbildningsbevakning, vi anordnar föreläsningar och event med företag som vill träffa just dig, och vi har fester och sittningar med det där lilla extra när du lagt ifrån dig böckerna för dagen.
+            </div>
+
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+
+            <!-- Second Featurette -->
+            <div class="featurette" id="contact">
+                <img class="featurette-image img-circle img-responsive pull-left" src="~/Images/lounge.jpg" style="width: 500px; height: 500px;">
+                <h2 class="featurette-heading">
+                    Sesam Lounge
+                    <span class="text-muted">vårt eget vardagsrum</span>
+                </h2>
+                <p class="lead">Vi är den enda sektionen som har ett eget vardagsrum - Sesams Lounge! Den hittar du tillsammans med vårt kontor. Här kan du som medlem komma in med ditt universitetskort. Sesam Lounge är det perfekta stället att sitta med sina vänner och ta det lugnt. Och när det är kontorstid, bjuder Sesam såklart på kaffe. Det är också en plats för mingel med företag när vi ordnar olika event, och här finns mycket information och material från våra sponsorer.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section style="background-color: white">
+        <div class="container">
+
+            <!-- Third Featurette -->
+            <div class="featurette" id="services">
+                <img class="featurette-image img-circle img-responsive pull-right" src="~/Images/SERO.png" style="width: 500px; height: 500px;">
+                <h2 class="featurette-heading">
+                    S.E.R.O
+                    <span class="text-muted">Sveriges Ekonomföreningars Riksorganisation</span>
+                </h2>
+                <p class="lead">
+                    Större delen av Handelshögskolans studenter är ekonomer, och Sesam är medlem i S.E.R.O – Sveriges Ekonomföreningars Riksorganisation.
+                    Det är en paraplyorganisation för ekonomföreningar, med mål att öka ekonomistudenters konkurrenskraft på arbetsmarknaden. Medlemskapet i S.E.R.O möjliggör många intressanta samarbeten, nya kontakter och erfarenhetsutbyten, samt utbildningar och konferenser som även är av intresse för andra ämnen på Handelshögskolan, vilket är viktigt då vi inte enbart representerar ekonomer.
+            </div>
+
+        </div>
+    </section>
 
 </div>
