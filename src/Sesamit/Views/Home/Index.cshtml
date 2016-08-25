@@ -14,11 +14,9 @@
             <div class="item active">
                 <div class="carousel-caption">
                     <i class="fa fa-exclamation fa-5x" aria-hidden="true"></i>
-                    <h1>Höstens introduktion drar igång den 26 augusti</h1>
-                    <p>
-
-                        <a asp-controller="Home" asp-action="Intro" class="btn btn-primary">Klicka här för att veta mer!</a>
-                    </p>
+                    <h1 class="hidden-sm hidden-xs">Höstens introduktion drar igång den 26 augusti</h1>
+                    <h4 class="visible-sm visible-xs">Höstens introduktion drar igång den 26 augusti</h4>
+                        <a asp-controller="Home" asp-action="Intro" class="btn btn-primary">Läs mer!</a>
                 </div>
             </div>
             <div class="item">
@@ -100,8 +98,6 @@
         </div>
     </div>
 </section>
-
-
 <section class="hidden-sm hidden-xs section-padding" id="section-ordforande">
     <div class="jumbotron">
         <div class="container">
@@ -137,27 +133,30 @@
 </section>
 <section class="section-padding" id="section-fp-info">
     <div class="container text-center">
-        <div class="col-md-4 col-xs-4">
-            <i class="fa fa-exclamation fa-7x fa-blue" aria-hidden="true"></i>
-            <h3 class="h3-fp-section">Bryggan</h3>
-            <p>Vi driver studentpuben bryggan där alla studenter kan ha en trevlig stund</p>
-            <a asp-controller="Home" asp-action="Bryggan" class="btn">Läs mer!</a>
+        <div class="col-md-3 col-xs-6">
+            <i class="fa fa-info fa-7x fa-blue fa-padding" aria-hidden="true"></i>
+            <h3 class="h3-fp-section">Introduktion</h3>
+            <p>Din tid på universitetet börjar med en introduktion där du får möjlighet att få bästa möjliga start på din studietid.</p>
+            <a asp-controller="Home" asp-action="Intro" class="btn btn-fp-section">Läs mer!</a>
 
         </div>
-        <div class="col-md-4 col-xs-4">
-            <i class="fa fa-exclamation fa-7x fa-blue" aria-hidden="true"></i>
+        <div class="col-md-1 col-xs-0"></div>
+        <div class="col-md-3 col-xs-6">
+            <i class="fa fa-beer fa-7x fa-blue fa-padding" aria-hidden="true"></i>
             <h3 class="h3-fp-section">Bryggan</h3>
-            <p>Vi driver studentpuben bryggan där alla studenter kan ha en trevlig stund</p>
-            <a asp-controller="Home" asp-action="Bryggan" class="btn">Läs mer!</a>
+            <p>Vi driver studentpuben bryggan där alla studenter, ovasett sektion, är välkomna att ha en trevlig stund.</p>
+            <a asp-controller="Home" asp-action="Bryggan" class="btn btn-fp-section">Läs mer!</a>
 
         </div>
-        <div class="col-md-4 col-xs-4">
-            <i class="fa fa-exclamation fa-7x fa-blue" aria-hidden="true"></i>
-            <h3 class="h3-fp-section">Bryggan</h3>
-            <p>Vi driver studentpuben bryggan där alla studenter kan ha en trevlig stund</p>
-            <a asp-controller="Home" asp-action="Bryggan" class="btn">Läs mer!</a>
+        <div class="col-md-1 col-xs-12"></div>
+        <div class="col-md-3 col-xs-12">
+            <i class="fa fa-group fa-7x fa-blue fa-padding" aria-hidden="true"></i>
+            <h3 class="h3-fp-section">Utstkott</h3>
+            <p>Sesam består ut av en styrelse och 7st utskott som är oerhört viktiga för att Sesam ska fungera.</p>
+            <a asp-controller="OmSesam" asp-action="Utskott" class="btn btn-fp-section">Läs mer!</a>
 
         </div>
+        <div class="col-md-1 col-xs-4"></div>
        
     </div>
 </section>
@@ -166,36 +165,37 @@
     <div class="container ">
         <h1 class="text-center h1-margin">Våra samarbeten</h1>
         <div class="row text-center">
-            <div class="col-md-2 ">
+            <div class="col-md-2 col-xs-6 col-sm-3">
                 <a href="http://www.lrfkonsult.se/" class="btn" target="_blank">
                     <img class="img-responsive center-block" src="../Images/foretag/lrfkonsult.gif"/>
                 </a>
             </div>
-            <div class="col-md-2 ">
+            <div class="col-md-2 col-xs-6 col-sm-3">
                 <a href="http://www.unionen.se/" class="btn " target="_blank">
 
                     <img class="img-responsive " src="../Images/foretag/unionen.jpg"/>
                 </a>
             </div>
-            <div class="col-md-2 ">
+            <div class="col-md-2 col-xs-6 col-sm-3">
                 <a href="http://www.pwc.se/" class="btn" target="_blank">
 
                     <img class="img-responsive " src="../Images/foretag/Pwc.gif"/>
                 </a>
 
             </div>
-            <div class="col-md-2 ">
+            <div class="col-md-2 col-xs-6 col-sm-3">
                 <a href="http://www.civilekonomerna.se/" class="btn" target="_blank">
 
                     <img class="img-responsive " src="../Images/foretag/civilekonomerna.gif"/>
                 </a>
             </div>
-            <div class="col-md-2 ">
+            <div class="clearfix visible-xs-block"></div>
+            <div class="col-md-2 col-xs-6 col-sm-3">
                 <a href="https://home.kpmg.com/se/sv/home.html" class="btn " target="_blank">
                     <img class="img-responsive " src="../Images/foretag/KPMG.gif"/>
                 </a>
             </div>
-            <div class="col-md-2 ">
+            <div class="col-md-2 col-xs-6 col-sm-3">
                 <a href="http://www.grantthornton.se/" class="btn" target="_blank">
 
                     <img class="img-responsive " src="../Images/foretag/GrandThornton.gif"/>
@@ -203,52 +203,53 @@
             </div>
         </div>
         <div class="row ">
-            <div class="col-md-2 ">
+            <div class="col-md-2 col-xs-6 col-sm-3">
                 <a href="http://kommuninvest.se/" class="btn" target="_blank">
                     <img class="img-responsive img-rounded" src="../Images/foretag/KI_V3_RGB_sve_text.jpg"/>
                 </a>
             </div>
-            <div class="col-md-2 ">
+            <div class="col-md-2 col-xs-6 col-sm-3">
                 <a href="https://www.lansforsakringar.se/privat/" class="btn" target="_blank">
                     <img class="img-responsive" src="../Images/foretag/LF-logo.jpg"/>
                 </a>
             </div>
-            <div class="col-md-2 ">
+            <div class="clearfix visible-xs-block"></div>
+            <div class="col-md-2 col-xs-6 col-sm-3">
                 <a href="http://www.ikea.com/se/sv/" class="btn " target="_blank">
                     <img class="img-responsive" src="../Images/foretag/2000px-Ikea_logo.svg.png"/>
                 </a>
             </div>
-            <div class="col-md-2 ">
+            <div class="col-md-2 col-xs-6 col-sm-3">
                 <a href="http://www.ica.se/butiker/nara/orebro/ica-supermarket-tybble-1074/butikserbjudanden/" target="_blank" class="btn">
                     <img class="img-responsive " src="../Images/foretag/ica_logo-390x238.png"/>
                 </a>
 
             </div>
-            <div class="col-md-2">
+            <div class="col-md-2 col-xs-6 col-sm-3">
                 <a href="http://www.strateg.se/" class="btn" target="_blank">
                     <img class="img-responsive " src="../Images/foretag/strateg.png"/>
                 </a>
             </div>
-            <div class="col-md-2 ">
+            <div class="col-md-2 col-xs-6 col-sm-3">
                 <a href="http://seb.se/" class="btn" target="_blank">
                     <img class="img-responsive" src="../Images/foretag/SEB.jpg"/>
                 </a>
             </div>
         </div>
         <div class="row ">
-            <div class="col-md-2 col-md-offset-3">
+            <div class="col-md-2 col-md-offset-3 col-xs-6 col-sm-3">
 
                 <a href="http://drivhuset.se/orebro" class="btn " target="_blank">
                     <img class="img-responsive " src="../Images/foretag/drivhuset.jpg"/>
                 </a>
             </div>
-            <div class="col-md-2">
+            <div class="col-md-2 col-xs-6 col-sm-3">
                 <a href="https://www.academicwork.se/" class="btn" target="_blank">
 
                     <img class="img-responsive " src="../Images/foretag/academicwork.png"/>
                 </a>
             </div>
-            <div class="col-md-2">
+            <div class="col-md-2 col-xs-6 col-sm-3">
                 <a href="https://www.academicwork.se/" class="btn" target="_blank">
                     <img class="img-responsive" src="../Images/foretag/upsales_logo_blue.png"/>
                 </a>

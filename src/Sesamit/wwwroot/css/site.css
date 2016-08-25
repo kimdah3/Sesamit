@@ -25,16 +25,18 @@ p {
     height: 40px;
     width: auto;
 }
+
 #logout-button {
     padding: 3px 20px;
 }
-#logout-button button {
-    padding: 0;
-}
+    #logout-button button {
+        padding: 0;
+    }
 /**************************** GENERAL ****************************/
 .section-padding {
     padding: 100px 0 100px;
 }
+
 .section-grey {
     background-color: #f8f8f8;
 }
@@ -54,23 +56,45 @@ p {
 .fa-white {
     color: #FFF;
 }
+
 .fa-grey {
     color: #666;
 }
+
 .fa-7x {
-  font-size: 7em !important;
+    font-size: 7em !important;
 }
+
 .h3-fp-section {
     margin-top: 0;
     font-weight: lighter;
 }
+.fa-padding {
+    padding: 10px;
+}
+.btn-fp-section {
+    font-size: 1em;
+}
+
 .h1-margin {
     margin: 30px 0 100px;
 }
+
 .section-margin {
     margin: 0 0 300px;
 }
-
+.img-full-width {
+    width: 100%;
+}
+.img-padding {
+    padding: 10px;
+}
+.big-header {
+    padding: 280px 0 380px !important;
+}
+.h1-padding {
+    padding: 25px 0 40px;
+}
 /**************************** RESPONSIV FIXES ****************************/
 @media (max-width: 1201px) and (min-width: 769px) {
     .front-page-header {
@@ -90,7 +114,31 @@ p {
     .front-page-header {
         margin-top: -19px !important;
     }
-
+    .front-page-header {
+        background-image: url("../Images/Sesam3-small.png") !important;
+    }
+        .front-page-header .item {
+            padding: 260px 0 130px !important;
+            margin: 30px !important;
+        }
+    #nyheter-blogg-menu {
+         padding-top: 100px !important; 
+    }
+    #intro-header {
+        background-image: url("../Images/introduktion/15-09-11-orebrodagen-2015-57665-faded-small.png") !important;
+    }
+    #blogg-nyheter-header {
+        background-image: url("../Images/introduktion/orebro-dagen-xs-small.png") !important;
+    }
+    #vadarsesam-header {
+        background-image: url("../Images/introduktion/lowquality/1234376_10151711575364811_1959800029_n-faded-small.png") !important;
+    }
+    #styrelsen-header {
+        background-image: url("../Images/introduktion/15-09-11-orebrodagen-2015-57644-faded-lite-small.png") !important;
+    }
+    #utskott-header {
+    background-image: url("../Images/introduktion/lowquality/1236830_10151711573389811_1283696907_n-faded-small.png") !important;
+}
     .menu-container {
         background-color: white;
         padding: 0;
@@ -117,8 +165,15 @@ p {
     #bryggan-header {
         background-size: 100% 100% !important;
     }
+
     .section-padding {
-        padding: 50px 0;
+        padding: 60px 0 !important;
+    }
+    #front-page-samarbeten {
+    padding: 60px 0 !important;
+}
+    .h1-margin {
+    margin: 30px 0 50px !important;
 }
 }
 
@@ -146,7 +201,8 @@ p {
 }
 
     .front-page-header #carousel-example-generic {
-        background-color: rgba(0,0,0,0.5);
+        background-color: #000;
+        background-color: rgba(0,0,0,0.5) ;
     }
 
     .front-page-header .carousel-indicators li {
@@ -200,7 +256,8 @@ p {
 }
 
 #front-page-samarbeten {
-    margin: 100px 0 150px;
+
+    padding: 100px 0 150px;
 }
 
 .img-logo-fp {
@@ -269,10 +326,9 @@ p {
 }
 
 
-section#intro-content-top {
+#intro-content-top {
     background-color: #f8f8f8;
 }
-
 #intro-content-top .row .fa {
     color: #127ba3;
 }
@@ -292,9 +348,7 @@ section#intro-content-top {
         margin-bottom: 7px;
     }
 
-.intro-img {
-    width: 100%;
-}
+
 
 #introk-bg-section {
     background-image: url("../Images/introk/introduktion2.png");
@@ -304,8 +358,7 @@ section#intro-content-top {
 }
 
 .intro-k-pair-small {
-    width: 100%;
-    padding: 10px;
+    padding: 15px;
 }
 
 .p-no-bottom-margin {
@@ -334,14 +387,15 @@ section#intro-content-top {
     font-size: 18px;
 }
 
+#vadarsesam-header {
+    background-image: url("../Images/introduktion/lowquality/1234376_10151711575364811_1959800029_n-faded.png");
+}
 .vadarsesam-header {
     z-index: 0;
     margin-top: -100px;
-    background-image: url("../Images/introduktion/15-09-11-orebrodagen-2015-57660-faded.png");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    padding: 280px 0 380px;
     margin-bottom: 0;
     text-shadow: 0 1px 2px rgba(0,0,0,0.6);
 }
@@ -538,6 +592,10 @@ section#intro-content-top {
 }
 
 /****************************Utskott****************************/
+#utskott-header {
+    background-image: url("../Images/introduktion/lowquality/1236830_10151711573389811_1283696907_n-faded.png");
+    
+}
 #nav li a {
     background-color: white;
 }
@@ -559,14 +617,14 @@ section#intro-content-top {
 }
 
 .btn-trans {
-  background: transparent;
+    background: transparent;
 }
 
-.btn-trans:hover{
-  outline: none;
-  color: white;
-  background: rgba(255, 255, 255, 0.1);
-}
+    .btn-trans:hover {
+        outline: none;
+        color: white;
+        background: rgba(255, 255, 255, 0.1);
+    }
 
 
 /****************************Kontakta oss****************************/
@@ -580,7 +638,7 @@ section#intro-content-top {
     background-image: url("../Images/introduktion/15-09-11-orebrodagen-2015-57644-faded.png");
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 280px 0 400px;
+
 }
 
 #styrelsen-content {
@@ -684,6 +742,9 @@ section#intro-content-top {
     background-repeat: no-repeat;
     background-size: cover;
 }
+#foretag-header .container{
+    height: 124px;
+}
 
 #foretag-section {
     padding: 30px 0;
@@ -763,7 +824,7 @@ section#intro-content-top {
 
 
 #nyheter-blogg-menu {
-    padding-top: 40px;
+    padding-top: 250px;
     text-shadow: 0 1px 2px rgba(0,0,0,0.0);
 }
 
@@ -827,13 +888,17 @@ footer {
     footer .fa-button {
         padding: 20px;
     }
-    footer .fa-button:hover {
-        text-decoration: none;
-    }
-    .col-fa {
-        padding: 50px 0;
-    }
+
+        footer .fa-button:hover {
+            text-decoration: none;
+        }
+
+.col-fa {
+    padding: 50px 0;
+}
+
 .footer-hr {
     background-color: #f8f8f8;
-     height: 1px; border: 0; 
+    height: 1px;
+    border: 0;
 }
