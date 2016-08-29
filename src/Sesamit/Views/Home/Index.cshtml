@@ -15,7 +15,7 @@
                 <div class="carousel-caption">
                     <i class="fa fa-exclamation fa-5x" aria-hidden="true"></i>
                     <h1 class="hidden-sm hidden-xs">Höstens introduktion drar igång den 26 augusti</h1>
-                    <h4 class="visible-sm visible-xs">Höstens introduktion drar igång den 26 augusti</h4>
+                    <h4 class="vi   sible-sm visible-xs">Höstens introduktion drar igång den 26 augusti</h4>
                         <a asp-controller="Home" asp-action="Intro" class="btn btn-primary">Läs mer!</a>
                 </div>
             </div>
@@ -26,7 +26,7 @@
                     <h4>
                         Håll utkik! Vi kommer med ständiga uppdateringar från olika jobbaktörer.
                     </h4>
-                    <a asp-controller="NyheterBlogg" asp-action="Index" class="btn btn-info">Läs mer!</a>
+                    <a asp-controller="Home" asp-action="NyheterBlogg" class="btn btn-primary">Läs mer!</a>
                 </div>
             </div>
         </div>
@@ -45,7 +45,7 @@
 </header>
 <div class="alert alert-dismissible alert-info text-center">
     <button type="button" class="close" data-dismiss="alert">&times;</button>
-    <strong>Senaste nytt:</strong> Unionen söker studenter till extrajobb i Örebro!
+    <strong>Senaste nytt:</strong> <a class="alert-link" asp-controller="Home" asp-action="NyheterBlogg">Audit Associates till Stockholm med start i augusti 2017</a>
 </div>
 
 <section class="section-padding" id="section-frontpage">
@@ -104,8 +104,17 @@
             <div class="col-lg-4 col-md-5  hidden-sm">
             </div>
             <div class="col-lg-7 col-md-7 col-sm-12">
-                <h2 class="h1 page-header">Hej, Skorpan här!</h2>
-                <p>Ordförande är ansvarig för att leda sektionens styrelse. Tillsammans med vice ordförande arbetar ordförande för att utveckla Sesam och främja Örebro studentkår. Ordförande är Sesams spindel i nätet och stöttar Sesams olika projekt och utskott. Vidare är även ordförande firmatecknare i organisationen.</p>
+                <h2 class="h1 page-header">Hej, Jonatan här!</h2>
+                <p >
+                    Jag är ordförande för studentsektionen Sesam, och vill hälsa dig välkommen hit till vår hemsida.
+                    
+                    <p>
+                        Här inne finner du all information om vad vi i sektionen gör, hur vi arbetar , och vad Du kan göra som medlem. Tveka inte att kontakta någon av oss styrelsen om du vill veta mer om hur just du kan engagera dig.
+                    </p>
+                    
+                <p>Vi ses!</p>
+
+
             </div>
         </div>
     </div>
@@ -116,18 +125,20 @@
 <section class="visible-sm visible-xs section-padding">
     <div class="container">
         <div class="row">
-            <div class="col-md-12">
-                <div class="col-md-6">
-                    <h1 class="">Hej! Mitt namn är Jonatan</h1>
-                    <p>Ordförande är ansvarig för att leda sektionens styrelse. Tillsammans med vice ordförande arbetar ordförande för att utveckla Sesam och främja Örebro studentkår. Ordförande är Sesams spindel i nätet och stöttar Sesams olika projekt och utskott. Vidare är även ordförande firmatecknare i organisationen.</p>
+                <div class="col-sm-6">
+                    <h2 class="h1 page-header">Hej, Jonatan här!</h2>
                     <p>
-                        <a href="mailto:ordforande@sesamit.se" class="">ordforande@sesamit.se</a>
+                        Jag är ordförande för studentsektionen Sesam, och vill hälsa dig välkommen hit till vår hemsida.
+
+                    <p>
+                        Här inne finner du all information om vad vi i sektionen gör, hur vi arbetar , och vad Du kan göra som medlem. Tveka inte att kontakta någon av oss styrelsen om du vill veta mer om hur just du kan engagera dig.
                     </p>
+
+                    <p>Vi ses!</p>
                 </div>
-                <div class="col-md-6">
+                <div class="col-sm-6">
                     <img width="500" height="500" class="img-rounded img-responsive " src="../Images/styrelse/Kavaj-Jonatan.png" alt="">
                 </div>
-            </div>
         </div>
     </div>
 </section>

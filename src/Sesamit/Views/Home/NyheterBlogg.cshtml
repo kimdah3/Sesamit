@@ -46,40 +46,152 @@
             <div class="tab-content">
                 <!-- Nyheter -->
                 <div role="tabpanel" class="tab-pane active" id="nyheter">
-                    @foreach (var newsPost in Model.NewsPosts)
-                    {
-                        var index = Model.NewsPosts.FindIndex(x => x == newsPost);
-                        var panelBorder = "";
-                        //if (index % 2 == 0)
-                        //{
-                        //    panelBorder = "border-left-panel";
-                        //}
-                        //else
-                        //{
-                        //    panelBorder = "border-right-panel";
-                        //}
-                        <div class="row">
-                            <div class="panel panel-default @panelBorder">
-                                <div class="panel-body">
-                                    <h3>
-                                        @newsPost.Title
-                                        <small>
-                                            <span class="text-capitalize pull-right">Nyhet</span>
-                                            (@newsPost.Date.ToString("MM/dd/yyyy"))
-                                        </small>
-                                    </h3>
-                                                <p class="row-padding">
-                                                    @Html.Raw(newsPost.Text.ToString())
-                                                </p>
-                                    <p >
-                                            Skriven av
-                                            @newsPost.Author
-                                    </p>
-                                   
+
+
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <h2>
+                                Audit Associates till Stockholm med start i augusti 2017
+                                <small>
+                                    <span class="text-capitalize pull-right">Nyhet</span>
+                                    (08-26-2016)
+                                </small>
+                            </h2>
+                            <p class="lead">
+                                Är du en ekonomstudent med examen i sikte som söker en arbetsgivare som sätter din
+
+                                personliga utveckling i fokus? Vi på KPMG söker drivna talanger som vill axla rollen som
+
+                                Audit Associate i en global miljö med unika karriärmöjligheter.
+                            </p>
+                            <h4>Din roll som Audit Associate på KPMG </h4>
+                            <p>
+                                Som Audit Associate (revisorsassistent) arbetar du med ett flertal team med kvalificerade
+
+                                medarbetare från olika verksamhetsområden inom KPMG. Teamen du arbetar med är
+
+                                skräddarsydda för att möta specifika förfrågningar och förväntningar från våra kunder.
+
+                                Tillsammans med dina kollegor skapar du dig en uppfattning om dina kunders verksamhet och
+
+                                om risker och möjligheter. En revision innehåller många spännande delar, alltifrån intervjuer med
+
+                                nyckelpersoner till granskning av företagsspecifika processer, siffror och finansiella rapporter. Du
+
+                                får arbeta i en roll som innebär nya utmaningar, nya möten och nya affärsperspektiv på daglig
+
+                                basis.
+                            </p>
+
+
+                            <h4>KPMG - Ett globalt nätverk med fokus på dina personliga karriärmål</h4>
+
+                            <p>
+                                Även om du som anställd hos oss arbetar i team lägger vi även fokus på dig. Du blir som anställd
+
+                                hos oss tilldelad en Performance Manager som blir din egen karriärcoach. Tillsammans lägger ni
+
+                                upp din individuella utvecklingsplan redan när du påbörjar din anställning. Vi vill att våra
+
+                                medarbetares karriär ska präglas av tydlighet och möjlighet för individen att påverka, vilket vi
+
+                                tillgodoser genom vår karriärtrappa. En karriär inom Audit på KPMG ger dig tidigt en inblick i
+
+                                näringslivets kärna, kundernas verksamheter samt ett brett affärsperspektiv och kunskap om
+
+                                olika branscher.
+                            </p>
+
+                            <h4>Vem vill vi träffa?</h4>
+
+                            <p>
+                                Gemensamt för de medarbetare som vi anställer på KPMG är att de är prestigelösa,
+
+                                teamorienterade och drivna personer med förmågan att bygga relationer och skapa
+
+                                affärskontakter. Vi är noga med vilka vi väljer att gå vidare med i denna process och söker därför
+
+                                dig som på något sätt utmärker dig. Din examen och dina meriter vid sidan av studierna visar
+
+                                därför på tydligt driv och engagemang i form av studieresultat och åtaganden så som arbete eller
+
+                                föreningsengagemang. Vidare har du goda kunskaper i svenska och engelska samt ett stort
+
+                                intresse för revision. En förutsättning är att du vid tjänstens tillträde har en examen inom ekonomi
+
+                                och uppfyller revisorsnämndens teoretiska krav för auktorisation. Du kan läsa mer om kraven på
+
+                                Revisorsnämndens hemsida www.revisorsnamnden.se
+                            </p>
+
+                            <h4>Vill du bli en av oss?</h4>
+
+                            <p>
+                                Om du tror att du är rätt person för rollen och vill anta en ny utmaning ser vi fram emot din
+
+                                ansökan innehållande CV, personligt brev, betygskopior från universitet/högskola samt
+
+                                gymnasiebetyg. Vi kommer att intervjua intressanta kandidater löpande med start omgående.
+
+                                <strong> Ansök senast den 30 september 2016.</strong>
+
+
+                            </p>
+                            <h4>
+                                Kontakta oss gärna för frågor om KPMG eller om rekryteringsprocessen
+                            </h4>
+                            <p>
+
+                                Att välja framtida arbetsgivare och karriär är ett viktigt val. 
+                                Har du frågor gällande KPMG som
+
+                                arbetsplats eller om vår rekryteringsprocess är du välkommen att kontakta Emma Larsson,
+                                emma.larsson@kpmg.se, 0729-920573 eller Katarina Tisner, katarina.tisner@kpmg.se, 0709-
+                                528648.
+                            </p>
+
+
+                            <p>
+                                Skriven av Kim
+                            </p>
+
+                        </div>
+                    </div>
+
+                    @*@foreach (var newsPost in Model.NewsPosts)
+                        {
+                            var index = Model.NewsPosts.FindIndex(x => x == newsPost);
+                            var panelBorder = "";
+                            //if (index % 2 == 0)
+                            //{
+                            //    panelBorder = "border-left-panel";
+                            //}
+                            //else
+                            //{
+                            //    panelBorder = "border-right-panel";
+                            //}
+                            <div class="row">
+                                <div class="panel panel-default @panelBorder">
+                                    <div class="panel-body">
+                                        <h3>
+                                            @newsPost.Title
+                                            <small>
+                                                <span class="text-capitalize pull-right">Nyhet</span>
+                                                (@newsPost.Date.ToString("MM/dd/yyyy"))
+                                            </small>
+                                        </h3>
+                                                    <p class="row-padding">
+                                                        @Html.Raw(newsPost.Text.ToString())
+                                                    </p>
+                                        <p >
+                                                Skriven av
+                                                @newsPost.Author
+                                        </p>
+
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    }
+                        }*@
                 </div>
                 <div role="tabpanel" class="tab-pane " id="blogg">
                     @foreach (var bloggPost in Model.BloggPosts)
