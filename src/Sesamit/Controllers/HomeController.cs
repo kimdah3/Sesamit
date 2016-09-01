@@ -7,6 +7,7 @@ using System.Xml;
 using System.Xml.Linq;
 using Microsoft.AspNetCore.Mvc;
 using Sesamit.Data;
+using Sesamit.Models;
 using Sesamit.Models.HomeViewModels;
 
 namespace Sesamit.Controllers
@@ -78,6 +79,7 @@ namespace Sesamit.Controllers
             var newsPosts = _context.NewsPosts.OrderByDescending(x => x.Date);
             model.NewsPosts = newsPosts.ToList();
 
+            
             return View(model);
         }
 
@@ -90,5 +92,19 @@ namespace Sesamit.Controllers
         {
             return View();
         }
+
+        //private List<NewsPost> FixBytePictures(List<NewsPost> newsPosts)
+        //{
+        //    var fixedPosts = new List<NewsPost>();
+        //    foreach (var newsPost in newsPosts)
+        //    {
+        //        fixedPosts.Add(newsPost);
+        //        if (newsPost.Picture != null)
+        //        {
+        //            fixedPosts[newsPosts.IndexOf(newsPost)].Picture = string.Format("data:image/png;base64,{0}", Convert.ToBase64String(newsPost.Picture));
+        //        }
+        //    }
+        //    return null;
+        //}
     }
 }

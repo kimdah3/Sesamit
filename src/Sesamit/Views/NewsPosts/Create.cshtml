@@ -1,8 +1,8 @@
 @using System
-@model Sesamit.Models.NewsPost
+@model Sesamit.Models.NewsPostViewModels.NewsPostAddViewModel
 
 @{
-    ViewData["Title"] = "Create";
+     ViewData["Title"] = "Create";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
@@ -23,41 +23,58 @@
 
         <h2>Skriv ett nyhetsinlägg</h2>
 
-        <form asp-action="Create">
+        <form asp-action="Create" enctype="multipart/form-data">
+            
             <div class="form-horizontal">
-                <hr/>
+                <hr />
                 <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                 <div class="form-group">
-                    <label  class="col-md-2 control-label">Författare</label>
+                    <label class="col-md-2 control-label">Författare</label>
                     <div class="col-md-10">
-                        <input asp-for="Author" class="form-control"/>
-                        <span asp-validation-for="Author" class="text-danger" />
+                        <input asp-for="NewsPost.Author" class="form-control" />
+                        <span asp-validation-for="NewsPost.Author" class="text-danger" />
                     </div>
                 </div>
                 <div class="form-group">
-                    <label asp-for="Date" class="col-md-2 control-label"></label>
+                    <label asp-for="NewsPost.Date" class="col-md-2 control-label"></label>
                     <div class="col-md-10">
-                        <input asp-for="Date" class="form-control"/>
-                        <span asp-validation-for="Date" class="text-danger" />
+                        <input asp-for="NewsPost.Date" class="form-control" />
+                        <span asp-validation-for="NewsPost.Date" class="text-danger" />
                     </div>
                 </div>
                 <div class="form-group">
-                    <label asp-for="Title" class="col-md-2 control-label"></label>
+                    <label asp-for="NewsPost.Title" class="col-md-2 control-label"></label>
                     <div class="col-md-10">
-                        <input asp-for="Title" class="form-control"/>
-                        <span asp-validation-for="Title" class="text-danger" />
+                        <input asp-for="NewsPost.Title" class="form-control" />
+                        <span asp-validation-for="NewsPost.Title" class="text-danger" />
                     </div>
                 </div>
+
                 <div class="form-group">
-                    <label asp-for="Text" class="col-md-2 control-label"></label>
+                    <label asp-for="FilePicture" class="col-md-2 control-label"></label>
                     <div class="col-md-10">
-                        <input asp-for="Text" id="editor" class="form-control"/>
-                        <span asp-validation-for="Text" class="text-danger" />
+                        <input type="file" accept="image/*" asp-for="FilePicture" class="form-control" />
+                        <span asp-validation-for="FilePicture" class="text-danger" />
                     </div>
                 </div>
+
+                <div class="form-group">
+                    <label asp-for="NewsPost.Text" class="col-md-2 control-label"></label>
+                    <div class="col-md-10">
+                        <input asp-for="NewsPost.Text" id="editor" class="form-control" />
+                        <span asp-validation-for="NewsPost.Text" class="text-danger" />
+                    </div>
+                </div>
+
+
+
+
+
+                @*@Html.TextBoxFor(model => model.File, new { @class = "form-control", type = "file", accept = "image/*" })*@
+
                 <div class="form-group">
                     <div class="col-md-offset-2 col-md-10">
-                        <input type="submit" value="Skapa" class="btn btn-default"/>
+                        <input type="submit" value="Skapa" class="btn btn-default" />
                     </div>
                 </div>
             </div>
@@ -70,6 +87,6 @@
 </section>
 
 
-    @section Scripts {
-        @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-    }
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

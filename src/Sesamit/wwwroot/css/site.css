@@ -98,15 +98,15 @@ p {
 /**************************** RESPONSIV FIXES ****************************/
 @media (max-width: 1201px) and (min-width: 769px) {
     .front-page-header {
-        margin-top: -145px !important;
+        margin-top: -155px !important;
     }
 
     .top-page-header {
-        margin-top: -145px !important;
+        margin-top: -155px !important;
     }
 
     .header-responsive-fix {
-        margin-top: -130px !important;
+        margin-top: -155px !important;
     }
 }
 
@@ -308,7 +308,7 @@ p {
 }
 
 #intro-header {
-    background-image: url("../Images/introduktion/15-09-11-orebrodagen-2015-57665-faded.png");
+    background-image: url("../Images/introduktion/15-09-11-orebrodagen-2015-57665-faded.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }

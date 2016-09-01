@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
@@ -8,6 +9,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Sesamit.Data;
 using Sesamit.Models;
+using Sesamit.Models.NewsPostViewModels;
 
 namespace Sesamit.Controllers
 {
@@ -18,7 +20,7 @@ namespace Sesamit.Controllers
 
         public NewsPostsController(ApplicationDbContext context)
         {
-            _context = context;    
+            _context = context;
         }
 
         // GET: NewsPosts
@@ -55,15 +57,31 @@ namespace Sesamit.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Author,Date,Text,Title")] NewsPost newsPost)
+        public async Task<IActionResult> Create(NewsPostAddViewModel newsPostAddViewModel)
         {
             if (ModelState.IsValid)
             {
+                var newsPost = new NewsPost()
+                {
+                    Author = newsPostAddViewModel.NewsPost.Author,
+                    Date = newsPostAddViewModel.NewsPost.Date,
+                    Text = newsPostAddViewModel.NewsPost.Text,
+                    Title = newsPostAddViewModel.NewsPost.Title
+                };
+
+                if (newsPostAddViewModel.FilePicture != null)
+                {
+                    var target = new MemoryStream();
+                    newsPostAddViewModel.FilePicture.OpenReadStream().CopyTo(target);
+                    var pictureByte = target.ToArray();
+                    newsPost.Picture = pictureByte;
+                }
+
                 _context.Add(newsPost);
                 await _context.SaveChangesAsync();
                 return RedirectToAction("Index");
             }
-            return View(newsPost);
+            return View(newsPostAddViewModel);
         }
 
         // GET: NewsPosts/Edit/5

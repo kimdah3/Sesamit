@@ -45,6 +45,14 @@
         <div class="col-md-12">
             <div class="tab-content">
                 <!-- Nyheter -->
+                @foreach (var newsPost in Model.NewsPosts)
+                {
+                    if (newsPost.Picture != null)
+                    {
+                        <img src="@string.Format("data:image/png;base64,{0}", Convert.ToBase64String(newsPost.Picture))" />
+                    }
+                }
+
                 <div role="tabpanel" class="tab-pane active" id="nyheter">
 
 
@@ -142,7 +150,7 @@
                             </h4>
                             <p>
 
-                                Att välja framtida arbetsgivare och karriär är ett viktigt val. 
+                                Att välja framtida arbetsgivare och karriär är ett viktigt val.
                                 Har du frågor gällande KPMG som
 
                                 arbetsplats eller om vår rekryteringsprocess är du välkommen att kontakta Emma Larsson,
