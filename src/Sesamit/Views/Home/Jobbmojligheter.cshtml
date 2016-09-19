@@ -3,40 +3,11 @@
 @{
     ViewData["Title"] = "Blogg";
 }
-<header class="top-page-header text-center" id="blogg-nyheter-header">
+<header class="top-page-header text-center">
 
     <div class="container">
-        <i class="fa fa-newspaper-o fa-5x"></i>
-        <h1>Nyheter & Blogg</h1>
-
-        <div id="nyheter-blogg-menu">
-            <div class="col-md-1 hidden-xs"></div>
-            <div class="col-md-10 ">
-
-                <div class="row">
-
-                    <ul class="nav nav-tabs" role="tablist">
-                        <li role="presentation" class="active">
-                            <a href="#nyheter" aria-controls="om" role="tab" data-toggle="tab">
-                                <h5>
-                                    Senaste nytt
-                                </h5>
-                            </a>
-                        </li>
-                        <li role="presentation">
-                            <a href="#blogg" aria-controls="mat" role="tab" data-toggle="tab">
-                                <h5>
-                                    Bloggen
-                                </h5>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="col-md-1 hidden-xs"></div>
-
-        </div>
+        <i class="fa fa-briefcase fa-5x"></i>
+        <h1>Här finns jobbgmöjligheter!</h1>
     </div>
 
 </header>
@@ -44,14 +15,6 @@
     <div class="container">
         <div class="col-md-12">
             <div class="tab-content">
-                <!-- Nyheter -->
-                @foreach (var newsPost in Model.NewsPosts)
-                {
-                    @*if (newsPost.Picture != null)
-                    {
-                        <img src="@string.Format("data:image/png;base64,{0}", Convert.ToBase64String(newsPost.Picture))" />
-                    }*@
-                }
 
                 <div role="tabpanel" class="tab-pane active" id="nyheter">
 
@@ -61,7 +24,7 @@
                             <h2>
                                 Audit Associates till Stockholm med start i augusti 2017
                                 <small>
-                                    <span class="text-capitalize pull-right">Nyhet</span>
+                                    <span class="text-capitalize pull-right">Jobbmöjlighet</span>
                                     (08-26-2016)
                                 </small>
                             </h2>
@@ -166,78 +129,8 @@
                         </div>
                     </div>
 
-                    @*@foreach (var newsPost in Model.NewsPosts)
-                        {
-                            var index = Model.NewsPosts.FindIndex(x => x == newsPost);
-                            var panelBorder = "";
-                            //if (index % 2 == 0)
-                            //{
-                            //    panelBorder = "border-left-panel";
-                            //}
-                            //else
-                            //{
-                            //    panelBorder = "border-right-panel";
-                            //}
-                            <div class="row">
-                                <div class="panel panel-default @panelBorder">
-                                    <div class="panel-body">
-                                        <h3>
-                                            @newsPost.Title
-                                            <small>
-                                                <span class="text-capitalize pull-right">Nyhet</span>
-                                                (@newsPost.Date.ToString("MM/dd/yyyy"))
-                                            </small>
-                                        </h3>
-                                                    <p class="row-padding">
-                                                        @Html.Raw(newsPost.Text.ToString())
-                                                    </p>
-                                        <p >
-                                                Skriven av
-                                                @newsPost.Author
-                                        </p>
-
-                                    </div>
-                                </div>
-                            </div>
-                        }*@
                 </div>
-                <div role="tabpanel" class="tab-pane " id="blogg">
-                    @foreach (var bloggPost in Model.BloggPosts)
-                    {
-                        var index = Model.BloggPosts.FindIndex(x => x == bloggPost);
-                        var panelBorder = "";
-                        //if (index % 2 == 0)
-                        //{
-                        //    panelBorder = "border-left-panel";
-                        //}
-                        //else
-                        //{
-                        //    panelBorder = "border-right-panel";
-                        //}
-                        <div class="row">
-                            <div class="panel panel-default @panelBorder">
-                                <div class="panel-body">
-                                    <h3>
-                                        @bloggPost.Title
-                                        <small>
-                                            @bloggPost.TimePast.Days dagar, @bloggPost.TimePast.Hours timmar sedan.
-                                            <span class="text-capitalize pull-right">Blogginlägg</span>
-                                        </small>
-                                    </h3>
-                                    <p>@Html.Raw(bloggPost.Description.ToString())</p>
-
-                                    @if (bloggPost.ImageLink != null)
-                                    {
-                                        <img class="img-responsive img-rounded center-block" src="@bloggPost.ImageLink.ToString()" />
-                                    }
-                                    <h3>
-                                        <a class="btn btn-success" href="@bloggPost.Link">Läs mer här!</a>
-                                    </h3>
-                                </div>
-                            </div>
-                        </div>
-                    }
-                </div>
+                
             </div>
         </div>
     </div>

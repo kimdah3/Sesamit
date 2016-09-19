@@ -31,7 +31,12 @@ namespace Sesamit.Controllers
             return View();
         }
 
-        public IActionResult Foretag()
+        public IActionResult Samarbetspartners()
+        {
+            return View();
+        }
+
+        public IActionResult Jobbmojligheter()
         {
             return View();
         }
@@ -64,7 +69,7 @@ namespace Sesamit.Controllers
                         Description = item.Elements().First(i => i.Name.LocalName == "description").Value.Substring(0, item.Elements().First(i => i.Name.LocalName == "description").Value.IndexOf('-')),
                         Link = new Uri(item.Elements().First(i => i.Name.LocalName == "link").Value),
                         PubDate = DateTime.Parse(item.Elements().First(i => i.Name.LocalName == "pubDate").Value),
-                        TimePast = DateTime.Today - DateTime.Parse(item.Elements().First(i => i.Name.LocalName == "pubDate").Value),
+                        TimePast = DateTime.Now - DateTime.Parse(item.Elements().First(i => i.Name.LocalName == "pubDate").Value),
                         ImageLink = null
                     };
                     if (item.Elements().Count() == 8)
