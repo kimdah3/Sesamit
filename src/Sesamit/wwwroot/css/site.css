@@ -115,7 +115,7 @@ p {
         margin-top: -19px !important;
     }
     .front-page-header {
-        background-image: url("../Images/Sesam3-small.png") !important;
+        background-image: url("../Images/headers/front-page-small.jpg") !important;
     }
         .front-page-header .item {
             padding: 260px 0 130px !important;
@@ -125,19 +125,19 @@ p {
          padding-top: 100px !important; 
     }
     #intro-header {
-        background-image: url("../Images/introduktion/15-09-11-orebrodagen-2015-57665-faded-small.png") !important;
+        background-image: url("../Images/headers/15-09-11-orebrodagen-2015-57665-faded-small.jpg") !important;
     }
     #blogg-nyheter-header {
-        background-image: url("../Images/introduktion/orebro-dagen-xs-small.png") !important;
+        background-image: url("../Images/headers/20130913_orebrodagen_HT13-73060-faded-small.jpg") !important;
     }
     #vadarsesam-header {
-        background-image: url("../Images/introduktion/lowquality/1234376_10151711575364811_1959800029_n-faded-small.png") !important;
+        background-image: url("../Images/headers/20130913_orebrodagen_HT13-72999-faded-small.jpg") !important;
     }
     #styrelsen-header {
-        background-image: url("../Images/introduktion/15-09-11-orebrodagen-2015-57644-faded-lite-small.png") !important;
+        background-image: url("../Images/headers/15-09-11-orebrodagen-2015-57644-faded-small.jpg") !important;
     }
     #utskott-header {
-    background-image: url("../Images/introduktion/lowquality/1236830_10151711573389811_1283696907_n-faded-small.png") !important;
+    background-image: url("../Images/headers/lowquality/1236830_10151711573389811_1283696907_n-faded-small.png") !important;
 }
     .menu-container {
         background-color: white;
@@ -194,7 +194,7 @@ p {
 .front-page-header {
     z-index: 0;
     margin-top: -100px;
-    background-image: url("../Images/Sesam3.png");
+    background-image: url("../Images/headers/front-page.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -286,7 +286,7 @@ p {
         }
 
 #section-fp-middle {
-    background-image: url("../Images/introduktion/15-09-11-orebrodagen-2015-57660-faded.png");
+    background-image: url("../Images/headers/15-09-11-orebrodagen-2015-57660-faded.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 600px;
@@ -308,7 +308,7 @@ p {
 }
 
 #intro-header {
-    background-image: url("../Images/introduktion/15-09-11-orebrodagen-2015-57665-faded.jpg");
+    background-image: url("../Images/headers/15-09-11-orebrodagen-2015-57665-faded.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -388,7 +388,7 @@ p {
 }
 
 #vadarsesam-header {
-    background-image: url("../Images/introduktion/lowquality/1234376_10151711575364811_1959800029_n-faded.png");
+    background-image: url("../Images/headers/20130913_orebrodagen_HT13-72999-faded.jpg");
 }
 .vadarsesam-header {
     z-index: 0;
@@ -635,7 +635,7 @@ p {
 
 /****************************Styrelsen****************************/
 #styrelsen-header {
-    background-image: url("../Images/introduktion/15-09-11-orebrodagen-2015-57644-faded.png");
+    background-image: url("../Images/headers/15-09-11-orebrodagen-2015-57644-faded.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -674,7 +674,7 @@ p {
 
 /****************************Bryggan****************************/
 #bryggan-header {
-    background-image: url("../Images/bryggan/beer-hq.png");
+    background-image: url("../Images/headers/beer-hq.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 200px;
@@ -811,7 +811,7 @@ p {
 /****************************NYHETER&BLOGG****************************/
 
 #blogg-nyheter-header {
-    background-image: url("../Images/introduktion/orebro-dagen-small.png");
+    background-image: url("../Images/headers/20130913_orebrodagen_HT13-73060-faded.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     padding: 250px 0 0;
@@ -856,13 +856,13 @@ p {
 /****************************CAMPUSMÄSSAN****************************/
 
 #campusmassan-header {
-    background-image: url("../Images/campusmassan.png");
+    background-image: url("../Images/headers/campusmassan.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
 /****************************SEKTINSMÖTEN****************************/
 #header-sektionsmoten {
-    background-image: url("../Images/sektionsmote.png");
+    background-image: url("../Images/headers/sektionsmote.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }

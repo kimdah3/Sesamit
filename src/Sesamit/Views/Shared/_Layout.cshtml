@@ -29,7 +29,6 @@
                 </button>
                 <a class="pull-left" asp-controller="Home" asp-action="Index"><img class="sesamlogo" alt="Sesam logga" src="~/Images/sesamlogo-medium.png"/></a>
                 <a asp-controller="Home" asp-action="Index" class="navbar-brand">Sesam</a>
-                @*<a class="navbar-brand" href="#">Sesam</a>*@
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -38,12 +37,13 @@
                     <li><a asp-controller="Home" asp-action="Intro">Introduktion</a></li>
                     @*<li><a href="#">Nyheter</a></li>*@
                     <li><a asp-controller="Home" asp-action="NyheterBlogg">Nyheter & Blogg</a></li>
-                    <li><a asp-controller="Home" asp-action="Foretag">Företag</a></li>
+                    <li><a asp-controller="Home" asp-action="Samarbetspartners">Samarbetspartners</a></li>
+                    <li><a asp-controller="Home" asp-action="Jobbmojligheter">Jobbmöjligheter</a></li>
                     <li><a asp-controller="Home" asp-action="Bryggan">Bryggan</a></li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Om sesam <span class="caret"></span></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Om Sesam <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a asp-controller="OmSesam" asp-action="VadArSesam">Vad är sesam?</a></li>
+                            <li><a asp-controller="OmSesam" asp-action="VadArSesam">Vad är Sesam?</a></li>
                             <li role="separator" class="divider"></li>
                             <li><a asp-controller="OmSesam" asp-action="Styrelsen">Styrelsen</a></li>
                             <li><a asp-controller="OmSesam" asp-action="Utskott">Utskott</a></li>
