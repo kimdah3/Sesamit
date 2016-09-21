@@ -4,254 +4,245 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - Sesam</title>
     <environment names="Development,Staging,Production">
-        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css"/>
-        <link rel="stylesheet" href="~/css/site.css"/>
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+        <link rel="stylesheet" href="~/css/site.css" />
         <link href="~/css/orgChart.css" rel="stylesheet" />
-        <link href="~/lib/font-awesome/css/font-awesome.css" rel="stylesheet"/>
+        <link href="~/lib/font-awesome/css/font-awesome.css" rel="stylesheet" />
         <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     </environment>
     @Html.ApplicationInsightsJavaScript(TelemetryConfiguration)
 </head>
 <body data-spy="scroll" data-target="#scrollspy">
-<div class="container menu-container">
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="pull-left" asp-controller="Home" asp-action="Index"><img class="sesamlogo" alt="Sesam logga" src="~/Images/sesamlogo-medium.png"/></a>
-                <a asp-controller="Home" asp-action="Index" class="navbar-brand">Sesam</a>
-            </div>
+    <div class="container menu-container">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="pull-left" asp-controller="Home" asp-action="Index"><img class="sesamlogo" alt="Sesam logga" src="~/Images/sesamlogo-medium.png" /></a>
+                    <a asp-controller="Home" asp-action="Index" class="navbar-brand hidden-sm">Sesam</a>
+                </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li><a asp-controller="Home" asp-action="Intro">Introduktion</a></li>
-                    <li><a asp-controller="Home" asp-action="NyheterBlogg">Nyheter & Blogg</a></li>
-                    <li><a asp-controller="Home" asp-action="Bryggan">Bryggan</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Partners <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a asp-controller="Home" asp-action="Samarbetspartners">Samarbetspartners</a></li>
-                            <li><a asp-controller="Home" asp-action="Jobbmojligheter">Jobbmöjligheter</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Om Sesam <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a asp-controller="OmSesam" asp-action="VadArSesam">Vad är Sesam?</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a asp-controller="OmSesam" asp-action="Styrelsen">Styrelsen</a></li>
-                            <li><a asp-controller="OmSesam" asp-action="Utskott">Utskott</a></li>
-                            <li><a asp-controller="OmSesam" asp-action="Sektionsmoten">Sektionsmöten</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a asp-controller="OmSesam" asp-action="Campusmassan">CAMPUSMÄSSAN</a></li>
-                            <li><a href="#">Kalender</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="" id="kontakt-button" data-toggle="modal" data-target="#kontaktModal">Kontakta oss</a></li>
-                </ul>
-                @await Html.PartialAsync("_LoginPartial")
-
-                @if (!SignInManager.IsSignedIn(User))
-                {
-                    <ul class="nav navbar-nav navbar-right">
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a asp-controller="Home" asp-action="Intro">Introduktion</a></li>
+                        <li><a asp-controller="Home" asp-action="NyheterBlogg">Nyheter & Blogg</a></li>
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                <span class="caret"></span>
-                            </a>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Företag <span class="caret"></span></a>
                             <ul class="dropdown-menu">
-                                <li>
-                                    <a asp-controller="Account" asp-action="Login">Logga in</a>
-                                </li>
-
+                                <li><a asp-controller="Home" asp-action="Samarbetspartners">Samarbetspartners</a></li>
+                                <li><a asp-controller="Home" asp-action="Jobbmojligheter">Jobbmöjligheter</a></li>
                             </ul>
                         </li>
+                        <li><a asp-controller="Home" asp-action="Bryggan">Bryggan</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Om Sesam <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a asp-controller="OmSesam" asp-action="VadArSesam">Vad är Sesam?</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a asp-controller="OmSesam" asp-action="Styrelsen">Styrelsen</a></li>
+                                <li><a asp-controller="OmSesam" asp-action="Utskott">Utskott</a></li>
+                                <li><a asp-controller="OmSesam" asp-action="Sektionsmoten">Sektionsmöten</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a asp-controller="OmSesam" asp-action="Campusmassan">CAMPUSMÄSSAN</a></li>
+                                <li><a href="#">Kalender</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="" id="kontakt-button" data-toggle="modal" data-target="#kontaktModal">Kontakta oss</a></li>
                     </ul>
-                }
+                    @await Html.PartialAsync("_LoginPartial")
 
-            </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
-    </nav>
-</div>
+                    @if (!SignInManager.IsSignedIn(User))
+                    {
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                    <span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a asp-controller="Account" asp-action="Login">Logga in</a>
+                                    </li>
 
-@RenderBody()
-<footer>
-    <div class="container">
+                                </ul>
+                            </li>
+                        </ul>
+                    }
 
-        <div class="row text-center">
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+    </div>
 
-            <div class="col-md-3 col-xs-6">
-                <h3>
-                    <i class="fa fa-map-marker"></i>
-                    Adress
-                </h3>
-                <p>
-                    Studentsektionen-Sesam
-                </p>
-                <p>
-                    <i>
+    @RenderBody()
+    <footer>
+        <div class="container">
+
+            <div class="row text-center">
+
+                <div class="col-md-3 col-sm-3 col-xs-12">
+                    <h3>
+                        <i class="fa fa-map-marker"></i>
+                        Adress
+                    </h3>
+                    <p>
+                        Studentsektionen-Sesam
+                    </p>
+                    <p>
                         Fakultetsgatan 1
-                    </i>
-                </p>
-                <p>
-                    <i>
+                    </p>
+                    <p>
                         70181 Örebro
-                    </i>
-                </p>
-            </div>
-            <div class="col-md-3 col-xs-6">
+                    </p>
+                </div>
+                <div class="col-md-3 col-xs-12">
 
-                <h3>
-                    <i class="fa fa-envelope "></i>
+                    <h3>
+                        <i class="fa fa-envelope "></i>
 
-                    Mail
-                </h3>
-                <p>
-                    <a href="mailto:info@sesamit.se">
-                        info@sesamit.se
+                        Mail
+                    </h3>
+                    <p>
+                        <a href="mailto:info@sesamit.se">
+                            info@sesamit.se
+                        </a>
+                    </p>
+                </div>
+                <div class="clearfix visible-xs visible-sm"></div>
+                <div class="col-md-3 col-xs-12">
+
+                    <h3>
+                        <i class="fa fa-phone "></i>
+                        Telefon
+                    </h3>
+                    <p>
+                        Akut? Ring vår ordförande Jonatan på:
+                    </p>
+                    <p>
+                        <a href="tel:0708444499">070 - 84 44 499</a>
+                    </p>
+                    <hr class="visible-xs visible-sm footer-hr" />
+
+                </div>
+                <div class="col-md-3 col-xs-12 col-fa text-center">
+
+                    <a class="fa-button" href="https://www.facebook.com/Sesamit/?fref=ts">
+                        <i class="fa fa-facebook-square fa-3x"></i>
                     </a>
-                </p>
-            </div>
-            <div class="clearfix visible-xs visible-sm"></div>
-            <div class="col-md-3 col-xs-12">
 
-                <h3>
-                    <i class="fa fa-phone "></i>
-                    Telefon
-                </h3>
-                <p>
-                    Akut? Ring vår ordförande Jonatan på:
-                </p>
-                <p>
-                    070 - 84 44 499
-                </p>
-                <hr class="visible-xs visible-sm footer-hr"/>
+                    <a class="fa-button" href="https://www.instagram.com/sesamofficial/?hl=en">
+                        <i class="fa fa-instagram fa-3x"></i>
+                    </a>
+                </div>
 
             </div>
-            <div class="col-md-3 col-xs-12 col-fa text-center">
-
-                <a class="fa-button" href="https://www.facebook.com/Sesamit/?fref=ts">
-                    <i class="fa fa-facebook-square fa-3x"></i>
-                </a>
-
-                <a class="fa-button" href="https://www.instagram.com/sesamofficial/?hl=en">
-                    <i class="fa fa-instagram fa-3x"></i>
-                </a>
-            </div>
-
         </div>
-    </div>
-</footer>
+    </footer>
 
-<!-- Modal -->
+    <!-- Modal -->
 
-<div class="modal fade bs-example-modal-lg" id="kontaktModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-    <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="myModalLabel">Kontakta oss</h4>
-            </div>
-            <div class="modal-body">
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="panel panel-primary kontakt-modified-panel-small">
-                            <div class="panel-heading">
-                                <i class="fa fa-envelope fa-1x pull-right"></i>
-                                <h3 class="panel-title">Email</h3>
-
+    <div class="modal fade bs-example-modal-lg" id="kontaktModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Kontakta oss</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="panel panel-primary kontakt-modified-panel-small">
+                                <div class="panel-heading">
+                                    <i class="fa fa-envelope fa-1x pull-right"></i>
+                                    <h3 class="panel-title">Email</h3>
+                                </div>
+                                <div class="panel-body">
+                                    <p>info@sesamit.se</p>
+                                    <a asp-controller="OmSesam" asp-action="Styrelsen">Kontakta någon i styrelsen? </a>
+                                </div>
                             </div>
-                            <div class="panel-body">
-                                <p>info@sesamit.se</p>
-                                <a asp-controller="OmSesam" asp-action="Styrelsen">Kontakta någon i styrelsen? </a>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="panel panel-primary kontakt-modified-panel-small">
+                                <div class="panel-heading">
+                                    <i class="fa fa-building fa-1x pull-right"></i>
+                                    <h3 class="panel-title">Kontoret</h3>
+
+                                </div>
+                                <div class="panel-body">
+                                    <p>
+                                        Vi har kontorstid alla vardagar
+                                        från <strong>12-13</strong>. Hälsa gärna på!
+                                        Vi finns på plats i Nova huset våning 2!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="panel panel-primary kontakt-modified-panel-small">
+                                <div class="panel-heading">
+                                    <i class="fa fa-exclamation fa-1x pull-right"></i>
+                                    <h3 class="panel-title">Akut</h3>
+                                </div>
+                                <div class="panel-body">
+                                    <p>
+                                        Ring vår ordförande Jonatan Palmgren på
+                                        <a href="tel:0737728822">073-772 88 22</a>
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="panel panel-primary kontakt-modified-panel-small">
-                            <div class="panel-heading">
-                                <i class="fa fa-building fa-1x pull-right"></i>
-                                <h3 class="panel-title">Kontoret</h3>
-
-                            </div>
-                            <div class="panel-body">
-                                <p>
-                                    Vi har kontorstid alla vardagar
-                                    från <strong>12-13</strong>. Hälsa gärna på!
-                                    Vi finns på plats i Nova huset våning 2!
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="panel panel-primary kontakt-modified-panel-small">
-                            <div class="panel-heading">
-                                <i class="fa fa-exclamation fa-1x pull-right"></i>
-                                <h3 class="panel-title">Akut</h3>
-
-                            </div>
-                            <div class="panel-body">
-                                <p>
-                                    Ring vår ordförande Jonatan Palmgren på
-                                    073-772 88 22
-                                </p>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="panel panel-primary">
+                                <div class="panel-heading">
+                                    <i class="fa fa-map-marker fa-1x pull-right"></i>
+                                    <h3 class="panel-title">Adress</h3>
+                                </div>
+                                <div class="panel-body">
+                                    <p>
+                                        <strong>
+                                            Studentsektionen-Sesam
+                                        </strong>
+                                        <br />
+                                        Fakultetsgatan 1
+                                        <br />
+                                        70181, Örebro
+                                        <br />
+                                    </p>
+                                    <div id="kontakt-map" class="hidden-sm hidden-xs thumbnail"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-12">
-
-                        <div class="panel panel-primary">
-                            <div class="panel-heading">
-                                <i class="fa fa-map-marker fa-1x pull-right"></i>
-                                <h3 class="panel-title">Adress</h3>
-
-                            </div>
-                            <div class="panel-body">
-                                <p>
-                                    <strong>
-                                        Studentsektionen-Sesam
-                                    </strong>
-                                    <br/>
-                                    Fakultetsgatan 1
-                                    <br/>
-                                    70181, Örebro
-                                    <br/>
-                                </p>
-                                <div id="kontakt-map" class="hidden-sm hidden-xs thumbnail"></div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Stäng</button>
                 </div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Stäng</button>
             </div>
         </div>
     </div>
-</div>
 
-<environment names="Development,Staging,Production">
-    <script src="~/lib/jquery/dist/jquery.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
-    <script src="~/js/jquery.easing.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtXwSw2mG7B4x-Y_-LGj4_DbHyzb_amno&callback=initMap"
-            async defer></script>
-</environment>
+    <environment names="Development,Staging,Production">
+        <script src="~/lib/jquery/dist/jquery.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="~/js/jquery.easing.min.js"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtXwSw2mG7B4x-Y_-LGj4_DbHyzb_amno&callback=initMap"
+                async defer></script>
+    </environment>
 
-@RenderSection("scripts", required: false)
+    @RenderSection("scripts", required: false)
 </body>
 </html>
-
