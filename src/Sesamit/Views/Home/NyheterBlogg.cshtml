@@ -91,41 +91,52 @@
                         }*@
                 </div>
                 <div role="tabpanel" class="tab-pane " id="blogg">
-                    @foreach (var bloggPost in Model.BloggPosts)
-                    {
-                        var index = Model.BloggPosts.FindIndex(x => x == bloggPost);
-                        var panelBorder = "";
-                        //if (index % 2 == 0)
-                        //{
-                        //    panelBorder = "border-left-panel";
-                        //}
-                        //else
-                        //{
-                        //    panelBorder = "border-right-panel";
-                        //}
-                        <div class="row">
-                            <div class="panel panel-default @panelBorder">
-                                <div class="panel-body">
-                                    <h3>
-                                        @bloggPost.Title
-                                        <small>
-                                            @bloggPost.TimePast.Days dagar, @bloggPost.TimePast.Hours timmar sedan.
-                                            <span class="text-capitalize pull-right">Blogginlägg</span>
-                                        </small>
-                                    </h3>
-                                    <p>@Html.Raw(bloggPost.Description.ToString())</p>
+                    <div class="row">
+                        <div class="col-md-7">
 
-                                    @if (bloggPost.ImageLink != null)
-                                    {
-                                        <img class="img-responsive img-rounded center-block" src="@bloggPost.ImageLink.ToString()" />
-                                    }
-                                    <h3>
-                                        <a class="btn btn-success" href="@bloggPost.Link">Läs mer här!</a>
-                                    </h3>
+                            @foreach (var bloggPost in Model.BloggPosts)
+                            {
+                                var index = Model.BloggPosts.FindIndex(x => x == bloggPost);
+                                var panelBorder = "";
+                                //if (index % 2 == 0)
+                                //{
+                                //    panelBorder = "border-left-panel";
+                                //}
+                                //else
+                                //{
+                                //    panelBorder = "border-right-panel";
+                                //}
+                                <div class="panel panel-default">
+                                    <div class="panel-body">
+                                        <h3>
+                                            @bloggPost.Title
+                                            <small>
+                                                @bloggPost.TimePast.Days dagar, @bloggPost.TimePast.Hours timmar sedan.
+                                                <span class="text-capitalize pull-right">Blogginlägg</span>
+                                            </small>
+                                        </h3>
+                                        <p>@Html.Raw(bloggPost.Description.ToString())</p>
+
+                                        @if (bloggPost.ImageLink != null)
+                                        {
+                                            <img class="img-responsive img-rounded center-block" src="@bloggPost.ImageLink.ToString()"/>
+                                        }
+                                        <h3>
+                                            <a class="btn btn-success" href="@bloggPost.Link">Läs mer här!</a>
+                                        </h3>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                        <div class="col-md-5">
+                            <div class="panel panel-default">
+                                <div class="panel-body">
+                                    <div style="width: 100%;" class="fb-page" data-href="https://www.facebook.com/Sesamit/" data-tabs="timeline" data-width="400" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/Sesamit/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Sesamit/">Sesam</a></blockquote></div>
+
                                 </div>
                             </div>
                         </div>
-                    }
+                    </div>
                 </div>
             </div>
         </div>
