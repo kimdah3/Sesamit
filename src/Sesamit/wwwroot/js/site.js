@@ -30,10 +30,7 @@ $(function () {
             top: $('#nav').offset().top
         }
     });
-
 });
-// IMPORTERAD NEWS CAROUSEL
-
 
 //Facebook
 (function(d, s, id) {
@@ -44,3 +41,9 @@ $(function () {
     js.src = "//connect.facebook.net/sv_SE/sdk.js#xfbml=1&version=v2.7&appId=107579145685";
     fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));
+
+
+//Bryggan
+function FillMenu() {
+    alert("https://barappen.se:9310/api/v020/menu/1e");
+}

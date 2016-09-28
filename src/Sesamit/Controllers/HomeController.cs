@@ -84,7 +84,8 @@ namespace Sesamit.Controllers
             var newsPosts = _context.NewsPosts.OrderByDescending(x => x.Date);
             model.NewsPosts = newsPosts.ToList();
 
-            
+
+
             return View(model);
         }
 

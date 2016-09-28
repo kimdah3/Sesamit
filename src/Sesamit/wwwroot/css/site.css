@@ -95,6 +95,9 @@ p {
 .h1-padding {
     padding: 25px 0 40px;
 }
+.btn-non-clickable {
+    
+}
 /**************************** RESPONSIV FIXES ****************************/
 @media (max-width: 1201px) and (min-width: 769px) {
     .front-page-header {
@@ -691,8 +694,7 @@ p {
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 200px;
-    padding-bottom: 0;
-    margin-bottom: 0;
+    padding-bottom: 100px;
 }
 
 #bryggan-menu {
@@ -722,12 +724,12 @@ p {
         transition: none;
     }
 
-#bryggan-content {
+#section-bryggan-intro {
     padding: 25px 0;
     background-color: #f8f8f8;
 }
 
-    #bryggan-content .tab-content i {
+    #section-bryggan-intro .tab-content i {
         font-size: 1.5em;
     }
 
