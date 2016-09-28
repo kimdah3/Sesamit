@@ -40,7 +40,10 @@ $(function () {
     js.id = id;
     js.src = "//connect.facebook.net/sv_SE/sdk.js#xfbml=1&version=v2.7&appId=107579145685";
     fjs.parentNode.insertBefore(js, fjs);
+    
 }(document, 'script', 'facebook-jssdk'));
+
+FB.Canvas.setSize({ width: 800, height: 480 });
 
 
 //Bryggan
