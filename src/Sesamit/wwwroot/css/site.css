@@ -98,6 +98,10 @@ p {
 .btn-non-clickable {
     
 }
+.section-small-padding{
+    padding: 40px 0;
+}
+
 /**************************** RESPONSIV FIXES ****************************/
 @media (max-width: 1201px) and (min-width: 769px) {
     .front-page-header {
@@ -725,7 +729,6 @@ p {
     }
 
 #section-bryggan-intro {
-    padding: 25px 0;
     background-color: #f8f8f8;
 }
 
@@ -749,6 +752,9 @@ p {
     padding: 0;
     margin-top: 4px;
     color: #333333 !important;
+}
+#section-bryggan-menu {
+    background-color: #f8f8f8;
 }
 
 /****************************FÖRETAG****************************/
