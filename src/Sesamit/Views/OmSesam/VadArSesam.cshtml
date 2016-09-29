@@ -5,6 +5,12 @@
 <header id="vadarsesam-header" class="vadarsesam-header big-header header-responsive-fix">
     <div class="container text-center">
         <h1>Vad är Sesam?</h1>
+        <p style="color: white;">
+            Vi är kårsektionen för dig som läser ekonomi, informatik och statistik.
+            Vi grundades 1993 och har sedan dess funnits med syfte att bevaka utbildningen, engagera medlemmar socialt och ge dem en naturligare väg in i näringslivet efter studierna.
+            Återkommande aktiviteter är bland annat Mentorskapsprojektet, Campusmässan, Båtfesten och Introduktionen.
+            Vi är stolta över vår introduktion som är en av Sveriges längsta och bästa i slaget, där du som ny student snabbt har möjlighet att komma in i studentlivet!
+        </p>
         <a href="#ArrowDestination" class="btn btn-trans page-scroll">
             <i class="fa fa-arrow-down fa-5x"></i>
         </a>
@@ -22,11 +28,10 @@
                     <div class="tree">
                         <ul>
                             <li>
-                                <a href="#">Örebro studentkår</a>
+                                <a href="#" style="background-color: forestgreen; color: whitesmoke;">Örebro studentkår</a>
                                 <ul>
                                     <li>
                                         <a href="#">
-                                            Andra sektioner<br />
                                             Corax,
                                             DokSek,
                                             GIH,
@@ -41,7 +46,7 @@
                                         <a href="#" style="background-color: darkblue; color: whitesmoke;">Sesam</a>
                                         <ul>
                                             <li>
-                                                <a href="#">Styrelse</a>
+                                                <a asp-controller="OmSesam" asp-action="Styrelse">Styrelse</a>
                                                 <ul>
                                                     <li>
                                                         <a asp-controller="Home" asp-action="Bryggan">Bryggan</a>
@@ -50,19 +55,19 @@
                                                         <a href="/OmSesam/Utskott#finans">Finansutskottet</a>
                                                     </li>
                                                     <li>
-                                                        <a href="/OmSesam/Utskott#informatik">Informatik-utskottet</a>
+                                                        <a href="/OmSesam/Utskott#informatik">Informatikutskottet</a>
                                                     </li>
                                                     <li>
-                                                        <a href="/OmSesam/Utskott#marknad">Marknadsförings-utskottet</a>
+                                                        <a href="/OmSesam/Utskott#marknad">Marknadsföringsutskottet</a>
                                                     </li>
                                                     <li>
-                                                        <a href="/OmSesam/Utskott#naringsliv">Näringslivs-utskottet</a>
+                                                        <a href="/OmSesam/Utskott#naringsliv">Näringslivsutskottet</a>
                                                     </li>
                                                     <li>
                                                         <a href="/OmSesam/Utskott#studiesociala">Studiesociala utskottet</a>
                                                     </li>
                                                     <li>
-                                                        <a href="/OmSesam/Utskott#utbildning">Utbildnings-utskottet</a>
+                                                        <a href="/OmSesam/Utskott#utbildning">Utbildningsutskottet</a>
                                                     </li>
                                                 </ul>
                                             </li>
@@ -82,8 +87,8 @@
     <div class="row" style="text-align: center; margin: 20px 0 20px 0;">
         <div class="container">
 
-            <div class="col-md-3">
-                <img class="img-rounded" src="~/Images/Logo_txt_runt_svv_ENG.svg" width="200" height="140">
+            <div class="col-md-4">
+                <img class="img-rounded" src="~/Images/Logo_txt_runt_svv_ENG.svg" width="220" height="160">
                 <h2>Handelshögskolan</h2>
                 <p>Sesam representerar studenter på institutionen Handelshögskolan. Om du läser ekonomi, informatik eller statistik hör du till Handelshögskolan, och därmed sektionen Sesam.</p>
                 <p>
@@ -91,8 +96,8 @@
                 </p>
             </div>
 
-            <div class="col-md-3">
-                <img class="img-rounded" src="~/Images/workers.png" width="200" height="140">
+            <div class="col-md-4">
+                <img class="img-rounded" src="~/Images/workers.png" width="220" height="160">
                 <h2>Styrelse</h2>
                 <p>Sesam består av en styrelsen som utför arbeten som kommer att vara till nytta för dig som student. Allt från företagskontakter till lärofyllda upplevelser! Styrelsen består av...</p>
                 <p>
@@ -100,17 +105,8 @@
                 </p>
             </div>
 
-            <div class="col-md-3">
-                <img class="img-rounded" src="~/Images/Kåren_1.png" width="200" height="140">
-                <h2>Örebro Studentkår</h2>
-                <p>Sesam är en sektion i Örebro studentkår. Studentkåren för studenternas talan och representerar oss i frågor som rör universitetet och vår utbildning. Bli medlem idag!</p>
-                <p>
-                    <a class="btn btn-primary" href="http://www.orebrostudentkar.se/" target="_blank" role="button">Läs mer »</a>
-                </p>
-            </div>
-
-            <div class="col-md-3">
-                <img class="img-rounded" src="~/Images/businessman278.png" width="200" height="140">
+            <div class="col-md-4">
+                <img class="img-rounded" src="~/Images/businessman278.png" width="220" height="160">
                 <h2>Utskott</h2>
                 <p>För att Sesam ska kunna utföra sitt arbete behöver de hjälp av sina Utskott. Utskotten gör allt för att Sesams medlemmar ska få det bättre under studietiden.</p>
                 <p>
@@ -127,7 +123,7 @@
             <!-- First Featurette -->
             <div class="featurette" id="about">
                 <img class="featurette-image img-circle img-responsive pull-right" src="~/Images/stundetkarlogga.png">
-                <h2 class="featurette-heading">Kåren<br /></h2>
+                <h2 class="featurette-heading">Örebro studentkår<br /></h2>
                 <h2 class="text-muted">För en bättre studietid</h2>
                 <p class="lead">
                     Man brukar dela in kårens arbete i två delar: det utbildningspolitiska, som handlar om att öka kvaliteten på utbildningen, och det studiesociala, som rör allt annat runtom studierna, till exempel boende, ekonomi, nöjen och fritid. 
@@ -162,12 +158,32 @@
 
             <!-- Third Featurette -->
             <div class="featurette" id="services">
-                <img class="featurette-image img-circle img-responsive pull-right" src="~/Images/SERO.png">
+                <img class="featurette-image img-circle img-responsive pull-right" src="~/Images/SERO.png" style="height: 450px;">
                 <h2 class="featurette-heading">S.E.R.O<br /></h2>
                 <h2 class="text-muted">Sveriges Ekonomföreningars Riksorganisation</h2>
                 <p class="lead">
                     Större delen av Handelshögskolans studenter är ekonomer, och Sesam är medlem i S.E.R.O – Sveriges Ekonomföreningars Riksorganisation.
                     Det är en paraplyorganisation för ekonomföreningar, med mål att öka ekonomistudenters konkurrenskraft på arbetsmarknaden. Medlemskapet i S.E.R.O möjliggör många intressanta samarbeten, nya kontakter och erfarenhetsutbyten, samt utbildningar och konferenser som även är av intresse för andra ämnen på Handelshögskolan, vilket är viktigt då vi inte enbart representerar ekonomer.
+            </div>
+
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+
+            <!-- Fourth Featurette -->
+            <div class="featurette" id="contact">
+                <img class="featurette-image img-circle img-responsive pull-left" src="~/Images/sektionsmoteForminskad.jpg"  style="height: 450px;">
+                <h2 class="featurette-heading">Sektionsmöten<br /></h2>
+                <h2 class="text-muted">Hålls 4 gånger om året</h2>
+                <p class="lead">
+                    Syftet med sektionsmötena är att du som medlem ska få insyn i vad vi i Sesam arbetar med, kunna vara med och påverka olika beslut och säga vad du tycker och tänker.
+                    Sesam är en medlemsorganisation och styrelsens arbete utförs hela tiden med medlemmarnas intresse och nytta i fokus. 
+                    Mindre beslut fattas av styrelsen som är invalda av medlemmarna Större beslut tas dock på Sektionsmöten. 
+                    Där har du som är medlem i Sesam rösträtt och chans att vara med och påverka. 
+                    Sektionsmötena hålls minst 2 ggr/termin och annonseras ut senast 2 veckor i förväg
+                </p>
             </div>
 
         </div>

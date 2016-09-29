@@ -95,9 +95,6 @@ p {
 .h1-padding {
     padding: 25px 0 40px;
 }
-.btn-non-clickable {
-    
-}
 .section-small-padding{
     padding: 40px 0;
 }
@@ -390,8 +387,8 @@ p {
 }
 
 .featurette-image{
-    height: 50%;
-    width: 50%;
+    height: 40%;
+    width: 40%;
 }
 
 .featurette-heading{
