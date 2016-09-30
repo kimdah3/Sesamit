@@ -96,7 +96,7 @@ p {
 }
 
 .big-header {
-    padding: 280px 0 380px !important;
+    padding: 180px 0 100px !important;
 }
 
 .h1-padding {
@@ -109,7 +109,6 @@ p {
 .section-small-padding {
     padding: 40px 0;
 }
-
 /**************************** RESPONSIV FIXES ****************************/
 @media (max-width: 1201px) and (min-width: 769px) {
     .front-page-header {
@@ -301,8 +300,8 @@ p {
         border: 0;
         -webkit-box-shadow: none;
         background-color: transparent;
-        margin: 60px 0 0;
-        padding: 0 0 80px;
+        margin: 40px 0 0;
+        padding: 0 0 40px;
     }
 
         #section-ordforande .jumbotron h2, #section-ordforande .jumbotron p {
@@ -676,7 +675,7 @@ p {
 
 /****************************Styrelsen****************************/
 #styrelsen-header {
-    background-image: url("../Images/headers/15-09-11-orebrodagen-2015-57644-faded.jpg");
+    background-image: url("../Images/headers/styrelsen1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -712,12 +711,19 @@ p {
     color: #003366;
 }
 
-/****************************Bryggan****************************/
-#bryggan-header {
-    background-image: url("../Images/headers/beer-hq.jpg");
+#section-styrelsen-jump {
+    background-color: #f8f8f8;
+    background-image: url("../Images/styrelse/Foto-2016-09-06-11-54-54-fm.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top: 200px;
+    height: 500px;
+}
+/****************************Bryggan****************************/
+#bryggan-header {
+    background-image: url("../Images/headers/IMG_0930.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 150px;
     padding-bottom: 100px;
 }
 
@@ -800,31 +806,41 @@ p {
         #section-bryggan-beer .jumbotron p {
             color: #FFF;
         }
-        #bryggan-provjobba {
-            padding: 30px;
-            background-color: rgba(0,0,0, 0.9);
-            border-radius: 5px;
-        }
-        #bryggan-provjobba h2 {
-            margin: 0;
-        }
-/****************************FÖRETAG****************************/
-#foretag-header {
-    z-index: 0;
-    margin-top: -100px;
+
+#bryggan-provjobba {
+    padding: 30px;
+    background-color: rgba(0,0,0, 0.9);
+    border-radius: 5px;
+}
+
+    #bryggan-provjobba h2 {
+        margin: 0;
+    }
+
+#btn-bryggan-menu {
     width: 100%;
-    padding: 210px 0 210px;
-    margin-bottom: 0;
-    text-shadow: 0 1px 2px rgba(0,0,0,0.6);
-    background-image: url("../Images/handelshogskolan-under-aulan.png");
+    margin: 20px 0 10px;
+}
+
+#bryggan-menu-heading {
+    margin: 0 0 20px;
+}
+
+/****************************FÖRETAG****************************/
+#partners-header {
+    background-image: url("../Images/headers/nova-bunker.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
-
     #foretag-header .container {
         height: 124px;
     }
 
+    #jobbmojligheter-header{
+    background-image: url("../Images/headers/nova-vaning1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 #foretag-section {
     padding: 30px 0;
     background-color: #f8f8f8;
@@ -893,7 +909,8 @@ p {
     background-image: url("../Images/headers/20130913_orebrodagen_HT13-73060-faded.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 180px 0 0;
+    padding-top: 150px;
+    padding-bottom: 100px;
 }
 
 #section-blogg {

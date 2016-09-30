@@ -46,7 +46,7 @@ namespace Sesamit.Controllers
             return View();
         }
 
-        public async Task<IActionResult> NyheterBlogg()
+        public async Task<IActionResult> BloggNyheter()
         {
             const string url = "http://sesamnu.blogg.se/index.rss";
             var model = new NyheterBloggViewModel();
@@ -81,10 +81,8 @@ namespace Sesamit.Controllers
             }
             model.BloggPosts = bloggPosts;
 
-            var newsPosts = _context.NewsPosts.OrderByDescending(x => x.Date);
-            model.NewsPosts = newsPosts.ToList();
-
-
+            //var newsPosts = _context.NewsPosts.OrderByDescending(x => x.Date);
+            //model.NewsPosts = newsPosts.ToList();
 
             return View(model);
         }
@@ -98,19 +96,5 @@ namespace Sesamit.Controllers
         {
             return View();
         }
-
-        //private List<NewsPost> FixBytePictures(List<NewsPost> newsPosts)
-        //{
-        //    var fixedPosts = new List<NewsPost>();
-        //    foreach (var newsPost in newsPosts)
-        //    {
-        //        fixedPosts.Add(newsPost);
-        //        if (newsPost.Picture != null)
-        //        {
-        //            fixedPosts[newsPosts.IndexOf(newsPost)].Picture = string.Format("data:image/png;base64,{0}", Convert.ToBase64String(newsPost.Picture));
-        //        }
-        //    }
-        //    return null;
-        //}
     }
 }
