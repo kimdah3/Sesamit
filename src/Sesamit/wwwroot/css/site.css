@@ -151,9 +151,6 @@ p {
         background-image: url("../Images/headers/15-09-11-orebrodagen-2015-57644-faded-small.jpg") !important;
     }
 
-    #utskott-header {
-        background-image: url("../Images/headers/lowquality/1236830_10151711573389811_1283696907_n-faded-small.png") !important;
-    }
 
     .menu-container {
         background-color: white;
@@ -180,6 +177,8 @@ p {
 
     #bryggan-header {
         background-size: 100% 100% !important;
+        background-image: url("../Images/headers/IMG_0930-small.jpg") !important;
+
     }
 
     .section-padding {
@@ -628,6 +627,8 @@ p {
 /****************************Utskott****************************/
 #utskott-header {
     background-image: url("../Images/headers/15-09-11-orebrodagen-2015-57660-faded.jpg");
+    padding: 220px 0 120px;
+
 }
 
 #nav li a {
