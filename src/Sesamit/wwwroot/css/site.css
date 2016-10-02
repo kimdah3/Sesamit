@@ -405,10 +405,11 @@ p {
     padding: 50px 0 50px 0;
 }
 
-.featurette-image {
-    height: 50%;
-    width: 50%;
-}
+    .featurette-image {
+        height: 45%;
+        width: 45%;
+    }
+
 
 .featurette-heading {
     margin: 0;
@@ -549,9 +550,6 @@ p {
         margin: 40px 0;
     }
 
-    .featurette-image {
-        max-width: 50%;
-    }
 
         .featurette-image.pull-left {
             margin-right: 10px;
@@ -608,13 +606,13 @@ p {
         }
 }
 
-@media(max-width:375px) {
+@media(max-width:550px) {
     .featurette-divider {
         margin: 10px 0;
     }
 
     .featurette-image {
-        max-width: 100%;
+        width: 100%;
     }
 
         .featurette-image.pull-left {
