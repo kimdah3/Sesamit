@@ -832,15 +832,17 @@ p {
     background-repeat: no-repeat;
     background-size: cover;
 }
-    #foretag-header .container {
-        height: 124px;
-    }
 
-    #jobbmojligheter-header{
+#foretag-header .container {
+    height: 124px;
+}
+
+#jobbmojligheter-header {
     background-image: url("../Images/headers/nova-vaning1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 #foretag-section {
     padding: 30px 0;
     background-color: #f8f8f8;
@@ -1001,96 +1003,163 @@ footer {
 
 
 /************orgChart************/
-* {
-    margin: 0;
-    padding: 0;
-}
+@media(min-width:1200px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
 
-.tree ul {
-    padding-top: 20px;
-    position: relative;
-    transition: all 0.5s;
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-}
+    .tree ul {
+        padding-top: 20px;
+        position: relative;
+        transition: all 0.5s;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+    }
 
-.tree li {
-    float: left;
-    text-align: center;
-    list-style-type: none;
-    position: relative;
-    padding: 20px 5px 0 5px;
-    transition: all 0.5s;
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-}
+    .tree li {
+        float: left;
+        text-align: center;
+        list-style-type: none;
+        position: relative;
+        padding: 20px 5px 0 5px;
+        transition: all 0.5s;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+    }
 
-    .tree li::before, .tree li::after {
+        .tree li::before, .tree li::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 50%;
+            border-top: 1px solid #ccc;
+            width: 50%;
+            height: 20px;
+        }
+
+        .tree li::after {
+            right: auto;
+            left: 50%;
+            border-left: 1px solid #ccc;
+        }
+
+        .tree li:only-child::after, .tree li:only-child::before {
+            display: none;
+        }
+
+        .tree li:only-child {
+            padding-top: 0;
+        }
+
+        .tree li:first-child::before, .tree li:last-child::after {
+            border: 0 none;
+        }
+
+        .tree li:last-child::before {
+            border-right: 1px solid #ccc;
+            border-radius: 0 5px 0 0;
+            -webkit-border-radius: 0 5px 0 0;
+            -moz-border-radius: 0 5px 0 0;
+        }
+
+        .tree li:first-child::after {
+            border-radius: 5px 0 0 0;
+            -webkit-border-radius: 5px 0 0 0;
+            -moz-border-radius: 5px 0 0 0;
+        }
+
+    .tree ul ul::before {
         content: '';
         position: absolute;
         top: 0;
-        right: 50%;
-        border-top: 1px solid #ccc;
-        width: 50%;
+        left: 50%;
+        border-left: 1px solid #ccc;
+        width: 0;
         height: 20px;
     }
 
-    .tree li::after {
-        right: auto;
-        left: 50%;
-        border-left: 1px solid #ccc;
+    .tree li a {
+        border: 1px solid #ccc;
+        padding: 5px 10px;
+        text-decoration: none;
+        color: #666;
+        font-family: arial, verdana, tahoma;
+        font-size: 11px;
+        display: inline-block;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        transition: all 0.5s;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
     }
 
-    .tree li:only-child::after, .tree li:only-child::before {
-        display: none;
+        .tree li a:hover, .tree li a:hover + ul li a {
+            background: #c8e4f8;
+            color: #000;
+            border: 1px solid #94a0b4;
+        }
+
+            .tree li a:hover + ul li::after,
+            .tree li a:hover + ul li::before,
+            .tree li a:hover + ul::before,
+            .tree li a:hover + ul ul::before {
+                border-color: #94a0b4;
+            }
+}
+
+@media(max-width:1200px) {
+    .tree li {
+        margin: 0px 0;
+        list-style-type: none;
+        position: relative;
+        padding: 20px 5px 0px 5px;
     }
 
-    .tree li:only-child {
-        padding-top: 0;
-    }
+        .tree li::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            width: 1px;
+            height: 100%;
+            right: auto;
+            left: -20px;
+            border-left: 1px solid #ccc;
+            bottom: 50px;
+        }
 
-    .tree li:first-child::before, .tree li:last-child::after {
-        border: 0 none;
+        .tree li::after {
+            content: '';
+            position: absolute;
+            top: 30px;
+            width: 25px;
+            height: 20px;
+            right: auto;
+            left: -20px;
+            border-top: 1px solid #ccc;
+        }
+
+        .tree li a {
+            display: inline-block;
+            border: 1px solid #ccc;
+            padding: 5px 10px;
+            text-decoration: none;
+            color: #666;
+            font-family: arial, verdana, tahoma;
+            font-size: 11px;
+            border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+        }
+
+    .tree > ul > li::before, .tree > ul > li::after {
+        border: 0;
     }
 
     .tree li:last-child::before {
-        border-right: 1px solid #ccc;
-        border-radius: 0 5px 0 0;
-        -webkit-border-radius: 0 5px 0 0;
-        -moz-border-radius: 0 5px 0 0;
+        height: 30px;
     }
-
-    .tree li:first-child::after {
-        border-radius: 5px 0 0 0;
-        -webkit-border-radius: 5px 0 0 0;
-        -moz-border-radius: 5px 0 0 0;
-    }
-
-.tree ul ul::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 50%;
-    border-left: 1px solid #ccc;
-    width: 0;
-    height: 20px;
-}
-
-.tree li a {
-    border: 1px solid #ccc;
-    padding: 5px 10px;
-    text-decoration: none;
-    color: #666;
-    font-family: arial, verdana, tahoma;
-    font-size: 11px;
-    display: inline-block;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    transition: all 0.5s;
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-}
 
     .tree li a:hover, .tree li a:hover + ul li a {
         background: #c8e4f8;
@@ -1098,9 +1167,7 @@ footer {
         border: 1px solid #94a0b4;
     }
 
-        .tree li a:hover + ul li::after,
-        .tree li a:hover + ul li::before,
-        .tree li a:hover + ul::before,
-        .tree li a:hover + ul ul::before {
+        .tree li a:hover + ul li::after, .tree li a:hover + ul li::before, .tree li a:hover + ul::before, .tree li a:hover + ul ul::before {
             border-color: #94a0b4;
         }
+}
