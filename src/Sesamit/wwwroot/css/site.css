@@ -53,6 +53,12 @@ p {
 .fa-blue {
     color: #127ba3;
 }
+.fa-green {
+    color: green;
+}
+.fa-red {
+    color: red;
+}
 
 .fa-white {
     color: #FFF;
@@ -64,6 +70,9 @@ p {
 
 .fa-7x {
     font-size: 7em !important;
+}
+.fa-9x {
+    font-size: 9em !important;
 }
 
 .h3-fp-section {
@@ -105,6 +114,10 @@ p {
 
 .section-small-padding {
     padding: 40px 0;
+}
+
+.row-big-padding {
+    padding: 30px;
 }
 /**************************** RESPONSIV FIXES ****************************/
 @media (max-width: 1201px) and (min-width: 769px) {
@@ -1177,4 +1190,23 @@ footer {
         .tree li a:hover + ul li::after, .tree li a:hover + ul li::before, .tree li a:hover + ul::before, .tree li a:hover + ul ul::before {
             border-color: #94a0b4;
         }
+}
+
+
+#sesamvagen {
+    background-color: #f8f8f8;
+}
+#fa-arrowleft-sesamvagen {
+        margin-top: 90px;
+}
+#sesamvagen-arrowdown {
+    margin-bottom: 30px;
+}
+#sesamvagen-header {
+    background-image: url("../Images/headers/20130913_orebrodagen_HT13-72989-faded.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#fa-responsive-sesamvagen {
+    padding: 10px 0 25px;
 }
