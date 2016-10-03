@@ -178,7 +178,6 @@ p {
     #bryggan-header {
         background-size: 100% 100% !important;
         background-image: url("../Images/headers/IMG_0930-small.jpg") !important;
-
     }
 
     .section-padding {
@@ -192,6 +191,7 @@ p {
     .h1-margin {
         margin: 30px 0 50px !important;
     }
+
     .top-page-header {
         padding: 200px 0 110px !important;
     }
@@ -403,10 +403,10 @@ p {
     padding: 50px 0 50px 0;
 }
 
-    .featurette-image {
-        height: 45%;
-        width: 45%;
-    }
+.featurette-image {
+    height: 45%;
+    width: 45%;
+}
 
 
 .featurette-heading {
@@ -549,13 +549,13 @@ p {
     }
 
 
-        .featurette-image.pull-left {
-            margin-right: 10px;
-        }
+    .featurette-image.pull-left {
+        margin-right: 10px;
+    }
 
-        .featurette-image.pull-right {
-            margin-left: 10px;
-        }
+    .featurette-image.pull-right {
+        margin-left: 10px;
+    }
 
     .featurette-heading {
         font-size: 30px;
@@ -628,7 +628,6 @@ p {
 #utskott-header {
     background-image: url("../Images/headers/15-09-11-orebrodagen-2015-57660-faded.jpg");
     padding: 220px 0 120px;
-
 }
 
 #nav li a {
@@ -645,6 +644,15 @@ p {
 
 #nav .active a {
     border-left: 5px lightskyblue solid;
+}
+
+.utskott-heading {
+    margin: 0 0 20px 0;
+    text-align: center;
+}
+
+.utskott-p{
+    margin: 15px 5px 0 5px;
 }
 
 #utskott-panel {
@@ -760,9 +768,11 @@ p {
 .img-margin-bottom {
     margin-bottom: 25px;
 }
+
 .img-margin-top {
     margin-top: 15px;
 }
+
 .h2-margin-top {
     margin-top: 0;
 }
