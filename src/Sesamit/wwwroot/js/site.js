@@ -43,7 +43,7 @@ function FillMenu() {
 }
 
 //Utstkott
-function ApplyUtskottSlide() {
+function ApplySlide() {
     $('a.page-scroll')
                 .bind('click',
                     function (event) {
