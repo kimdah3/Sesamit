@@ -299,7 +299,7 @@ p {
 
 #section-ordforande {
     background-color: #f8f8f8;
-    background-image: url("../Images/styrelse/Kavaj-Jonatan-fp5.png");
+    background-image: url("../Images/styrelse/Kavaj-Jonatan-fp5.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -382,13 +382,6 @@ p {
     }
 
 
-
-#introk-bg-section {
-    background-image: url("../Images/introk/introduktion2.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 500px;
-}
 
 .intro-k-pair-small {
     padding: 15px;
