@@ -8,7 +8,5 @@ namespace Sesamit.Models.HomeViewModels
     public class NyheterBloggViewModel
     {
         public List<BloggPostModel> BloggPosts { get; set; }
-        public List<NewsPost> NewsPosts { get; set; }
-
     }
 }

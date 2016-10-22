@@ -13,5 +13,5 @@ namespace Sesamit.Models.HomeViewModels
         public TimeSpan TimePast { get; set; }
         public Uri Link { get; set; }
         public Uri ImageLink { get; set; }
-}
+    }
 }

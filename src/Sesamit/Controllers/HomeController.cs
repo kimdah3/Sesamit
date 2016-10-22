@@ -3,24 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
-using System.Xml;
 using System.Xml.Linq;
 using Microsoft.AspNetCore.Mvc;
-using Sesamit.Data;
-using Sesamit.Models;
 using Sesamit.Models.HomeViewModels;
 
 namespace Sesamit.Controllers
 {
+
     public class HomeController : Controller
     {
-        private readonly ApplicationDbContext _context;
-
-        public HomeController(ApplicationDbContext context)
-        {
-            _context = context;
-        }
-
         public IActionResult Index()
         {
             return View();
@@ -79,10 +70,8 @@ namespace Sesamit.Controllers
                     bloggPosts.Add(post);
                 }
             }
-            model.BloggPosts = bloggPosts;
 
-            //var newsPosts = _context.NewsPosts.OrderByDescending(x => x.Date);
-            //model.NewsPosts = newsPosts.ToList();
+            model.BloggPosts = bloggPosts;
 
             return View(model);
         }
@@ -102,4 +91,5 @@ namespace Sesamit.Controllers
             return View();
         }
     }
+
 }
