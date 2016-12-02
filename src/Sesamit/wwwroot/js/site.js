@@ -65,3 +65,8 @@ function ApplySlide() {
             }
         });
 }
+
+
+function ImperaAnnons() {
+    $('body').append('<div class="impera-widget"> <style>.impera-widget{position: fixed; z-index: 1000; bottom:0; width:100%;}.impera-widget .circle-container{-webkit-border-radius:50%; border-radius:50%; left:50%; -webkit-transform:translate(-50%); transform:translate(-50%); background:#dd519a; color:white; height:250px; width:250px; text-align: center; position: absolute; bottom:-125px; transition: 0.5s ease-in-out;}.impera-widget .circle-container .ds-logo img{height:150px; width:150px; filter:grayscale(100%);}.impera-widget .circle-container:hover{bottom:-50px;}.impera-widget .circle-container .cta{font-size:24px; color:black; text-decoration: none;}@media (max-width:420px){.impera-widget .circle-container .ds-logo img{height:90px; width:90px; filter:grayscale(100%);}.impera-widget .circle-container{height:200px; width:200px;}}</style> <div class="circle-container"> <a href="http://www.digitalsummit.se/student/"> <div class="ds-logo"> <img src="http://www.digitalsummit.se/media/1035/logga.svg"> </div><div class="cta"> Anmäl dig här! </div></a> </div></div>')
+}

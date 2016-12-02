@@ -16,6 +16,11 @@ namespace Sesamit.Controllers
             return View();
         }
 
+        public IActionResult Handlingar()
+        {
+            return View();
+        }
+
         public IActionResult Styrelsen()
         {
             return View();
@@ -27,6 +32,16 @@ namespace Sesamit.Controllers
         }
 
         public IActionResult Campusmassan()
+        {
+            return View();
+        }
+
+        public IActionResult FullmaktigeLedamoter()
+        {
+            return View();
+        }
+
+        public IActionResult Arkiv()
         {
             return View();
         }

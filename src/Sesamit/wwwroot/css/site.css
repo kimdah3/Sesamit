@@ -53,9 +53,11 @@ p {
 .fa-blue {
     color: #127ba3;
 }
+
 .fa-green {
     color: green;
 }
+
 .fa-red {
     color: red;
 }
@@ -71,6 +73,7 @@ p {
 .fa-7x {
     font-size: 7em !important;
 }
+
 .fa-9x {
     font-size: 9em !important;
 }
@@ -657,7 +660,7 @@ p {
     text-align: center;
 }
 
-.utskott-p{
+.utskott-p {
     margin: 15px 5px 0 5px;
 }
 
@@ -967,9 +970,13 @@ p {
 /****************************CAMPUSMÄSSAN****************************/
 
 #campusmassan-header {
-    background-image: url("../Images/headers/campusmassan.jpg");
+    background-image: url("../Images/headers/campusmassan2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+#img-campusmassan-header {
+    width: 75%;
 }
 /****************************SEKTINSMÖTEN****************************/
 #header-sektionsmoten {
@@ -1189,17 +1196,40 @@ footer {
 #sesamvagen {
     background-color: #f8f8f8;
 }
+
 #fa-arrowleft-sesamvagen {
-        margin-top: 90px;
+    margin-top: 90px;
 }
+
 #sesamvagen-arrowdown {
     margin-bottom: 30px;
 }
+
 #sesamvagen-header {
     background-image: url("../Images/headers/20130913_orebrodagen_HT13-72989-faded.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 #fa-responsive-sesamvagen {
     padding: 10px 0 25px;
+}
+/*****************HANDLINGAR*********************/
+#handlingar-header {
+    background-image: url("../Images/headers/handlingar-header.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 150px;
+    padding-bottom: 100px;
+}
+#section-fullmaktige {
+    background-color: #f8f8f8;
+}
+/*****************ARKIV*********************/
+#handlingar-arkiv {
+    background-image: url("../Images/headers/akriv.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 150px;
+    padding-bottom: 100px;
 }

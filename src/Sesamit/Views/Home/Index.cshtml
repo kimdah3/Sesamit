@@ -8,16 +8,25 @@
         <ol class="carousel-indicators">
             <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
             <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            @*<li data-target="#carousel-example-generic" data-slide-to="2"></li>*@
         </ol>
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
+            @*<div class="item active">
+                <div class="carousel-caption">
+                    <i class="fa fa-smile-o fa-5x" aria-hidden="true"></i>
+                    <h1 class="hidden-sm hidden-xs">Välkommen till Sesam!</h1>
+                    <h4 class="hidden-sm hidden-xs">Ta en titt på handlingarna inför nästa <a asp-controller="OmSesam" asp-action="Handlingar" class="btn btn-primary">sektionsmöte</a></h4>
+                    <h4 class="visible-sm visible-xs">Välkommen till Sesam!</h4>
+                    <h4 class="visible-sm visible-xs">Ta en titt på handlingarna inför nästa <a asp-controller="OmSesam" asp-action="Handlingar" class="btn btn-primary">sektionsmöte</a></h4>
+                </div>
+            </div>*@
             <div class="item active">
                 <div class="carousel-caption">
                     <i class="fa fa-exclamation fa-5x" aria-hidden="true"></i>
-                    <h1 class="hidden-sm hidden-xs">#sesamvågen</h1>
-                    @*<h4 class="hidden-sm hidden-xs">Värva en vän - Få goodiebag och tävla om fint pris!</h4>*@
-                    <h4 class="visible-sm visible-xs">#sesamvågen</h4>
-                    @*<h4 class="visible-sm visible-xs">Värva en vän - Få goodiebag och tävla om fint pris!</h4>*@
+                    <h1 class="hidden-sm hidden-xs">Vårens introduktion drar igång den 13 Januari.</h1>
+                    <h4 class="visible-sm visible-xs">Vårens introduktion drar igång den 13 Januari.</h4>
+                    <a asp-controller="Home" asp-action="Intro" class="btn btn-primary">Läs mer!</a>
                 </div>
             </div>
             <div class="item">
@@ -34,6 +43,7 @@
                     <a asp-controller="Home" asp-action="Jobbmojligheter" class="btn btn-primary">Läs mer!</a>
                 </div>
             </div>
+
         </div>
 
         <!-- Controls -->
@@ -50,7 +60,7 @@
 </header>
 <div class="alert alert-dismissible alert-info text-center">
     <button type="button" class="close" data-dismiss="alert">&times;</button>
-    <strong>Senaste jobbmöjligheten:</strong> <a class="alert-link" asp-controller="Home" asp-action="Jobbmojligheter">TRAINEE AT H&M</a>
+    <strong>Senaste jobbmöjligheten:</strong> <a class="alert-link" asp-controller="Home" asp-action="Jobbmojligheter">KPMG söker Data & Analytics-specialister</a>
 </div>
 
 <section class="section-padding" id="section-frontpage">
@@ -70,8 +80,8 @@
                     <div class="col-md-3 col-xs-6 fa-blue">
                         <i class="fa fa-users fa-3x" aria-hidden="true"></i>
                         <h4>
-                            Över 500
-                             medlemmar!
+                            Över 650
+                            medlemmar!
                         </h4>
                     </div>
                     <div class="col-md-3 col-xs-6">
@@ -114,12 +124,12 @@
                     Hej, Jonatan här!
 
                 </h2>
-                <p >
+                <p>
                     Jag är ordförande för studentsektionen Sesam och vill hälsa dig välkommen hit till vår hemsida.
-                    
-                    <p>
-                        Här inne finner du all information om vad vi i sektionen gör, hur vi arbetar och vad Du kan göra som medlem. Tveka inte att kontakta någon av oss i styrelsen om du vill veta mer om hur just du kan engagera dig.
-                    </p>
+
+                <p>
+                    Här inne finner du all information om vad vi i sektionen gör, hur vi arbetar och vad Du kan göra som medlem. Tveka inte att kontakta någon av oss i styrelsen om du vill veta mer om hur just du kan engagera dig.
+                </p>
                 <p>Vi ses!</p>
             </div>
         </div>
@@ -129,18 +139,18 @@
     <div class="container">
         <div class="row">
             <h2 class="h1 page-header">
-                
+
                 Hej, Jonatan här!
                 <i class="fa fa-comment"></i>
             </h2>
-                    <img width="500" height="500" class="img-margin-bottom img-rounded img-responsive " src="../Images/styrelse/Kavaj-Jonatan.png" alt="">
-                    <p>
-                        Jag är ordförande för studentsektionen Sesam, och vill hälsa dig välkommen hit till vår hemsida.
-                    <p>
-                        Här inne finner du all information om vad vi i sektionen gör, hur vi arbetar , och vad Du kan göra som medlem. Tveka inte att kontakta någon av oss styrelsen om du vill veta mer om hur just du kan engagera dig.
-                    </p>
+            <img width="500" height="500" class="img-margin-bottom img-rounded img-responsive " src="../Images/styrelse/Kavaj-Jonatan.png" alt="">
+            <p>
+                Jag är ordförande för studentsektionen Sesam, och vill hälsa dig välkommen hit till vår hemsida.
+            <p>
+                Här inne finner du all information om vad vi i sektionen gör, hur vi arbetar , och vad Du kan göra som medlem. Tveka inte att kontakta någon av oss styrelsen om du vill veta mer om hur just du kan engagera dig.
+            </p>
 
-                    <p>Vi ses!</p>
+            <p>Vi ses!</p>
         </div>
     </div>
 </section>
@@ -170,7 +180,7 @@
 
         </div>
         <div class="col-md-1 col-xs-4"></div>
-       
+
     </div>
 </section>
 
@@ -180,85 +190,85 @@
         <div class="row text-center">
             <div class="col-md-2 col-xs-6 col-sm-3">
                 <a href="http://www.lrfkonsult.se/" class="btn" target="_blank">
-                    <img class="img-responsive center-block" src="../Images/foretag/lrfkonsult.gif"/>
+                    <img class="img-responsive center-block" src="../Images/foretag/lrfkonsult.gif" />
                 </a>
             </div>
             <div class="col-md-2 col-xs-6 col-sm-3">
                 <a href="http://www.unionen.se/" class="btn " target="_blank">
 
-                    <img class="img-responsive " src="../Images/foretag/unionen.jpg"/>
+                    <img class="img-responsive " src="../Images/foretag/unionen.jpg" />
                 </a>
             </div>
             <div class="col-md-2 col-xs-6 col-sm-3">
                 <a href="http://www.pwc.se/" class="btn" target="_blank">
 
-                    <img class="img-responsive " src="../Images/foretag/Pwc.gif"/>
+                    <img class="img-responsive " src="../Images/foretag/Pwc.gif" />
                 </a>
 
             </div>
             <div class="col-md-2 col-xs-6 col-sm-3">
                 <a href="http://www.civilekonomerna.se/" class="btn" target="_blank">
 
-                    <img class="img-responsive " src="../Images/foretag/civilekonomerna.gif"/>
+                    <img class="img-responsive " src="../Images/foretag/civilekonomerna.gif" />
                 </a>
             </div>
             <div class="clearfix visible-xs-block"></div>
             <div class="col-md-2 col-xs-6 col-sm-3">
                 <a href="https://home.kpmg.com/se/sv/home.html" class="btn " target="_blank">
-                    <img class="img-responsive " src="../Images/foretag/KPMG.gif"/>
+                    <img class="img-responsive " src="../Images/foretag/KPMG.gif" />
                 </a>
             </div>
             <div class="col-md-2 col-xs-6 col-sm-3">
                 <a href="http://www.grantthornton.se/" class="btn" target="_blank">
 
-                    <img class="img-responsive " src="../Images/foretag/GrandThornton.gif"/>
+                    <img class="img-responsive " src="../Images/foretag/GrandThornton.gif" />
                 </a>
             </div>
         </div>
         <div class="row ">
             <div class="col-md-2 col-xs-6 col-sm-3">
                 <a href="http://kommuninvest.se/" class="btn" target="_blank">
-                    <img class="img-responsive img-rounded" src="../Images/foretag/KI_V3_RGB_sve_text.jpg"/>
+                    <img class="img-responsive img-rounded" src="../Images/foretag/KI_V3_RGB_sve_text.jpg" />
                 </a>
             </div>
             <div class="col-md-2 col-xs-6 col-sm-3">
                 <a href="https://www.lansforsakringar.se/privat/" class="btn" target="_blank">
-                    <img class="img-responsive" src="../Images/foretag/LF-logo.jpg"/>
+                    <img class="img-responsive" src="../Images/foretag/LF-logo.jpg" />
                 </a>
             </div>
             <div class="clearfix visible-xs-block"></div>
             <div class="col-md-2 col-xs-6 col-sm-3">
                 <a href="http://www.ikea.com/se/sv/" class="btn " target="_blank">
-                    <img class="img-responsive" src="../Images/foretag/2000px-Ikea_logo.svg.png"/>
+                    <img class="img-responsive" src="../Images/foretag/2000px-Ikea_logo.svg.png" />
                 </a>
             </div>
             <div class="col-md-2 col-xs-6 col-sm-3">
                 <a href="http://www.ica.se/butiker/nara/orebro/ica-supermarket-tybble-1074/butikserbjudanden/" target="_blank" class="btn">
-                    <img class="img-responsive " src="../Images/foretag/ica_logo-390x238.png"/>
+                    <img class="img-responsive " src="../Images/foretag/ica_logo-390x238.png" />
                 </a>
 
             </div>
             <div class="col-md-2 col-xs-6 col-sm-3">
                 <a href="http://www.strateg.se/" class="btn" target="_blank">
-                    <img class="img-responsive " src="../Images/foretag/strateg.png"/>
+                    <img class="img-responsive " src="../Images/foretag/strateg.png" />
                 </a>
             </div>
             <div class="col-md-2 col-xs-6 col-sm-3">
                 <a href="http://seb.se/" class="btn" target="_blank">
-                    <img class="img-responsive" src="../Images/foretag/SEB.jpg"/>
+                    <img class="img-responsive" src="../Images/foretag/SEB.jpg" />
                 </a>
             </div>
         </div>
         <div class="row ">
 
-        <div class="col-md-2 col-md-offset-4 col-xs-6 col-sm-3">
+            <div class="col-md-2 col-md-offset-4 col-xs-6 col-sm-3">
                 <a href="https://www.academicwork.se/" class="btn" target="_blank">
 
                     <img class="img-responsive " src="../Images/foretag/academicwork.png" />
                 </a>
             </div>
             <div class="col-md-2 col-xs-6 col-sm-3">
-                <a href="https://www.academicwork.se/" class="btn" target="_blank">
+                <a href="https://www.upsales.com/" class="btn" target="_blank">
                     <img class="img-responsive" src="../Images/foretag/upsales_logo_blue.png" />
                 </a>
             </div>
@@ -267,3 +277,8 @@
     </div>
 
 </section>
+
+
+@section scripts
+{
+}
