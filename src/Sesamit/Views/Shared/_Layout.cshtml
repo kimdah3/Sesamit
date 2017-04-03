@@ -32,12 +32,13 @@
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
                         <li><a asp-controller="Home" asp-action="Intro">Introduktion</a></li>
-                        <li><a asp-controller="Home" asp-action="BloggNyheter">Blogg & Nyheter</a></li>
+                        <li><a href="https://www.facebook.com/Sesamit/?fref=ts" target="_blank">Nyheter</a></li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Företag <span class="caret"></span></a>
                             <ul class="dropdown-menu">
                                 <li><a asp-controller="Home" asp-action="Samarbetspartners">Samarbetspartners</a></li>
                                 <li><a asp-controller="Home" asp-action="Jobbmojligheter">Jobbmöjligheter</a></li>
+                                <li  class="disabled"><a asp-controller="" class="disabled" asp-action="">Mentorskapsprojektet </a></li>
                             </ul>
                         </li>
                         <li><a asp-controller="Home" asp-action="Bryggan">Bryggan</a></li>
@@ -45,7 +46,8 @@
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Om Sesam <span class="caret"></span></a>
                             <ul class="dropdown-menu">
                                 <li><a asp-controller="OmSesam" asp-action="VadArSesam">Vad är Sesam?</a></li>
-                                <li><a asp-controller="OmSesam" asp-action="Campusmassan">Campusmässan</a></li>
+                                <li><a asp-controller="OmSesam" asp-action="Vardegrund">Sesams värdegrund</a></li>
+                                @*<li><a asp-controller="OmSesam" asp-action="Campusmassan">Campusmässan</a></li>*@
                                 <li role="separator" class="divider"></li>
                                 <li><a asp-controller="OmSesam" asp-action="Styrelsen">Styrelsen</a></li>
                                 <li><a asp-controller="OmSesam" asp-action="Utskott">Utskott</a></li>
@@ -56,6 +58,8 @@
                                 @*<li><a href="#">Kalender</a></li>*@
                             </ul>
                         </li>
+                        <li><a asp-controller="Home" asp-action="MEGAN">MEGAN</a></li>
+                        <li><a asp-controller="OmSesam" asp-action="Campusmassan">Campusmässan</a></li>
                         <li><a href="" id="kontakt-button" data-toggle="modal" data-target="#kontaktModal">Kontakta oss</a></li>
                     </ul>
                 </div><!-- /.navbar-collapse -->

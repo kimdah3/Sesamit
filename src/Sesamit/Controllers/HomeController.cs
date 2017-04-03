@@ -87,6 +87,11 @@ namespace Sesamit.Controllers
             return View();
         }
 
+        public IActionResult MEGAN()
+        {
+            return View();
+        }
+
         public IActionResult Error()
         {
             return View();

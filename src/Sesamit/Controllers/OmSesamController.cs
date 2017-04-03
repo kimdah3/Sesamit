@@ -31,6 +31,11 @@ namespace Sesamit.Controllers
             return View();
         }
 
+        public IActionResult Val()
+        {
+            return View();
+        }
+
         public IActionResult Campusmassan()
         {
             return View();
@@ -42,6 +47,11 @@ namespace Sesamit.Controllers
         }
 
         public IActionResult Arkiv()
+        {
+            return View();
+        }
+
+        public IActionResult Vardegrund()
         {
             return View();
         }

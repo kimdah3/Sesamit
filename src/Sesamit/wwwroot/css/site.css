@@ -14,6 +14,13 @@ p {
     font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 16px;
 }
+
+.jumbotron-transparent {
+    background-color: transparent;
+    border: 0;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
 /**************************** NAVBAR ****************************/
 .navbar {
     z-index: 5;
@@ -970,13 +977,9 @@ p {
 /****************************CAMPUSMÄSSAN****************************/
 
 #campusmassan-header {
-    background-image: url("../Images/headers/campusmassan2.jpg");
+    background-image: url("../Images/headers/campusmassan.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-#img-campusmassan-header {
-    width: 75%;
 }
 /****************************SEKTINSMÖTEN****************************/
 #header-sektionsmoten {
@@ -1214,22 +1217,15 @@ footer {
 #fa-responsive-sesamvagen {
     padding: 10px 0 25px;
 }
-/*****************HANDLINGAR*********************/
-#handlingar-header {
-    background-image: url("../Images/headers/handlingar-header.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-top: 150px;
-    padding-bottom: 100px;
+
+.jumbotron-transparent {
+    background-color: transparent;
+    border: 0;
+    box-shadow: none;
+    -webkit-box-shadow: none;
 }
-#section-fullmaktige {
-    background-color: #f8f8f8;
-}
-/*****************ARKIV*********************/
-#handlingar-arkiv {
-    background-image: url("../Images/headers/akriv.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-top: 150px;
-    padding-bottom: 100px;
+
+
+.panel-megan {
+    min-height: 280px;
 }
