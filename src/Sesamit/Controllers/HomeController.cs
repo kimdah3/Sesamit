@@ -92,6 +92,11 @@ namespace Sesamit.Controllers
             return View();
         }
 
+        public IActionResult MentorskapsProjektet()
+        {
+            return View();
+        }
+
         public IActionResult Error()
         {
             return View();

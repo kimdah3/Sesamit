@@ -943,7 +943,6 @@ p {
     background-color: #f8f8f8;
 }
 
-
 #nyheter-blogg-menu {
     padding-top: 60px;
     text-shadow: 0 1px 2px rgba(0,0,0,0.0);
@@ -1228,4 +1227,9 @@ footer {
 
 .panel-megan {
     min-height: 280px;
+}
+
+
+.section-background-grey {
+    background-color: #f8f8f8 !important;
 }
