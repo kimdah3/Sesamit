@@ -1233,3 +1233,20 @@ footer {
 .section-background-grey {
     background-color: #f8f8f8 !important;
 }
+
+#megan-header {
+    background-image: url("../Images/megan/GRUPP-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section-megan-pg h4 {
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+
+.section-megan-pg .panel-body p{
+    margin-top: 5px;
+}
+
+
