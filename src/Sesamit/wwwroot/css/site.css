@@ -1,1252 +1,1292 @@
 ﻿/*
-    #3b469d
-    #ffffff
-    #333333
-    #eef0f2
-    #c6c7c4
+	#3b469d
+	#ffffff
+	#333333
+	#eef0f2
+	#c6c7c4
 */
 
 body, html {
-    height: 100%;
+	height: 100%;
 }
 
 p {
-    font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 16px;
+	font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 16px;
 }
 
 .jumbotron-transparent {
-    background-color: transparent;
-    border: 0;
-    box-shadow: none;
-    -webkit-box-shadow: none;
+	background-color: transparent;
+	border: 0;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+}
+
+
+	/* SCROLL TO TOP SECTION*/
+.scroll-top-wrapper {
+	position: fixed;
+	opacity: 0;
+	visibility: hidden;
+	overflow: hidden;
+	text-align: center;
+	z-index: 99999999;
+	background-color: #777777;
+	color: #eeeeee;
+	width: 50px;
+	height: 48px;
+	line-height: 48px;
+	right: 30px;
+	bottom: 30px;
+	padding-top: 2px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+.scroll-top-wrapper:hover {
+	background-color: #888888;
+}
+.scroll-top-wrapper.show {
+	visibility:visible;
+	cursor:pointer;
+	opacity: 1.0;
+}
+.scroll-top-wrapper .fa {
+	line-height: inherit;
 }
 /**************************** NAVBAR ****************************/
 .navbar {
-    z-index: 5;
-    margin-top: 20px;
+	z-index: 5;
+	margin-top: 20px;
 }
 
 .navbar-header img {
-    margin: 7px 7px 7px 0;
-    height: 40px;
-    width: auto;
+	margin: 7px 7px 7px 0;
+	height: 40px;
+	width: auto;
 }
 
 #logout-button {
-    padding: 3px 20px;
+	padding: 3px 20px;
 }
 
-    #logout-button button {
-        padding: 0;
-    }
+	#logout-button button {
+		padding: 0;
+	}
 /**************************** GENERAL ****************************/
 .section-padding {
-    padding: 100px 0 100px;
+	padding: 100px 0 100px;
 }
 
 .section-grey {
-    background-color: #f8f8f8;
+	background-color: #f8f8f8;
 }
 
 .row-padding {
-    padding: 30px 0;
+	padding: 30px 0;
 }
 
 .img-center {
-    margin: 0 auto;
+	margin: 0 auto;
 }
 
 .fa-blue {
-    color: #127ba3;
+	color: #127ba3;
 }
 
 .fa-green {
-    color: green;
+	color: green;
 }
 
 .fa-red {
-    color: red;
+	color: red;
 }
 
 .fa-white {
-    color: #FFF;
+	color: #FFF;
 }
 
 .fa-grey {
-    color: #666;
+	color: #666;
 }
 
 .fa-7x {
-    font-size: 7em !important;
+	font-size: 7em !important;
 }
 
 .fa-9x {
-    font-size: 9em !important;
+	font-size: 9em !important;
 }
 
 .h3-fp-section {
-    margin-top: 0;
-    font-weight: lighter;
+	margin-top: 0;
+	font-weight: lighter;
 }
 
 .fa-padding {
-    padding: 10px;
+	padding: 10px;
 }
 
 .btn-fp-section {
-    font-size: 1em;
+	font-size: 1em;
 }
 
 .h1-margin {
-    margin: 30px 0 100px;
+	margin: 30px 0 100px;
 }
 
 .section-margin {
-    margin: 0 0 300px;
+	margin: 0 0 300px;
 }
 
 .img-full-width {
-    width: 100%;
+	width: 100%;
 }
 
 .img-padding {
-    padding: 10px;
+	padding: 10px;
 }
 
 .big-header {
-    padding: 180px 0 100px !important;
+	padding: 180px 0 100px !important;
 }
 
 .h1-padding {
-    padding: 25px 0 40px;
+	padding: 25px 0 40px;
 }
 
 .section-small-padding {
-    padding: 40px 0;
+	padding: 40px 0;
 }
 
 .row-big-padding {
-    padding: 30px;
+	padding: 30px;
 }
 /**************************** RESPONSIV FIXES ****************************/
 @media (max-width: 1201px) and (min-width: 769px) {
-    .front-page-header {
-        margin-top: -155px !important;
-    }
+	.front-page-header {
+		margin-top: -155px !important;
+	}
 
-    .top-page-header {
-        margin-top: -155px !important;
-    }
+	.top-page-header {
+		margin-top: -155px !important;
+	}
 
-    .header-responsive-fix {
-        margin-top: -155px !important;
-    }
+	.header-responsive-fix {
+		margin-top: -155px !important;
+	}
 }
 
 @media (max-width: 768px) {
-    .front-page-header {
-        margin-top: -19px !important;
-    }
+	.front-page-header {
+		margin-top: -19px !important;
+	}
 
-    .front-page-header {
-        background-image: url("../Images/headers/front-page-small.jpg") !important;
-    }
-
-
-    #nyheter-blogg-menu {
-        padding-top: 100px !important;
-    }
-
-    #intro-header {
-        background-image: url("../Images/headers/15-09-11-orebrodagen-2015-57665-faded-small.jpg") !important;
-    }
-
-    #blogg-nyheter-header {
-        background-image: url("../Images/headers/20130913_orebrodagen_HT13-73060-faded-small.jpg") !important;
-    }
-
-    #vadarsesam-header {
-        background-image: url("../Images/headers/20130913_orebrodagen_HT13-72999-faded-small.jpg") !important;
-    }
-
-    #styrelsen-header {
-        background-image: url("../Images/headers/15-09-11-orebrodagen-2015-57644-faded-small.jpg") !important;
-    }
+	.front-page-header {
+		background-image: url("../Images/headers/front-page-small.jpg") !important;
+	}
 
 
-    .menu-container {
-        background-color: white;
-        padding: 0;
-        margin: 0 !important;
-    }
+	#nyheter-blogg-menu {
+		padding-top: 100px !important;
+	}
 
-    .navbar-default {
-        margin-top: 0;
-    }
+	#intro-header {
+		background-image: url("../Images/headers/15-09-11-orebrodagen-2015-57665-faded-small.jpg") !important;
+	}
 
-    p.lead {
-        font-size: 18px !important;
-    }
+	#blogg-nyheter-header {
+		background-image: url("../Images/headers/20130913_orebrodagen_HT13-73060-faded-small.jpg") !important;
+	}
 
-    p {
-        font-size: 15px !important;
-    }
+	#vadarsesam-header {
+		background-image: url("../Images/headers/20130913_orebrodagen_HT13-72999-faded-small.jpg") !important;
+	}
 
-    #bryggan-menu li a i {
-        padding: 0;
-        font-size: 1.4em;
-    }
+	#styrelsen-header {
+		background-image: url("../Images/headers/15-09-11-orebrodagen-2015-57644-faded-small.jpg") !important;
+	}
 
-    #bryggan-header {
-        background-size: 100% 100% !important;
-        background-image: url("../Images/headers/IMG_0930-small.jpg") !important;
-    }
 
-    .section-padding {
-        padding: 60px 0 !important;
-    }
+	.menu-container {
+		background-color: white;
+		padding: 0;
+		margin: 0 !important;
+	}
 
-    #front-page-samarbeten {
-        padding: 60px 0 !important;
-    }
+	.navbar-default {
+		margin-top: 0;
+	}
 
-    .h1-margin {
-        margin: 30px 0 50px !important;
-    }
+	p.lead {
+		font-size: 18px !important;
+	}
 
-    .top-page-header {
-        padding: 200px 0 110px !important;
-    }
+	p {
+		font-size: 15px !important;
+	}
+
+	#bryggan-menu li a i {
+		padding: 0;
+		font-size: 1.4em;
+	}
+
+	#bryggan-header {
+		background-size: 100% 100% !important;
+		background-image: url("../Images/headers/IMG_0930-small.jpg") !important;
+	}
+
+	.section-padding {
+		padding: 60px 0 !important;
+	}
+
+	#front-page-samarbeten {
+		padding: 60px 0 !important;
+	}
+
+	.h1-margin {
+		margin: 30px 0 50px !important;
+	}
+
+	.top-page-header {
+		padding: 200px 0 110px !important;
+	}
 }
 
 @media (max-width: 991px) {
-    .footer-contact {
-        text-align: center;
-    }
+	.footer-contact {
+		text-align: center;
+	}
 }
 
 @media (min-width: 991px) {
-    .kontakt-modified-panel-small {
-        height: 150px;
-    }
+	.kontakt-modified-panel-small {
+		height: 150px;
+	}
 }
 
 
 /**************************** Frontpage header ****************************/
 .front-page-header {
-    z-index: 0;
-    margin-top: -100px;
-    background-image: url("../Images/headers/front-page.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
+	z-index: 0;
+	margin-top: -100px;
+	background-image: url("../Images/headers/front-page.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
 }
 
-    .front-page-header #carousel-example-generic {
-        background-color: #000;
-        background-color: rgba(0,0,0,0.5);
-    }
+	.front-page-header #carousel-example-generic {
+		background-color: #000;
+		background-color: rgba(0,0,0,0.5);
+	}
 
-    .front-page-header .carousel-indicators li {
-        width: 17px !important;
-        height: 17px !important;
-    }
+	.front-page-header .carousel-indicators li {
+		width: 17px !important;
+		height: 17px !important;
+	}
 
-    .front-page-header .carousel-control {
-        background-image: -webkit-linear-gradient(left, rgba(0,0,0,0.0001) 0, rgba(0,0,0,0.0) 100%) !important;
-    }
+	.front-page-header .carousel-control {
+		background-image: -webkit-linear-gradient(left, rgba(0,0,0,0.0001) 0, rgba(0,0,0,0.0) 100%) !important;
+	}
 
-    .front-page-header .item {
-        padding: 280px 0 90px;
-        margin-bottom: 70px;
-        height: 100px;
-    }
+	.front-page-header .item {
+		padding: 280px 0 90px;
+		margin-bottom: 70px;
+		height: 100px;
+	}
 
-        .front-page-header .item p {
-            margin: 2px;
-            padding: 4px;
-        }
+		.front-page-header .item p {
+			margin: 2px;
+			padding: 4px;
+		}
 
-        .front-page-header .item h2, .item h1, .item h4, .item h3, .item h5 {
-            color: #FFF;
-            margin-top: 0;
-            margin-bottom: 13px;
-            padding: 1px;
-        }
+		.front-page-header .item h2, .item h1, .item h4, .item h3, .item h5 {
+			color: #FFF;
+			margin-top: 0;
+			margin-bottom: 13px;
+			padding: 1px;
+		}
 
-        .front-page-header .item .fa-5x {
-            font-size: 11em;
-        }
+		.front-page-header .item .fa-5x {
+			font-size: 11em;
+		}
 
-        .front-page-header .item .fa-briefcase {
-            font-size: 8em !important;
-        }
+		.front-page-header .item .fa-briefcase {
+			font-size: 8em !important;
+		}
 
 
 /****************************Frontpage content****************************/
 #section-frontpage {
-    background-color: #f8f8f8;
+	background-color: #f8f8f8;
 }
 
 
 .alert {
-    margin-bottom: 0;
+	margin-bottom: 0;
 }
 
 .section-frontpage .panel {
-    border-top-width: 1.5px;
+	border-top-width: 1.5px;
 }
 
 #front-page-samarbeten {
-    padding: 100px 0 150px;
+	padding: 100px 0 150px;
 }
 
 .img-logo-fp {
-    margin: 20px 0 0;
-    max-height: 350px;
+	margin: 20px 0 0;
+	max-height: 350px;
 }
 
 #section-ordforande {
-    background-color: #f8f8f8;
-    background-image: url("../Images/styrelse/Kavaj-Jonatan-fp5.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+	background-color: #f8f8f8;
+	background-image: url("../Images/styrelse/Kavaj-Jonatan-fp5.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
-    #section-ordforande .jumbotron {
-        border: 0;
-        -webkit-box-shadow: none;
-        background-color: transparent;
-        margin: 40px 0 0;
-        padding: 0 0 40px;
-    }
+	#section-ordforande .jumbotron {
+		border: 0;
+		-webkit-box-shadow: none;
+		background-color: transparent;
+		margin: 40px 0 0;
+		padding: 0 0 40px;
+	}
 
-        #section-ordforande .jumbotron h2, #section-ordforande .jumbotron p {
-            color: #FFF;
-            text-shadow: 0 1px 2px rgba(0,0,0,0.6);
-        }
+		#section-ordforande .jumbotron h2, #section-ordforande .jumbotron p {
+			color: #FFF;
+			text-shadow: 0 1px 2px rgba(0,0,0,0.6);
+		}
 
 #section-fp-middle {
-    background-image: url("../Images/headers/15-09-11-orebrodagen-2015-57660-faded.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 600px;
+	background-image: url("../Images/headers/15-09-11-orebrodagen-2015-57660-faded.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 600px;
 }
 
 #section-fp-info {
-    background-color: #f8f8f8;
-    padding: 180px 0;
+	background-color: #f8f8f8;
+	padding: 180px 0;
 }
 
 /****************************introduktion****************************/
 .top-page-header {
-    z-index: 0;
-    margin-top: -100px;
-    width: 100%;
-    padding: 220px 0 170px;
-    margin-bottom: 0;
-    text-shadow: 0 1px 2px rgba(0,0,0,0.6);
+	z-index: 0;
+	margin-top: -100px;
+	width: 100%;
+	padding: 220px 0 170px;
+	margin-bottom: 0;
+	text-shadow: 0 1px 2px rgba(0,0,0,0.6);
 }
 
 #intro-header {
-    background-image: url("../Images/headers/15-09-11-orebrodagen-2015-57665-faded.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+	background-image: url("../Images/headers/15-09-11-orebrodagen-2015-57665-faded.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .top-page-header h1, .top-page-header h2, .top-page-header h3, .top-page-header h4 {
-    color: #FFF;
+	color: #FFF;
 }
 
 .top-page-header h1 {
-    margin-top: 5px;
+	margin-top: 5px;
 }
 
 .top-page-header i {
-    color: #FFF;
+	color: #FFF;
 }
 
 
 #intro-content-top {
-    background-color: #f8f8f8;
+	background-color: #f8f8f8;
 }
 
-    #intro-content-top .row .fa {
-        color: #127ba3;
-    }
+	#intro-content-top .row .fa {
+		color: #127ba3;
+	}
 
 #intro-k {
-    background-color: #75caeb;
+	background-color: #75caeb;
 }
 
 #intro-content-top .thumbnail {
-    padding: 15px;
-    border: 4px solid #eeeeee;
-    box-shadow: 0 1px 2px rgba(0,0,0,0.3);
+	padding: 15px;
+	border: 4px solid #eeeeee;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.3);
 }
 
-    #intro-content-top .thumbnail .caption h3 {
-        margin-top: -10px;
-        margin-bottom: 7px;
-    }
+	#intro-content-top .thumbnail .caption h3 {
+		margin-top: -10px;
+		margin-bottom: 7px;
+	}
 
 
 
 .intro-k-pair-small {
-    padding: 15px;
+	padding: 15px;
 }
 
 .p-no-bottom-margin {
-    margin-bottom: -10px;
+	margin-bottom: -10px;
 }
 
 .border-left-panel {
-    border-left: 5px lightskyblue solid;
+	border-left: 5px lightskyblue solid;
 }
 
 .border-right-panel {
-    border-right: 5px lightskyblue solid;
+	border-right: 5px lightskyblue solid;
 }
 
 .border-full-panel {
-    border-right: 5px lightskyblue solid;
-    border-left: 5px lightskyblue solid;
+	border-right: 5px lightskyblue solid;
+	border-left: 5px lightskyblue solid;
 }
 /****************************VadArSesam****************************/
 
 .featurette {
-    padding: 50px 0 50px 0;
+	padding: 50px 0 50px 0;
 }
 
 .featurette-image {
-    height: 45%;
-    width: 45%;
+	height: 45%;
+	width: 45%;
 }
 
 
 .featurette-heading {
-    margin: 0;
+	margin: 0;
 }
 
 .text-muted {
-    margin: 0;
-    margin-bottom: 15px;
+	margin: 0;
+	margin-bottom: 15px;
 }
 
 .lead {
-    font-size: 18px;
+	font-size: 18px;
 }
 
 #vadarsesam-header {
-    background-image: url("../Images/headers/20130913_orebrodagen_HT13-72999-faded.jpg");
+	background-image: url("../Images/headers/20130913_orebrodagen_HT13-72999-faded.jpg");
 }
 
 .vadarsesam-header {
-    z-index: 0;
-    margin-top: -100px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    margin-bottom: 0;
-    text-shadow: 0 1px 2px rgba(0,0,0,0.6);
+	z-index: 0;
+	margin-top: -100px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	margin-bottom: 0;
+	text-shadow: 0 1px 2px rgba(0,0,0,0.6);
 }
 
-    .vadarsesam-header h1, .top-page-header h2, .top-page-header h3, .top-page-header h4 {
-        color: #FFF;
-    }
+	.vadarsesam-header h1, .top-page-header h2, .top-page-header h3, .top-page-header h4 {
+		color: #FFF;
+	}
 
-    .vadarsesam-header h1 {
-        margin-top: 5px;
-    }
+	.vadarsesam-header h1 {
+		margin-top: 5px;
+	}
 
-    .vadarsesam-header i {
-        color: #FFF;
-        font-size: 08em;
-    }
+	.vadarsesam-header i {
+		color: #FFF;
+		font-size: 08em;
+	}
 
 
 .section-VadArSesampage {
-    padding-top: 30px;
-    padding-bottom: 0;
-    background-color: #f8f8f8;
+	padding-top: 30px;
+	padding-bottom: 0;
+	background-color: #f8f8f8;
 }
 
 .item-background {
-    background-color: white;
-    border: 1px solid white;
-    border-radius: 5px;
+	background-color: white;
+	border: 1px solid white;
+	border-radius: 5px;
 }
 
 .header-image {
-    display: block;
-    width: 100%;
-    text-align: center;
-    background: url('http://placehold.it/1900x500') no-repeat center center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
+	display: block;
+	width: 100%;
+	text-align: center;
+	background: url('http://placehold.it/1900x500') no-repeat center center scroll;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
 }
 
 .headline {
-    padding: 120px 0;
+	padding: 120px 0;
 }
 
-    .headline h1 {
-        font-size: 130px;
-        background: #fff;
-        background: rgba(255,255,255,0.9);
-    }
+	.headline h1 {
+		font-size: 130px;
+		background: #fff;
+		background: rgba(255,255,255,0.9);
+	}
 
-    .headline h2 {
-        font-size: 77px;
-        background: #fff;
-        background: rgba(255,255,255,0.9);
-    }
+	.headline h2 {
+		font-size: 77px;
+		background: #fff;
+		background: rgba(255,255,255,0.9);
+	}
 
 .featurette-divider {
-    margin: 80px 0;
+	margin: 80px 0;
 }
 
 .featurette {
-    overflow: hidden;
+	overflow: hidden;
 }
 
 .featurette-image.pull-left {
-    margin-right: 40px;
+	margin-right: 40px;
 }
 
 .featurette-image.pull-right {
-    margin-left: 40px;
+	margin-left: 40px;
 }
 
 .featurette-heading {
-    font-size: 50px;
+	font-size: 50px;
 }
 
 @media(max-width:1200px) {
-    .headline h1 {
-        font-size: 140px;
-    }
+	.headline h1 {
+		font-size: 140px;
+	}
 
-    .headline h2 {
-        font-size: 63px;
-    }
+	.headline h2 {
+		font-size: 63px;
+	}
 
-    .featurette-divider {
-        margin: 50px 0;
-    }
+	.featurette-divider {
+		margin: 50px 0;
+	}
 
-    .featurette-image.pull-left {
-        margin-right: 20px;
-    }
+	.featurette-image.pull-left {
+		margin-right: 20px;
+	}
 
-    .featurette-image.pull-right {
-        margin-left: 20px;
-    }
+	.featurette-image.pull-right {
+		margin-left: 20px;
+	}
 
-    .featurette-heading {
-        font-size: 35px;
-    }
+	.featurette-heading {
+		font-size: 35px;
+	}
 }
 
 @media(max-width:991px) {
-    .headline h1 {
-        font-size: 105px;
-    }
+	.headline h1 {
+		font-size: 105px;
+	}
 
-    .headline h2 {
-        font-size: 50px;
-    }
+	.headline h2 {
+		font-size: 50px;
+	}
 
-    .featurette-divider {
-        margin: 40px 0;
-    }
+	.featurette-divider {
+		margin: 40px 0;
+	}
 
 
-    .featurette-image.pull-left {
-        margin-right: 10px;
-    }
+	.featurette-image.pull-left {
+		margin-right: 10px;
+	}
 
-    .featurette-image.pull-right {
-        margin-left: 10px;
-    }
+	.featurette-image.pull-right {
+		margin-left: 10px;
+	}
 
-    .featurette-heading {
-        font-size: 30px;
-    }
+	.featurette-heading {
+		font-size: 30px;
+	}
 }
 
 @media(max-width:768px) {
-    .container {
-        margin: 0 15px;
-    }
+	.container {
+		margin: 0 15px;
+	}
 
-    .featurette-divider {
-        margin: 40px 0;
-    }
+	.featurette-divider {
+		margin: 40px 0;
+	}
 
-    .featurette-heading {
-        font-size: 25px;
-    }
+	.featurette-heading {
+		font-size: 25px;
+	}
 }
 
 @media(max-width:668px) {
-    .headline h1 {
-        font-size: 70px;
-    }
+	.headline h1 {
+		font-size: 70px;
+	}
 
-    .headline h2 {
-        font-size: 32px;
-    }
+	.headline h2 {
+		font-size: 32px;
+	}
 
-    .featurette-divider {
-        margin: 30px 0;
-    }
+	.featurette-divider {
+		margin: 30px 0;
+	}
 }
 
 @media(max-width:640px) {
-    .headline {
-        padding: 75px 0 25px 0;
-    }
+	.headline {
+		padding: 75px 0 25px 0;
+	}
 
-        .headline h1 {
-            font-size: 60px;
-        }
+		.headline h1 {
+			font-size: 60px;
+		}
 
-        .headline h2 {
-            font-size: 30px;
-        }
+		.headline h2 {
+			font-size: 30px;
+		}
 }
 
 @media(max-width:550px) {
-    .featurette-divider {
-        margin: 10px 0;
-    }
+	.featurette-divider {
+		margin: 10px 0;
+	}
 
-    .featurette-image {
-        width: 100%;
-    }
+	.featurette-image {
+		width: 100%;
+	}
 
-        .featurette-image.pull-left {
-            margin-right: 0;
-            margin-bottom: 10px;
-        }
+		.featurette-image.pull-left {
+			margin-right: 0;
+			margin-bottom: 10px;
+		}
 
-        .featurette-image.pull-right {
-            margin-bottom: 10px;
-            margin-left: 0;
-        }
+		.featurette-image.pull-right {
+			margin-bottom: 10px;
+			margin-left: 0;
+		}
 }
 
 /****************************Utskott****************************/
 #utskott-header {
-    background-image: url("../Images/headers/15-09-11-orebrodagen-2015-57660-faded.jpg");
-    padding: 220px 0 120px;
+	background-image: url("../Images/headers/15-09-11-orebrodagen-2015-57660-faded.jpg");
+	padding: 220px 0 120px;
 }
 
 #nav li a {
-    background-color: white;
+	background-color: white;
 }
 
 .affix {
-    top: 20px;
+	top: 20px;
 }
 
 #nav li a:hover {
-    border-left: 5px lightskyblue solid;
+	border-left: 5px lightskyblue solid;
 }
 
 #nav .active a {
-    border-left: 5px lightskyblue solid;
+	border-left: 5px lightskyblue solid;
 }
 
 .utskott-heading {
-    margin: 0 0 20px 0;
-    text-align: center;
+	margin: 0 0 20px 0;
+	text-align: center;
 }
 
 .utskott-p {
-    margin: 15px 5px 0 5px;
+	margin: 15px 5px 0 5px;
 }
 
 #utskott-panel {
-    border-left: 5px lightskyblue solid;
+	border-left: 5px lightskyblue solid;
 }
 
 .btn-trans {
-    background: transparent;
+	background: transparent;
 }
 
-    .btn-trans:hover {
-        outline: none;
-        color: white;
-        background: rgba(255, 255, 255, 0.1);
-    }
+	.btn-trans:hover {
+		outline: none;
+		color: white;
+		background: rgba(255, 255, 255, 0.1);
+	}
 
 
 /****************************Kontakta oss****************************/
 #kontakt-map {
-    height: 400px;
-    box-shadow: 0 1px 2px rgba(0,0,0,0.3);
+	height: 400px;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.3);
 }
 
 /****************************Styrelsen****************************/
 #styrelsen-header {
-    background-image: url("../Images/headers/styrelsen1.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+	background-image: url("../Images/headers/styrelsen1.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 #styrelsen-content {
-    padding: 40px 0;
-    background-color: #f8f8f8;
+	padding: 40px 0;
+	background-color: #f8f8f8;
 }
 
 .styrelsen-person-border {
-    padding: 15px;
-    border: 4px solid #eeeeee;
-    box-shadow: 0 1px 2px rgba(0,0,0,0.3);
+	padding: 15px;
+	border: 4px solid #eeeeee;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.3);
 }
 
 .styrelsen-person-picture {
-    margin: 0 auto;
+	margin: 0 auto;
 }
 
 .styrelse-mail-button {
-    margin-top: 30px;
+	margin-top: 30px;
 }
 
 .styrelse-row {
-    margin: 20px;
+	margin: 20px;
 }
 
-    .styrelse-row .col-md-3 {
-        padding-bottom: 30px;
-    }
+	.styrelse-row .col-md-3 {
+		padding-bottom: 30px;
+	}
 
 .fa-color-blue {
-    color: #003366;
+	color: #003366;
 }
 
 #section-styrelsen-jump {
-    background-color: #f8f8f8;
-    background-image: url("../Images/styrelse/Foto-2016-09-06-11-54-54-fm.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 500px;
+	background-color: #f8f8f8;
+	background-image: url("../Images/styrelse/Foto-2016-09-06-11-54-54-fm.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 500px;
 }
 /****************************Bryggan****************************/
 #bryggan-header {
-    background-image: url("../Images/headers/IMG_0930.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-top: 150px;
-    padding-bottom: 100px;
+	background-image: url("../Images/headers/IMG_0930.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-top: 150px;
+	padding-bottom: 100px;
 }
 
 #bryggan-menu {
-    padding-top: 40px;
-    text-shadow: 0 1px 2px rgba(0,0,0,0.0);
+	padding-top: 40px;
+	text-shadow: 0 1px 2px rgba(0,0,0,0.0);
 }
 
-    #bryggan-menu .nav-tabs {
-        border: none;
-    }
+	#bryggan-menu .nav-tabs {
+		border: none;
+	}
 
-    #bryggan-menu li a {
-        background-color: #f8f8f8;
-        border: none;
-        margin-bottom: -5px;
-        margin-right: 10px;
-    }
+	#bryggan-menu li a {
+		background-color: #f8f8f8;
+		border: none;
+		margin-bottom: -5px;
+		margin-right: 10px;
+	}
 
-        #bryggan-menu li a i {
-            color: #003366;
-        }
+		#bryggan-menu li a i {
+			color: #003366;
+		}
 
-    #bryggan-menu li.active a {
-        border: none;
-        -webkit-transition: none;
-        -moz-transition: none;
-        transition: none;
-    }
+	#bryggan-menu li.active a {
+		border: none;
+		-webkit-transition: none;
+		-moz-transition: none;
+		transition: none;
+	}
 
 #section-bryggan-intro {
-    background-color: #f8f8f8;
+	background-color: #f8f8f8;
 }
 
-    #section-bryggan-intro .tab-content i {
-        font-size: 1.5em;
-    }
+	#section-bryggan-intro .tab-content i {
+		font-size: 1.5em;
+	}
 
 .img-margin-bottom {
-    margin-bottom: 25px;
+	margin-bottom: 25px;
 }
 
 .img-margin-top {
-    margin-top: 15px;
+	margin-top: 15px;
 }
 
 .h2-margin-top {
-    margin-top: 0;
+	margin-top: 0;
 }
 
 #bryggan-medlemskap-tab a {
-    border-top: 5px lightskyblue solid !important;
+	border-top: 5px lightskyblue solid !important;
 }
 
 #bryggan-medlemskap-tab h4 {
-    padding: 0;
-    margin-top: 4px;
-    color: #333333 !important;
+	padding: 0;
+	margin-top: 4px;
+	color: #333333 !important;
 }
 
 #section-bryggan-menu {
-    background-color: #f8f8f8;
+	background-color: #f8f8f8;
 }
 
 #section-bryggan-beer {
-    background-image: url("../Images/bryggan/IMG_0929.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+	background-image: url("../Images/bryggan/IMG_0929.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
-    #section-bryggan-beer .jumbotron {
-        border: 0;
-        -webkit-box-shadow: none;
-        background-color: transparent;
-        margin: 60px 0 0;
-        padding: 0 0 80px;
-    }
+	#section-bryggan-beer .jumbotron {
+		border: 0;
+		-webkit-box-shadow: none;
+		background-color: transparent;
+		margin: 60px 0 0;
+		padding: 0 0 80px;
+	}
 
-        #section-bryggan-beer .jumbotron h2, #section-ordforande .jumbotron p {
-            color: #FFF;
-            text-shadow: 0 1px 2px rgba(0,0,0,0.6);
-        }
+		#section-bryggan-beer .jumbotron h2, #section-ordforande .jumbotron p {
+			color: #FFF;
+			text-shadow: 0 1px 2px rgba(0,0,0,0.6);
+		}
 
-        #section-bryggan-beer .jumbotron p {
-            color: #FFF;
-        }
+		#section-bryggan-beer .jumbotron p {
+			color: #FFF;
+		}
 
 #bryggan-provjobba {
-    padding: 30px;
-    background-color: rgba(0,0,0, 0.9);
-    border-radius: 5px;
+	padding: 30px;
+	background-color: rgba(0,0,0, 0.9);
+	border-radius: 5px;
 }
 
-    #bryggan-provjobba h2 {
-        margin: 0;
-    }
+	#bryggan-provjobba h2 {
+		margin: 0;
+	}
 
 #btn-bryggan-menu {
-    width: 100%;
-    margin: 20px 0 10px;
+	width: 100%;
+	margin: 20px 0 10px;
 }
 
 #bryggan-menu-heading {
-    margin: 0 0 20px;
+	margin: 0 0 20px;
 }
 
 /****************************FÖRETAG****************************/
 #partners-header {
-    background-image: url("../Images/headers/nova-bunker.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+	background-image: url("../Images/headers/nova-bunker.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 #foretag-header .container {
-    height: 124px;
+	height: 124px;
 }
 
 #jobbmojligheter-header {
-    background-image: url("../Images/headers/nova-vaning1.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+	background-image: url("../Images/headers/nova-vaning1.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 #foretag-section {
-    padding: 30px 0;
-    background-color: #f8f8f8;
+	padding: 30px 0;
+	background-color: #f8f8f8;
 }
 
 .row-bottom-buffer {
-    margin-bottom: 35px;
+	margin-bottom: 35px;
 }
 
 .row-top-buffer {
-    margin-top: 35px;
+	margin-top: 35px;
 }
 
 .foretag-row img {
-    max-height: 125px;
+	max-height: 125px;
 }
 
 
 
 #myCarousel .carousel-caption {
-    left: 0;
-    right: 0;
-    bottom: 0;
-    text-align: left;
-    padding: 10px;
-    background: rgba(0,0,0,0.6);
-    text-shadow: none;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	text-align: left;
+	padding: 10px;
+	background: rgba(0,0,0,0.6);
+	text-shadow: none;
 }
 
 #myCarousel .list-group {
-    position: absolute;
-    top: 0;
-    right: 0;
+	position: absolute;
+	top: 0;
+	right: 0;
 }
 
 #myCarousel .list-group-item {
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
 }
 
 #myCarousel .list-group .active {
-    border: none;
-    background-color: rgba(0,0,0,0.5);
+	border: none;
+	background-color: rgba(0,0,0,0.5);
 }
 
 @media (min-width: 992px) {
-    #myCarousel {
-        padding-right: 33.3333%;
-    }
+	#myCarousel {
+		padding-right: 33.3333%;
+	}
 
-        #myCarousel .carousel-controls {
-            display: none;
-        }
+		#myCarousel .carousel-controls {
+			display: none;
+		}
 }
 
 @media (max-width: 991px) {
-    .carousel-caption p,
-    #myCarousel .list-group {
-        display: none;
-    }
+	.carousel-caption p,
+	#myCarousel .list-group {
+		display: none;
+	}
 }
 /****************************NYHETER&BLOGG****************************/
 
 #blogg-nyheter-header {
-    background-image: url("../Images/headers/20130913_orebrodagen_HT13-73060-faded.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-top: 150px;
-    padding-bottom: 100px;
+	background-image: url("../Images/headers/20130913_orebrodagen_HT13-73060-faded.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-top: 150px;
+	padding-bottom: 100px;
 }
 
 #section-blogg {
-    padding: 30px 0;
-    background-color: #f8f8f8;
+	padding: 30px 0;
+	background-color: #f8f8f8;
 }
 
 #nyheter-blogg-menu {
-    padding-top: 60px;
-    text-shadow: 0 1px 2px rgba(0,0,0,0.0);
+	padding-top: 60px;
+	text-shadow: 0 1px 2px rgba(0,0,0,0.0);
 }
 
-    #nyheter-blogg-menu .nav-tabs {
-        border: none;
-    }
+	#nyheter-blogg-menu .nav-tabs {
+		border: none;
+	}
 
-    #nyheter-blogg-menu li a {
-        background-color: #f8f8f8;
-        border: none;
-        margin-bottom: -5px;
-        margin-right: 10px;
-    }
+	#nyheter-blogg-menu li a {
+		background-color: #f8f8f8;
+		border: none;
+		margin-bottom: -5px;
+		margin-right: 10px;
+	}
 
-        #nyheter-blogg-menu li a i {
-            color: #003366;
-        }
+		#nyheter-blogg-menu li a i {
+			color: #003366;
+		}
 
-        #nyheter-blogg-menu li a h4 {
-            color: #003366;
-        }
+		#nyheter-blogg-menu li a h4 {
+			color: #003366;
+		}
 
-    #nyheter-blogg-menu li.active a {
-        border: none;
-        transition: none;
-        -webkit-transition: none;
-        -o-transition: none;
-    }
+	#nyheter-blogg-menu li.active a {
+		border: none;
+		transition: none;
+		-webkit-transition: none;
+		-o-transition: none;
+	}
 /****************************CAMPUSMÄSSAN****************************/
 
 #campusmassan-header {
-    background-image: url("../Images/headers/campusmassan.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+	background-image: url("../Images/headers/campusmassan.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 /****************************SEKTINSMÖTEN****************************/
 #header-sektionsmoten {
-    background-image: url("../Images/headers/sektionsmote.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+	background-image: url("../Images/headers/sektionsmote.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 /****************************FOOTER****************************/
 footer {
-    color: #FFF;
-    padding: 50px 0;
-    background-color: #003366;
+	color: #FFF;
+	padding: 50px 0;
+	background-color: #003366;
 }
 
-    footer a {
-        color: #FFF;
-    }
+	footer a {
+		color: #FFF;
+	}
 
-        footer a:hover {
-            color: #FFF;
-        }
+		footer a:hover {
+			color: #FFF;
+		}
 
-    footer h1, footer h2, footer h3 {
-        color: #FFF;
-    }
+	footer h1, footer h2, footer h3 {
+		color: #FFF;
+	}
 
-    footer .fa-button {
-        padding: 20px;
-    }
+	footer .fa-button {
+		padding: 20px;
+	}
 
-        footer .fa-button:hover {
-            text-decoration: none;
-        }
+		footer .fa-button:hover {
+			text-decoration: none;
+		}
 
 .col-fa {
-    padding: 50px 0;
+	padding: 50px 0;
 }
 
 .footer-hr {
-    background-color: #f8f8f8;
-    height: 1px;
-    border: 0;
+	background-color: #f8f8f8;
+	height: 1px;
+	border: 0;
 }
 
 
 /************orgChart************/
 @media(min-width:1200px) {
-    * {
-        margin: 0;
-        padding: 0;
-    }
+	* {
+		margin: 0;
+		padding: 0;
+	}
 
-    .tree ul {
-        padding-top: 20px;
-        position: relative;
-        transition: all 0.5s;
-        -webkit-transition: all 0.5s;
-        -moz-transition: all 0.5s;
-    }
+	.tree ul {
+		padding-top: 20px;
+		position: relative;
+		transition: all 0.5s;
+		-webkit-transition: all 0.5s;
+		-moz-transition: all 0.5s;
+	}
 
-    .tree li {
-        float: left;
-        text-align: center;
-        list-style-type: none;
-        position: relative;
-        padding: 20px 5px 0 5px;
-        transition: all 0.5s;
-        -webkit-transition: all 0.5s;
-        -moz-transition: all 0.5s;
-    }
+	.tree li {
+		float: left;
+		text-align: center;
+		list-style-type: none;
+		position: relative;
+		padding: 20px 5px 0 5px;
+		transition: all 0.5s;
+		-webkit-transition: all 0.5s;
+		-moz-transition: all 0.5s;
+	}
 
-        .tree li::before, .tree li::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            right: 50%;
-            border-top: 1px solid #ccc;
-            width: 50%;
-            height: 20px;
-        }
+		.tree li::before, .tree li::after {
+			content: '';
+			position: absolute;
+			top: 0;
+			right: 50%;
+			border-top: 1px solid #ccc;
+			width: 50%;
+			height: 20px;
+		}
 
-        .tree li::after {
-            right: auto;
-            left: 50%;
-            border-left: 1px solid #ccc;
-        }
+		.tree li::after {
+			right: auto;
+			left: 50%;
+			border-left: 1px solid #ccc;
+		}
 
-        .tree li:only-child::after, .tree li:only-child::before {
-            display: none;
-        }
+		.tree li:only-child::after, .tree li:only-child::before {
+			display: none;
+		}
 
-        .tree li:only-child {
-            padding-top: 0;
-        }
+		.tree li:only-child {
+			padding-top: 0;
+		}
 
-        .tree li:first-child::before, .tree li:last-child::after {
-            border: 0 none;
-        }
+		.tree li:first-child::before, .tree li:last-child::after {
+			border: 0 none;
+		}
 
-        .tree li:last-child::before {
-            border-right: 1px solid #ccc;
-            border-radius: 0 5px 0 0;
-            -webkit-border-radius: 0 5px 0 0;
-            -moz-border-radius: 0 5px 0 0;
-        }
+		.tree li:last-child::before {
+			border-right: 1px solid #ccc;
+			border-radius: 0 5px 0 0;
+			-webkit-border-radius: 0 5px 0 0;
+			-moz-border-radius: 0 5px 0 0;
+		}
 
-        .tree li:first-child::after {
-            border-radius: 5px 0 0 0;
-            -webkit-border-radius: 5px 0 0 0;
-            -moz-border-radius: 5px 0 0 0;
-        }
+		.tree li:first-child::after {
+			border-radius: 5px 0 0 0;
+			-webkit-border-radius: 5px 0 0 0;
+			-moz-border-radius: 5px 0 0 0;
+		}
 
-    .tree ul ul::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 50%;
-        border-left: 1px solid #ccc;
-        width: 0;
-        height: 20px;
-    }
+	.tree ul ul::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 50%;
+		border-left: 1px solid #ccc;
+		width: 0;
+		height: 20px;
+	}
 
-    .tree li a {
-        border: 1px solid #ccc;
-        padding: 5px 10px;
-        text-decoration: none;
-        color: #666;
-        font-family: arial, verdana, tahoma;
-        font-size: 11px;
-        display: inline-block;
-        border-radius: 5px;
-        -webkit-border-radius: 5px;
-        -moz-border-radius: 5px;
-        transition: all 0.5s;
-        -webkit-transition: all 0.5s;
-        -moz-transition: all 0.5s;
-    }
+	.tree li a {
+		border: 1px solid #ccc;
+		padding: 5px 10px;
+		text-decoration: none;
+		color: #666;
+		font-family: arial, verdana, tahoma;
+		font-size: 11px;
+		display: inline-block;
+		border-radius: 5px;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		transition: all 0.5s;
+		-webkit-transition: all 0.5s;
+		-moz-transition: all 0.5s;
+	}
 
-        .tree li a:hover, .tree li a:hover + ul li a {
-            background: #c8e4f8;
-            color: #000;
-            border: 1px solid #94a0b4;
-        }
+		.tree li a:hover, .tree li a:hover + ul li a {
+			background: #c8e4f8;
+			color: #000;
+			border: 1px solid #94a0b4;
+		}
 
-            .tree li a:hover + ul li::after,
-            .tree li a:hover + ul li::before,
-            .tree li a:hover + ul::before,
-            .tree li a:hover + ul ul::before {
-                border-color: #94a0b4;
-            }
+			.tree li a:hover + ul li::after,
+			.tree li a:hover + ul li::before,
+			.tree li a:hover + ul::before,
+			.tree li a:hover + ul ul::before {
+				border-color: #94a0b4;
+			}
 }
 
 @media(max-width:1200px) {
-    .tree li {
-        margin: 0px 0;
-        list-style-type: none;
-        position: relative;
-        padding: 20px 5px 0px 5px;
-    }
+	.tree li {
+		margin: 0px 0;
+		list-style-type: none;
+		position: relative;
+		padding: 20px 5px 0px 5px;
+	}
 
-        .tree li::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            width: 1px;
-            height: 100%;
-            right: auto;
-            left: -20px;
-            border-left: 1px solid #ccc;
-            bottom: 50px;
-        }
+		.tree li::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			width: 1px;
+			height: 100%;
+			right: auto;
+			left: -20px;
+			border-left: 1px solid #ccc;
+			bottom: 50px;
+		}
 
-        .tree li::after {
-            content: '';
-            position: absolute;
-            top: 30px;
-            width: 25px;
-            height: 20px;
-            right: auto;
-            left: -20px;
-            border-top: 1px solid #ccc;
-        }
+		.tree li::after {
+			content: '';
+			position: absolute;
+			top: 30px;
+			width: 25px;
+			height: 20px;
+			right: auto;
+			left: -20px;
+			border-top: 1px solid #ccc;
+		}
 
-        .tree li a {
-            display: inline-block;
-            border: 1px solid #ccc;
-            padding: 5px 10px;
-            text-decoration: none;
-            color: #666;
-            font-family: arial, verdana, tahoma;
-            font-size: 11px;
-            border-radius: 5px;
-            -webkit-border-radius: 5px;
-            -moz-border-radius: 5px;
-        }
+		.tree li a {
+			display: inline-block;
+			border: 1px solid #ccc;
+			padding: 5px 10px;
+			text-decoration: none;
+			color: #666;
+			font-family: arial, verdana, tahoma;
+			font-size: 11px;
+			border-radius: 5px;
+			-webkit-border-radius: 5px;
+			-moz-border-radius: 5px;
+		}
 
-    .tree > ul > li::before, .tree > ul > li::after {
-        border: 0;
-    }
+	.tree > ul > li::before, .tree > ul > li::after {
+		border: 0;
+	}
 
-    .tree li:last-child::before {
-        height: 30px;
-    }
+	.tree li:last-child::before {
+		height: 30px;
+	}
 
-    .tree li a:hover, .tree li a:hover + ul li a {
-        background: #c8e4f8;
-        color: #000;
-        border: 1px solid #94a0b4;
-    }
+	.tree li a:hover, .tree li a:hover + ul li a {
+		background: #c8e4f8;
+		color: #000;
+		border: 1px solid #94a0b4;
+	}
 
-        .tree li a:hover + ul li::after, .tree li a:hover + ul li::before, .tree li a:hover + ul::before, .tree li a:hover + ul ul::before {
-            border-color: #94a0b4;
-        }
+		.tree li a:hover + ul li::after, .tree li a:hover + ul li::before, .tree li a:hover + ul::before, .tree li a:hover + ul ul::before {
+			border-color: #94a0b4;
+		}
 }
 
 
 #sesamvagen {
-    background-color: #f8f8f8;
+	background-color: #f8f8f8;
 }
 
 #fa-arrowleft-sesamvagen {
-    margin-top: 90px;
+	margin-top: 90px;
 }
 
 #sesamvagen-arrowdown {
-    margin-bottom: 30px;
+	margin-bottom: 30px;
 }
 
 #sesamvagen-header {
-    background-image: url("../Images/headers/20130913_orebrodagen_HT13-72989-faded.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+	background-image: url("../Images/headers/20130913_orebrodagen_HT13-72989-faded.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 #fa-responsive-sesamvagen {
-    padding: 10px 0 25px;
+	padding: 10px 0 25px;
 }
 
 .jumbotron-transparent {
-    background-color: transparent;
-    border: 0;
-    box-shadow: none;
-    -webkit-box-shadow: none;
+	background-color: transparent;
+	border: 0;
+	box-shadow: none;
+	-webkit-box-shadow: none;
 }
 
 
 .panel-megan {
-    min-height: 280px;
+	min-height: 280px;
+	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+	filter: grayscale(100%);
 }
 
 
 .section-background-grey {
-    background-color: #f8f8f8 !important;
+	background-color: #f8f8f8 !important;
 }
 
 #megan-header {
-    background-image: url("../Images/megan/GRUPP-1.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+	background-image: url("../Images/megan/GRUPP-1.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .section-megan-pg h4 {
-    margin-top: 0px;
-    margin-bottom: 15px;
+	margin-top: 0px;
+	margin-bottom: 15px;
 }
 
 .section-megan-pg .panel-body p{
-    margin-top: 5px;
+	margin-top: 5px;
 }
 
 
