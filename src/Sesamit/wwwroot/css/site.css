@@ -347,7 +347,7 @@ p {
 
 #section-ordforande {
 	background-color: #f8f8f8;
-	background-image: url("../Images/styrelse/Kavaj-Jonatan-fp5.jpg");
+	background-image: url("../Images/styrelse/Anton_Index.jpg"); 
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -732,7 +732,7 @@ p {
 
 /****************************Styrelsen****************************/
 #styrelsen-header {
-	background-image: url("../Images/headers/styrelsen1.jpg");
+	background-image: url("../Images/headers/nova-vaning1.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 }
