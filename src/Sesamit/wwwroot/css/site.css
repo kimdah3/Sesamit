@@ -730,6 +730,13 @@ p {
 	box-shadow: 0 1px 2px rgba(0,0,0,0.3);
 }
 
+/****************************FUM****************************/
+#handlingar-header {
+    background-image: url("../Images/fullmaktige/fum.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 /****************************Styrelsen****************************/
 #styrelsen-header {
 	background-image: url("../Images/headers/nova-vaning1.jpg");
