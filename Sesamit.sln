@@ -1,16 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{0E548218-68E6-45F7-9B41-A5686D4F39BD}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5DB84892-72A2-47D0-B94B-ABF7ABF40185}"
-	ProjectSection(SolutionItems) = preProject
-		global.json = global.json
-	EndProjectSection
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Sesamit", "src\Sesamit\Sesamit.xproj", "{6F13C725-6874-4AEA-A44E-7EB5E568332A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sesamit", "src\Sesamit\Sesamit.csproj", "{6F13C725-6874-4AEA-A44E-7EB5E568332A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -28,5 +25,8 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{6F13C725-6874-4AEA-A44E-7EB5E568332A} = {0E548218-68E6-45F7-9B41-A5686D4F39BD}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F760BA8D-C5FB-409D-86DC-8ADB4147E5EA}
 	EndGlobalSection
 EndGlobal
